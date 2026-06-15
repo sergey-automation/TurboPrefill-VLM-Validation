@@ -74,7 +74,71 @@ Implementation files, scripts, input samples, and benchmark logs are published i
 - `scripts/` — scripts used to run the VLM server and resolution tests.
 - `resolution_samples/` — input images used for validation.
 - `benchmarks/` — raw benchmark reports and server logs.
-- 
+
+
+
+## Reproducing the Validation
+
+### 1. Obtain the reference implementation
+
+The validation was performed using the following reference implementation branch:
+
+https://github.com/sergey-automation/llama.cpp/tree/turboprefill-vlm-support
+
+```bash
+git clone https://github.com/sergey-automation/llama.cpp.git
+cd llama.cpp
+git checkout turboprefill-vlm-support
+```
+
+### 2. Build llama.cpp
+
+Build the reference implementation.
+
+### 3. Baseline measurement
+
+Start the VLM server with TurboPrefill disabled:
+
+```text
+TURBOPREFILL=0 ./run_vlm_server.sh
+```
+
+ Run the benchmark:
+
+```text
+python3 run_vlm_resolution.py
+```
+
+### 4. TurboPrefill measurement
+
+Start the VLM server with TurboPrefill enabled:
+
+```text
+TURBOPREFILL=1 ./run_vlm_server.sh
+```
+ Run the benchmark:
+
+```text
+python3 run_vlm_resolution.py
+```
+
+### 5. Compare results
+
+Input images:
+
+```text
+resolution_samples/
+```
+
+Reference benchmark reports and logs:
+
+```text
+benchmarks/
+```
+
+Compare generated reports against the published benchmark logs included in this repository.
+
+  
 ## Attribution
 
 If this work is useful for future implementations of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill, please cite the original RFC proposal:
