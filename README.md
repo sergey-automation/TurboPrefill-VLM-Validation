@@ -56,13 +56,11 @@ The original TurboPrefill PoC intentionally used a conservative dispatcher and l
 
 The current validation implementation enables additional workloads that are still within the original concept of **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill**, but were not enabled in the first PoC.
 
-Currently enabled and validated:
+Additional workloads currently enabled for the TurboPrefill execution path:
 
-- Text LLM workloads.
-- Vision Language Model (VLM) workloads.
-- Multi-request execution in multi-user server mode, provided that all requests combined into one active processing batch belong to the same user session.
-
-Batches containing requests from multiple independent users are not yet enabled for the TurboPrefill path. This remains future validation work.
+- Execution of Text LLM workloads.
+- Execution of Vision Language Model (VLM) workloads.
+- Execution of multiple concurrent requests in multi-user server mode, provided that requests from different users are not mixed within the same TurboPrefill batch.
 
 ## Status
 
