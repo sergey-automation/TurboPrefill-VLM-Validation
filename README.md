@@ -2,6 +2,29 @@
 
 Validation of the applicability of **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill** to Vision Language Models (VLMs).
 
+## Example Input
+
+![FHD giraffe sample](resolution_samples/giraffe_FHD_1920x1080.jpg)
+
+## Validation Task
+
+Question:
+
+> What is happening in this image? Describe the animals, their approximate number, activity, environment, and colors. Which animal appears to be the leader of the group, and what five visual clues made you reach that conclusion? Use no more than 50 words.
+
+Example answer:
+
+> Eight giraffes are walking across a grassy wetland near a river. The animals are light brown with darker patches. The leading giraffe appears to guide the group. Clues: front position, direction of movement, spacing, head orientation, and group alignment.
+
+## Key Result
+
+Validation on Vision Language Models demonstrates that **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill** can significantly reduce user waiting time before answer generation without changing model weights, architecture, quantization, prompts, or inference mathematics.
+
+On the tested multi-GPU configuration, the scheduling changes reduced the prefill stage latency by approximately **2.24×**, resulting in approximately **2.12×** lower end-to-end response time for a 1920×1080 image workload.
+
+The observed improvement was achieved solely through changes in execution scheduling during the prefill stage.
+
+
 ## Background
 
 The original scheduling mechanism was proposed in:
@@ -20,18 +43,40 @@ This repository validates the applicability of Intra-Prompt Pipeline Scheduling 
 
 The objective is not to introduce a new scheduling mechanism, but to demonstrate that the original mechanism is applicable beyond text-only LLM workloads.
 
+
 ## Validation Implementation
 
-Current implementation branch:
+Reference implementation branch:
 
 https://github.com/sergey-automation/llama.cpp/tree/turboprefill-vlm-support
+
+## Scope of the Current Implementation
+
+The original TurboPrefill PoC intentionally used a conservative dispatcher and left some eligible workloads on the standard llama.cpp execution path.
+
+The current validation implementation enables additional workloads that are still within the original concept of **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill**, but were not enabled in the first PoC.
+
+Currently enabled and validated:
+
+- Text LLM workloads.
+- Vision Language Model (VLM) workloads.
+- Multi-request execution in multi-user server mode, provided that all requests combined into one active processing batch belong to the same user session.
+
+Batches containing requests from multiple independent users are not yet enabled for the TurboPrefill path. This remains future validation work.
 
 ## Status
 
 Work in progress.
 
-Implementation files, benchmarks and validation results will be published after testing.
+Implementation files, scripts, input samples, and benchmark logs are published in this repository.
 
+## Repository Structure
+
+- `files/` — modified llama.cpp source files used for the validation branch.
+- `scripts/` — scripts used to run the VLM server and resolution tests.
+- `resolution_samples/` — input images used for validation.
+- `benchmarks/` — raw benchmark reports and server logs.
+- 
 ## Attribution
 
 If this work is useful for future implementations of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill, please cite the original RFC proposal:
