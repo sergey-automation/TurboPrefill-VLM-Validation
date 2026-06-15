@@ -1,0 +1,441 @@
+build_info: b9100-2e97c5f96
+system_info: n_threads = 2 (n_threads_batch = 2) / 4 | CUDA : ARCHS = 610 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | CPU : SSE3 = 1 | SSSE3 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+init: using 5 threads for HTTP server
+start: binding port with default address family
+main: loading model
+srv    load_model: loading model '/home/serg/workspace/projects/llama.cpp/../../models/Qwen2.5-VL-72B/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf'
+common_init_result: fitting params to device memory, for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (P104-100)   |  8116 = 8017 + ( 752 =   588 +      64 +      99) +        -652 |
+common_memory_breakdown_print: |   - CUDA1 (P104-100)   |  8116 = 8025 + (5971 =  5296 +     576 +      99) +       -5881 |
+common_memory_breakdown_print: |   - CUDA2 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA3 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA4 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA5 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA6 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA7 (P104-100)   |  8116 = 8025 + (5445 =  4770 +     576 +      99) +       -5355 |
+common_memory_breakdown_print: |   - CUDA8 (P104-100)   |  8116 = 8025 + (5621 =  4945 +     576 +      99) +       -5530 |
+common_memory_breakdown_print: |   - CUDA9 (P104-100)   |  8116 = 8025 + (5653 =  5093 +     448 +     111) +       -5562 |
+common_memory_breakdown_print: |   - Host               |                  720 =   668 +       0 +      52                |
+common_params_fit_impl: projected memory use with initial parameters [MiB]:
+common_params_fit_impl:   - CUDA0 (NVIDIA P104-100):   8116 total,    752 used,   7264 free vs. target of   1024
+common_params_fit_impl:   - CUDA1 (NVIDIA P104-100):   8116 total,   5971 used,   2053 free vs. target of   1024
+common_params_fit_impl:   - CUDA2 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA3 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA4 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA5 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA6 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA7 (NVIDIA P104-100):   8116 total,   5445 used,   2579 free vs. target of   1024
+common_params_fit_impl:   - CUDA8 (NVIDIA P104-100):   8116 total,   5621 used,   2404 free vs. target of   1024
+common_params_fit_impl:   - CUDA9 (NVIDIA P104-100):   8116 total,   5653 used,   2372 free vs. target of   1024
+common_params_fit_impl: projected to use 50673 MiB of device memory vs. 80246 MiB of free device memory
+common_params_fit_impl: targets for free memory can be met on all devices, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 1.97 seconds
+llama_model_loader: loaded meta data with 27 key-value pairs and 963 tensors from /home/serg/workspace/projects/llama.cpp/../../models/Qwen2.5-VL-72B/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen2vl
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen2.5 VL 72B Instruct
+llama_model_loader: - kv   3:                           general.finetune str              = Instruct
+llama_model_loader: - kv   4:                           general.basename str              = Qwen2.5-VL
+llama_model_loader: - kv   5:                         general.size_label str              = 72B
+llama_model_loader: - kv   6:                        qwen2vl.block_count u32              = 80
+llama_model_loader: - kv   7:                     qwen2vl.context_length u32              = 128000
+llama_model_loader: - kv   8:                   qwen2vl.embedding_length u32              = 8192
+llama_model_loader: - kv   9:                qwen2vl.feed_forward_length u32              = 29568
+llama_model_loader: - kv  10:               qwen2vl.attention.head_count u32              = 64
+llama_model_loader: - kv  11:            qwen2vl.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  12:                     qwen2vl.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  13:   qwen2vl.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  14:            qwen2vl.rope.dimension_sections arr[i32,4]       = [16, 24, 24, 0]
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  16:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  17:                      tokenizer.ggml.tokens arr[str,152064]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,152064]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  22:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  23:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {% set image_count = namespace(value=...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - kv  26:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  401 tensors
+llama_model_loader: - type q5_0:   40 tensors
+llama_model_loader: - type q8_0:   40 tensors
+llama_model_loader: - type q4_K:  401 tensors
+llama_model_loader: - type q5_K:   40 tensors
+llama_model_loader: - type q6_K:   41 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 44.15 GiB (5.22 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA P104-100) (0000:03:00.0) - 8017 MiB free
+llama_prepare_model_devices: using device CUDA1 (NVIDIA P104-100) (0000:05:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA2 (NVIDIA P104-100) (0000:07:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA3 (NVIDIA P104-100) (0000:09:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA4 (NVIDIA P104-100) (0000:0a:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA5 (NVIDIA P104-100) (0000:0b:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA6 (NVIDIA P104-100) (0000:0c:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA7 (NVIDIA P104-100) (0000:0d:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA8 (NVIDIA P104-100) (0000:0e:00.0) - 8025 MiB free
+llama_prepare_model_devices: using device CUDA9 (NVIDIA P104-100) (0000:0f:00.0) - 8025 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+[0mload: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 23
+load: token to piece cache size = 0.9310 MB
+print_info: arch                  = qwen2vl
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 128000
+print_info: n_embd                = 8192
+print_info: n_embd_inp            = 8192
+print_info: n_layer               = 80
+print_info: n_head                = 64
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 8
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 0.0e+00
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 29568
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 8
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 128000
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: mrope sections        = [16, 24, 24, 0]
+print_info: model type            = ?B
+print_info: model params          = 72.71 B
+print_info: general.name          = Qwen2.5 VL 72B Instruct
+print_info: vocab type            = BPE
+print_info: n_vocab               = 152064
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 79 repeating layers to GPU
+load_tensors: offloaded 81/81 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =   668.25 MiB
+load_tensors:        CUDA0 model buffer size =   588.48 MiB
+load_tensors:        CUDA1 model buffer size =  5296.29 MiB
+load_tensors:        CUDA2 model buffer size =  4770.17 MiB
+load_tensors:        CUDA3 model buffer size =  4770.17 MiB
+load_tensors:        CUDA4 model buffer size =  4770.17 MiB
+load_tensors:        CUDA5 model buffer size =  4770.17 MiB
+load_tensors:        CUDA6 model buffer size =  4770.17 MiB
+load_tensors:        CUDA7 model buffer size =  4770.17 MiB
+load_tensors:        CUDA8 model buffer size =  4945.54 MiB
+load_tensors:        CUDA9 model buffer size =  5093.90 MiB
+...................................................................................................
+common_init_result: added </s> logit bias = -inf
+common_init_result: added <|endoftext|> logit bias = -inf
+common_init_result: added <|im_end|> logit bias = -inf
+common_init_result: added <|fim_pad|> logit bias = -inf
+common_init_result: added <|repo_name|> logit bias = -inf
+common_init_result: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 16384
+llama_context: n_ctx_seq     = 16384
+llama_context: n_batch       = 16384
+llama_context: n_ubatch      = 64
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = enabled
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (16384) < n_ctx_train (128000) -- the full capacity of the model will not be utilized
+[0mllama_context:  CUDA_Host  output buffer size =     0.58 MiB
+llama_kv_cache:      CUDA0 KV buffer size =    64.00 MiB
+llama_kv_cache:      CUDA1 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA2 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA3 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA4 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA5 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA6 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA7 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA8 KV buffer size =   576.00 MiB
+llama_kv_cache:      CUDA9 KV buffer size =   448.00 MiB
+llama_kv_cache: size = 5120.00 MiB ( 16384 cells,  80 layers,  1/1 seqs), K (f16): 2560.00 MiB, V (f16): 2560.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+llama_context: pipeline parallelism enabled
+sched_reserve: reserving ...
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:      CUDA0 compute buffer size =    99.68 MiB
+sched_reserve:      CUDA1 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA2 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA3 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA4 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA5 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA6 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA7 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA8 compute buffer size =    75.68 MiB
+sched_reserve:      CUDA9 compute buffer size =    87.15 MiB
+sched_reserve:  CUDA_Host compute buffer size =    52.03 MiB
+sched_reserve: graph nodes  = 2727
+sched_reserve: graph splits = 11
+sched_reserve: reserve took 119.69 ms, sched copies = 12
+common_init_from_params: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+[0mclip_model_loader: model name:   Qwen2.5 VL 72B Instruct
+clip_model_loader: description:  
+clip_model_loader: GGUF version: 3
+clip_model_loader: alignment:    32
+clip_model_loader: n_tensors:    519
+clip_model_loader: n_kv:         22
+
+clip_model_loader: has vision encoder
+clip_ctx: CLIP using CUDA0 backend
+load_hparams: Qwen-VL models require at minimum 1024 image tokens to function correctly on grounding tasks
+[0mload_hparams: if you encounter problems with accuracy, try adding --image-min-tokens 1024
+[0mload_hparams: more info: https://github.com/ggml-org/llama.cpp/issues/16842
+
+[0mload_hparams: projector:          qwen2.5vl_merger
+load_hparams: n_embd:             1280
+load_hparams: n_head:             16
+load_hparams: n_ff:               3456
+load_hparams: n_layer:            32
+load_hparams: ffn_op:             silu
+load_hparams: projection_dim:     8192
+
+--- vision hparams ---
+load_hparams: image_size:         560
+load_hparams: patch_size:         14
+load_hparams: has_llava_proj:     0
+load_hparams: minicpmv_version:   0
+load_hparams: n_merge:            2
+load_hparams: n_wa_pattern: 8
+load_hparams: image_min_pixels:   200704 (custom value)
+load_hparams: image_max_pixels:   5312384 (custom value)
+
+load_hparams: model size:         716.74 MiB
+load_hparams: metadata size:      0.18 MiB
+warmup: warmup with image size = 1288 x 1288
+alloc_compute_meta:      CUDA0 compute buffer size =   705.95 MiB
+alloc_compute_meta:        CPU compute buffer size =   292.41 MiB
+alloc_compute_meta: graph splits = 1, nodes = 1091
+warmup: flash attention is enabled
+srv    load_model: loaded multimodal model, '/home/serg/workspace/projects/llama.cpp/../../models/Qwen2.5-VL-72B/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf'
+srv    load_model: initializing slots, n_slots = 1
+no implementations specified for speculative decoding
+[0mslot   load_model: id  0 | task -1 | new slot, n_ctx = 16384
+srv    load_model: prompt cache is disabled - use `--cache-ram N` to enable it
+[0msrv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+[0msrv          init: init: --cache-idle-slots requires --kv-unified, disabling
+[0minit: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+main: model loaded
+main: server is listening on http://0.0.0.0:8081
+main: starting the main loop...
+srv  update_slots: all slots are idle
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_nHD_640x360.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot update_slots: id  0 | task 0 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 373
+slot update_slots: id  0 | task 0 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 0 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.182306
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 0 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 1086 ms
+decoding image batch 1/1, n_tokens_batch = 299
+decode: TurboPrefill requested=0 active=0 n_tokens=299 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 4978 ms
+srv  process_chun: image processed in 6064 ms
+slot init_sampler: id  0 | task 0 | init sampler, took 0.02 ms, tokens: text = 74, total = 373
+slot update_slots: id  0 | task 0 | prompt processing done, n_tokens = 373, batch.n_tokens = 6
+slot print_timing: id  0 | task 0 | 
+prompt eval time =    9303.86 ms /   373 tokens (   24.94 ms per token,    40.09 tokens per second)
+       eval time =    3736.77 ms /    16 tokens (  233.55 ms per token,     4.28 tokens per second)
+      total time =   13040.62 ms /   389 tokens
+slot      release: id  0 | task 0 | stop processing: n_tokens = 388, truncated = 0
+srv  update_slots: all slots are idle
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_qHD_960x540.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 36939762977
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 18 | processing task, is_child = 0
+slot update_slots: id  0 | task 18 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 720
+slot update_slots: id  0 | task 18 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 18 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.094444
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 18 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 1476 ms
+decoding image batch 1/1, n_tokens_batch = 646
+decode: TurboPrefill requested=0 active=0 n_tokens=646 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 12389 ms
+srv  process_chun: image processed in 13865 ms
+slot init_sampler: id  0 | task 18 | init sampler, took 0.01 ms, tokens: text = 74, total = 720
+slot update_slots: id  0 | task 18 | prompt processing done, n_tokens = 720, batch.n_tokens = 6
+slot print_timing: id  0 | task 18 | 
+prompt eval time =   16328.55 ms /   720 tokens (   22.68 ms per token,    44.09 tokens per second)
+       eval time =    3656.89 ms /    16 tokens (  228.56 ms per token,     4.38 tokens per second)
+      total time =   19985.44 ms /   736 tokens
+slot      release: id  0 | task 18 | stop processing: n_tokens = 735, truncated = 0
+srv  update_slots: all slots are idle
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_HD720_1280x720.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 36960659054
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 36 | processing task, is_child = 0
+slot update_slots: id  0 | task 36 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 1270
+slot update_slots: id  0 | task 36 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 36 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.053543
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 36 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 4073 ms
+decoding image batch 1/1, n_tokens_batch = 1196
+decode: TurboPrefill requested=0 active=0 n_tokens=1196 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 22588 ms
+srv  process_chun: image processed in 26662 ms
+slot init_sampler: id  0 | task 36 | init sampler, took 0.01 ms, tokens: text = 74, total = 1270
+slot update_slots: id  0 | task 36 | prompt processing done, n_tokens = 1270, batch.n_tokens = 6
+slot print_timing: id  0 | task 36 | 
+prompt eval time =   29510.13 ms /  1270 tokens (   23.24 ms per token,    43.04 tokens per second)
+       eval time =    3707.15 ms /    16 tokens (  231.70 ms per token,     4.32 tokens per second)
+      total time =   33217.28 ms /  1286 tokens
+slot      release: id  0 | task 36 | stop processing: n_tokens = 1285, truncated = 0
+srv  update_slots: all slots are idle
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_FHD_1920x1080.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 36994766856
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 54 | processing task, is_child = 0
+slot update_slots: id  0 | task 54 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 2765
+slot update_slots: id  0 | task 54 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 54 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.024593
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 54 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 17515 ms
+decoding image batch 1/1, n_tokens_batch = 2691
+decode: TurboPrefill requested=0 active=0 n_tokens=2691 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 54874 ms
+srv  process_chun: image processed in 72391 ms
+slot init_sampler: id  0 | task 54 | init sampler, took 0.01 ms, tokens: text = 74, total = 2765
+slot update_slots: id  0 | task 54 | prompt processing done, n_tokens = 2765, batch.n_tokens = 6
+slot print_timing: id  0 | task 54 | 
+prompt eval time =   74709.87 ms /  2765 tokens (   27.02 ms per token,    37.01 tokens per second)
+       eval time =    3737.65 ms /    16 tokens (  233.60 ms per token,     4.28 tokens per second)
+      total time =   78447.51 ms /  2781 tokens
+slot      release: id  0 | task 54 | stop processing: n_tokens = 2780, truncated = 0
+srv  update_slots: all slots are idle
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_QHD_2560x1440.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 37074285616
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 72 | processing task, is_child = 0
+slot update_slots: id  0 | task 72 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 4715
+slot update_slots: id  0 | task 72 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 72 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.014422
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 72 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 48151 ms
+decoding image batch 1/1, n_tokens_batch = 4641
+decode: TurboPrefill requested=0 active=0 n_tokens=4641 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 98803 ms
+srv  process_chun: image processed in 146956 ms
+slot init_sampler: id  0 | task 72 | init sampler, took 0.01 ms, tokens: text = 74, total = 4715
+slot update_slots: id  0 | task 72 | prompt processing done, n_tokens = 4715, batch.n_tokens = 6
+slot print_timing: id  0 | task 72 | 
+prompt eval time =  150043.21 ms /  4715 tokens (   31.82 ms per token,    31.42 tokens per second)
+       eval time =    3805.74 ms /    16 tokens (  237.86 ms per token,     4.20 tokens per second)
+      total time =  153848.95 ms /  4731 tokens
+slot      release: id  0 | task 72 | stop processing: n_tokens = 4730, truncated = 0
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  update_slots: all slots are idle
+srv  handle_media: loading image from local file '/home/serg/workspace/projects/llama.cpp/resolution_samples/./giraffe_APSC_3072x2048.jpg'
+srv  params_from_: Chat format: peg-native
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 37229236437
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task 90 | processing task, is_child = 0
+slot update_slots: id  0 | task 90 | new prompt, n_ctx_slot = 16384, n_keep = 0, task.n_tokens = 6774
+slot update_slots: id  0 | task 90 | n_tokens = 0, memory_seq_rm [0, end)
+slot update_slots: id  0 | task 90 | prompt processing progress, n_tokens = 68, batch.n_tokens = 68, progress = 0.010038
+decode: TurboPrefill requested=0 active=0 n_tokens=68 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+slot update_slots: id  0 | task 90 | n_tokens = 68, memory_seq_rm [68, end)
+srv  process_chun: processing image...
+encoding image slice...
+image slice encoded in 96799 ms
+decoding image batch 1/1, n_tokens_batch = 6700
+decode: TurboPrefill requested=0 active=0 n_tokens=6700 n_ubatch=64 full_ubatches=0 devices=10 pipeline=1 split_mode=1
+image decoded (batch 1/1) in 149246 ms
+srv  process_chun: image processed in 246046 ms
+slot init_sampler: id  0 | task 90 | init sampler, took 0.02 ms, tokens: text = 74, total = 6774
+slot update_slots: id  0 | task 90 | prompt processing done, n_tokens = 6774, batch.n_tokens = 6
+slot print_timing: id  0 | task 90 | 
+prompt eval time =  249275.05 ms /  6774 tokens (   36.80 ms per token,    27.17 tokens per second)
+       eval time =    3866.85 ms /    16 tokens (  241.68 ms per token,     4.14 tokens per second)
+      total time =  253141.90 ms /  6790 tokens
+slot      release: id  0 | task 90 | stop processing: n_tokens = 6789, truncated = 0
+srv  log_server_r: done request: POST /v1/chat/completions 127.0.0.1 200
+srv  update_slots: all slots are idle

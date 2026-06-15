@@ -1,0 +1,232 @@
+RUN_ID=20260615_174328
+START_TIME=2026-06-15T17:43:28
+SERVER=http://127.0.0.1:8081
+MODEL=Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
+IMAGE_DIR=resolution_samples
+QUESTION=What is happening in this image? Describe the animals, their approximate number, activity, environment, and colors. Which animal appears to be the leader of the group, and what five visual clues made you reach that conclusion? Use no more than 50 words.
+MAX_TOKENS=16
+TIMEOUT_S=900
+GPU_SAMPLE_INTERVAL_S=0.5
+
+ENV SETTINGS:
+TURBOPREFILL=
+CTX_SIZE=
+BATCH_SIZE=
+UBATCH_SIZE=
+N_GPU_LAYERS=
+SPLIT_MODE=
+TENSOR_SPLIT=
+FLASH_ATTN=
+CACHE_TYPE_K=
+CACHE_TYPE_V=
+IMAGE_MIN_TOKENS=
+IMAGE_MAX_TOKENS=
+HOST=
+PORT=
+CACHE_RAM=
+PROMPT_CACHE=
+METRICS=
+WEBUI=
+WARMUP=
+OFFLINE=
+MEDIA_PATH=
+
+PARSED SERVER SETTINGS:
+server_n_ctx=16384
+server_n_batch=16384
+server_n_ubatch=64
+server_causal_attn=1
+server_flash_attn=enabled
+server_pipeline_parallel=1
+server_graph_splits=11
+server_sched_copies=12
+server_clip_backend=CUDA0
+server_image_min_pixels=200704
+server_image_max_pixels=5312384
+
+MODEL/KV/COMPUTE BUFFERS SUMMARY:
+load_tensors:   CPU_Mapped model buffer size =   668.25 MiB | load_tensors:        CUDA0 model buffer size =   588.48 MiB | load_tensors:        CUDA1 model buffer size =  5296.29 MiB | load_tensors:        CUDA2 model buffer size =  4770.17 MiB | load_tensors:        CUDA3 model buffer size =  4770.17 MiB | load_tensors:        CUDA4 model buffer size =  4770.17 MiB | load_tensors:        CUDA5 model buffer size =  4770.17 MiB | load_tensors:        CUDA6 model buffer size =  4770.17 MiB | load_tensors:        CUDA7 model buffer size =  4770.17 MiB | load_tensors:        CUDA8 model buffer size =  4945.54 MiB | load_tensors:        CUDA9 model buffer size =  5093.90 MiB | llama_kv_cache:      CUDA0 KV buffer size =    64.00 MiB | llama_kv_cache:      CUDA1 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA2 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA3 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA4 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA5 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA6 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA7 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA8 KV buffer size =   576.00 MiB | llama_kv_cache:      CUDA9 KV buffer size =   448.00 MiB | sched_reserve:      CUDA0 compute buffer size =    99.68 MiB | sched_reserve:      CUDA1 compute buffer size =    75.68 MiB | sched_reserve:      CUDA2 compute buffer size =    75.68 MiB | sched_reserve:      CUDA3 compute buffer size =    75.68 MiB | sched_reserve:      CUDA4 compute buffer size =    75.68 MiB | sched_reserve:      CUDA5 compute buffer size =    75.68 MiB | sched_reserve:      CUDA6 compute buffer size =    75.68 MiB | sched_reserve:      CUDA7 compute buffer size =    75.68 MiB | sched_reserve:      CUDA8 compute buffer size =    75.68 MiB | sched_reserve:      CUDA9 compute buffer size =    87.15 MiB | sched_reserve:  CUDA_Host compute buffer size =    52.03 MiB | alloc_compute_meta:      CUDA0 compute buffer size =   705.95 MiB | alloc_compute_meta:        CPU compute buffer size =   292.41 MiB
+
+NVIDIA-SMI START:
+Mon Jun 15 17:43:28 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.309.01             Driver Version: 535.309.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA P104-100                Off | 00000000:03:00.0 Off |                  N/A |
+| 59%   41C    P8              10W / 180W |   6561MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA P104-100                Off | 00000000:05:00.0 Off |                  N/A |
+| 54%   39C    P8              10W / 180W |   6056MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA P104-100                Off | 00000000:07:00.0 Off |                  N/A |
+| 51%   36C    P8               9W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA P104-100                Off | 00000000:09:00.0 Off |                  N/A |
+| 53%   38C    P8               8W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA P104-100                Off | 00000000:0A:00.0 Off |                  N/A |
+| 50%   30C    P8              10W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA P104-100                Off | 00000000:0B:00.0 Off |                  N/A |
+| 55%   40C    P8              10W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA P104-100                Off | 00000000:0C:00.0 Off |                  N/A |
+| 59%   42C    P8              10W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA P104-100                Off | 00000000:0D:00.0 Off |                  N/A |
+| 50%   35C    P8              10W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   8  NVIDIA P104-100                Off | 00000000:0E:00.0 Off |                  N/A |
+| 54%   39C    P8               9W / 180W |   5704MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   9  NVIDIA P104-100                Off | 00000000:0F:00.0 Off |                  N/A |
+| 55%   40C    P8              10W / 180W |   5736MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            8MiB |
+|    0   N/A  N/A      2048      G   /usr/bin/gnome-shell                          4MiB |
+|    0   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     6546MiB |
+|    1   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    1   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     6050MiB |
+|    2   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    2   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    3   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    3   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    4   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    4   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    5   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    5   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    6   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    6   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    7   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    7   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    8   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    8   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5698MiB |
+|    9   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    9   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5730MiB |
++---------------------------------------------------------------------------------------+
+
+FILES ORDER:
+640x360 giraffe_nHD_640x360.jpg 201922
+960x540 giraffe_qHD_960x540.jpg 436031
+1280x720 giraffe_HD720_1280x720.jpg 740203
+1920x1080 giraffe_FHD_1920x1080.jpg 1523751
+2560x1440 giraffe_QHD_2560x1440.jpg 2444796
+3072x2048 giraffe_APSC_3072x2048.jpg 3638845
+
+RUN 2026-06-15T17:43:29 640x360 giraffe_nHD_640x360.jpg
+OK giraffe_nHD_640x360.jpg: wall_ms=9422.19 visual=299 img_dec_ms=2113 prompt_tok_s=66.94 tp_active=1 gpu_max_util=100
+
+RUN 2026-06-15T17:43:39 960x540 giraffe_qHD_960x540.jpg
+OK giraffe_qHD_960x540.jpg: wall_ms=11507.80 visual=646 img_dec_ms=3734 prompt_tok_s=94.07 tp_active=1 gpu_max_util=100
+
+RUN 2026-06-15T17:43:51 1280x720 giraffe_HD720_1280x720.jpg
+OK giraffe_HD720_1280x720.jpg: wall_ms=16833.32 visual=1196 img_dec_ms=6109 prompt_tok_s=97.73 tp_active=1 gpu_max_util=100
+
+RUN 2026-06-15T17:44:09 1920x1080 giraffe_FHD_1920x1080.jpg
+OK giraffe_FHD_1920x1080.jpg: wall_ms=37382.83 visual=2691 img_dec_ms=14219 prompt_tok_s=82.84 tp_active=1 gpu_max_util=100
+
+RUN 2026-06-15T17:44:47 2560x1440 giraffe_QHD_2560x1440.jpg
+OK giraffe_QHD_2560x1440.jpg: wall_ms=79255.00 visual=4641 img_dec_ms=25112 prompt_tok_s=62.77 tp_active=1 gpu_max_util=100
+
+RUN 2026-06-15T17:46:07 3072x2048 giraffe_APSC_3072x2048.jpg
+OK giraffe_APSC_3072x2048.jpg: wall_ms=140255.47 visual=6700 img_dec_ms=37641 prompt_tok_s=49.84 tp_active=1 gpu_max_util=100
+
+END_TIME=2026-06-15T17:48:28
+
+NVIDIA-SMI END:
+Mon Jun 15 17:48:28 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.309.01             Driver Version: 535.309.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA P104-100                Off | 00000000:03:00.0 Off |                  N/A |
+| 69%   51C    P0              54W / 180W |   6561MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA P104-100                Off | 00000000:05:00.0 Off |                  N/A |
+| 58%   47C    P0              44W / 180W |   6056MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA P104-100                Off | 00000000:07:00.0 Off |                  N/A |
+| 54%   44C    P0              43W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA P104-100                Off | 00000000:09:00.0 Off |                  N/A |
+| 57%   45C    P0              43W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   4  NVIDIA P104-100                Off | 00000000:0A:00.0 Off |                  N/A |
+| 50%   37C    P0              42W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   5  NVIDIA P104-100                Off | 00000000:0B:00.0 Off |                  N/A |
+| 59%   48C    P0              43W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   6  NVIDIA P104-100                Off | 00000000:0C:00.0 Off |                  N/A |
+| 63%   50C    P0              45W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   7  NVIDIA P104-100                Off | 00000000:0D:00.0 Off |                  N/A |
+| 51%   42C    P0              44W / 180W |   5530MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   8  NVIDIA P104-100                Off | 00000000:0E:00.0 Off |                  N/A |
+| 58%   47C    P0              42W / 180W |   5704MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   9  NVIDIA P104-100                Off | 00000000:0F:00.0 Off |                  N/A |
+| 59%   49C    P0              43W / 180W |   5736MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            8MiB |
+|    0   N/A  N/A      2048      G   /usr/bin/gnome-shell                          4MiB |
+|    0   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     6546MiB |
+|    1   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    1   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     6050MiB |
+|    2   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    2   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    3   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    3   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    4   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    4   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    5   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    5   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    6   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    6   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    7   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    7   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5524MiB |
+|    8   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    8   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5698MiB |
+|    9   N/A  N/A      1899      G   /usr/lib/xorg/Xorg                            4MiB |
+|    9   N/A  N/A    211057      C   ...ts/llama.cpp/build/bin/llama-server     5730MiB |
++---------------------------------------------------------------------------------------+
