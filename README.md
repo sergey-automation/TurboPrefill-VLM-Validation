@@ -16,6 +16,7 @@ Example answer:
 
 > Eight giraffes are walking across a grassy wetland near a river. The animals are light brown with darker patches. The leading giraffe appears to guide the group. Clues: front position, direction of movement, spacing, head orientation, and group alignment.
 
+
 ## Key Result
 
 Validation on Vision Language Models demonstrates that **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill** can significantly reduce user waiting time before answer generation without changing model weights, architecture, quantization, prompts, or inference mathematics.
@@ -24,6 +25,16 @@ On the tested multi-GPU configuration, the scheduling changes reduced the prefil
 
 The observed improvement was achieved solely through changes in execution scheduling during the prefill stage.
 
+## Test Configuration
+
+Model:
+
+- Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
+- mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf
+
+Primary metric:
+
+- TTFT (Time-To-First-Token)
 
 ## Background
 
