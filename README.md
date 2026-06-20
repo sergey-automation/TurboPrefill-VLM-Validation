@@ -2,6 +2,8 @@
 
 Validation of the applicability of **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill** to Vision Language Models (VLMs).
 
+TurboPrefill cut the waiting time before answer generation nearly in half: from 9.0 s to 4.6 s.
+
 ## Example Input
 
 ![FHD giraffe sample](resolution_samples/giraffe_FHD_1920x1080.jpg)
@@ -27,14 +29,24 @@ The observed improvement was achieved solely through changes in execution schedu
 
 ## Test Configuration
 
-Model:
+| Parameter | Value |
+|---|---|
+| Model | Qwen2.5-VL-72B-Instruct-Q4_K_M |
+| Task | Vision-language question answering |
+| Input | Single Full HD image (1920×1080) |
+| GPUs | 4× RTX 5060 Ti 16 GB |
+| UBatch size | 128 |
+| Split mode | Layer |
 
-- Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
-- mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf
+## Result
 
-Primary metric:
+| Metric | Baseline | TurboPrefill |
+|---|---:|---:|
+| Waiting time before the response started | 9.0 s | 4.6 s |
+| Prefill throughput | 303 tok/s | 604 tok/s |
+| Generation throughput | 8.6 tok/s | 8.6 tok/s |
 
-- TTFT (Time-To-First-Token)
+TurboPrefill nearly halved the waiting time before the model started responding, while leaving answer generation speed unchanged.
 
 ## Background
 
