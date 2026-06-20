@@ -110,6 +110,35 @@ git checkout turboprefill-vlm-support
 
 Build the reference implementation.
 
+### 2.1 Download the Qwen2.5-VL-72B GGUF model
+
+The validation uses the following model files:
+
+- `Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf`
+- `mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf`
+
+Create the expected model directory:
+
+```bash
+mkdir -p /workspace/models/Qwen2.5-VL-72B
+cd /workspace/models/Qwen2.5-VL-72B
+```
+
+Download the main model:
+```text
+wget -c --content-disposition \
+"https://huggingface.co/ggml-org/Qwen2.5-VL-72B-Instruct-GGUF/resolve/main/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf"
+```
+Download the multimodal projector:
+```text
+wget -c --content-disposition \
+"https://huggingface.co/ggml-org/Qwen2.5-VL-72B-Instruct-GGUF/resolve/main/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf"
+```
+Check the files:
+```text
+ls -lh /workspace/models/Qwen2.5-VL-72B
+```
+
 ### 3. Baseline measurement
 
 Start the VLM server with TurboPrefill disabled:
