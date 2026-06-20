@@ -1,4 +1,3 @@
-// TurboPrefill VLM Validation v0.1.0
 #include "llama-context.h"
 
 #include "ggml.h"
@@ -1642,7 +1641,6 @@ int llama_context::decode(const llama_batch & batch_inp) {
     }
 
     turboprefill.begin_batch(turboprefill_enabled, n_tokens_all, cparams.n_ubatch);
-
     if (n_tokens_all >= turboprefill_threshold) {
         LLAMA_LOG_INFO(
                 "%s: TurboPrefill requested=%d active=%d n_tokens=%u n_ubatch=%u full_ubatches=%u devices=%d pipeline=%d split_mode=%d\n",
