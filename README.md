@@ -23,8 +23,6 @@ Example answer:
 
 Validation on Vision Language Models demonstrates that **Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill** can significantly reduce user waiting time before answer generation without changing model weights, architecture, quantization, prompts, or inference mathematics.
 
-On the tested multi-GPU configuration, the scheduling changes reduced the prefill stage latency by approximately **2.24×**, resulting in approximately **2.12×** lower end-to-end response time for a 1920×1080 image workload.
-
 The observed improvement was achieved solely through changes in execution scheduling during the prefill stage.
 
 ## Test Configuration
@@ -47,6 +45,10 @@ The observed improvement was achieved solely through changes in execution schedu
 | Generation throughput | 8.6 tok/s | 8.6 tok/s |
 
 TurboPrefill nearly halved the waiting time before the model started responding, while leaving answer generation speed unchanged.
+
+## Future Relevance
+
+Validation on NVIDIA Pascal GPUs also demonstrated an approximately 2.2× reduction in prefill latency, suggesting that this optimization opportunity is not tied to a particular class of hardware and will likely remain relevant for future GPU generations.
 
 ## Background
 
