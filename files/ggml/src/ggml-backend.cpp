@@ -1,5 +1,5 @@
 // Note: porting this file to C++ is a work in progress
-// TurboPrefill VLM Validation v0.1.0
+// TurboPrefill VLM Validation v0.3.2
 
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
@@ -17,23 +17,14 @@
 #include <assert.h>
 #include <limits.h>
 #include <stdarg.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <algorithm>
 #include <cstring>
-#include <mutex>
-#include <string>
+#include <unordered_map>
 #include <vector>
-
-#define TURBOPREFILL_LOG_BANNER "TurboPrefill VLM Validation v0.1.0 | Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill | RFC PoC #24219"
-
-static void ggml_backend_sched_tp_log_banner_once(void) {
-    static std::once_flag once;
-    std::call_once(once, []() {
-        GGML_LOG_INFO("%s\n", TURBOPREFILL_LOG_BANNER);
-    });
-}
 
 #ifdef __APPLE__
 #include <sys/types.h>
@@ -793,6 +784,8 @@ enum ggml_backend_sched_tp_input_source_kind {
     GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_SNAPSHOT     = 1,
     GGML_BACKEND_SCHED_TP_INPUT_SOURCE_LIVE_WEIGHT     = 2,
     GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_INTERMEDIATE = 3,
+    GGML_BACKEND_SCHED_TP_INPUT_SOURCE_LIVE_CURRENT    = 4,
+    GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_LIVE_INPUT   = 5,
 };
 
 struct ggml_backend_sched_tp_input_plan {
@@ -800,6 +793,10 @@ struct ggml_backend_sched_tp_input_plan {
     int source_kind;
     int producer_split_id;
 };
+
+static bool ggml_backend_sched_tp_is_attn_kq_mask(const struct ggml_tensor * tensor) {
+    return tensor != nullptr && strstr(tensor->name, "attn_inp_kq_mask") != nullptr;
+}
 
 struct ggml_backend_sched_tp_tensor_meta {
     struct ggml_tensor * tensor;
@@ -838,10 +835,12 @@ struct ggml_backend_sched_tp_saved_ub {
     std::vector<ggml_backend_sched_tp_info_entry> split0_inputs;
     std::vector<ggml_backend_sched_tp_info_entry> graph_inputs;
     std::vector<std::vector<ggml_backend_sched_tp_info_entry>> info_banks;
+    std::vector<std::vector<ggml_backend_sched_tp_info_entry>> live_input_banks;
     std::vector<std::vector<ggml_backend_sched_tp_info_entry>> intermediate_banks;
     std::vector<std::vector<ggml_backend_sched_tp_input_plan>> input_plans;
     std::vector<ggml_backend_sched_tp_split_graph_snapshot> split_graphs;
     std::vector<std::vector<ggml_backend_sched_tp_tensor_meta>> split_metas;
+    std::vector<std::unordered_map<const struct ggml_tensor *, size_t>> split_meta_index;
     std::vector<ggml_backend_sched_tp_tensor_meta> metas;
 };
 
@@ -887,7 +886,6 @@ struct ggml_backend_sched {
     std::vector<uint8_t> * tp_ram_slots;
     int tp_ram_slots_count;
     std::vector<ggml_backend_sched_tp_saved_ub> * tp_saved_ubs;
-    int64_t tp_series_begin_us;
 
     struct ggml_context * ctx;
 
@@ -1976,27 +1974,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
             }
         }
 
-        if (split_id == 0) {
-            for (int graph_input_id = 0; graph_input_id < sched->n_graph_inputs; ++graph_input_id) {
-                struct ggml_tensor * input = sched->graph_inputs[graph_input_id];
-                if (input == nullptr) {
-                    continue;
-                }
-
-                ggml_backend_sched_tp_capture_tensor_meta(metas, input);
-
-                ggml_backend_t input_backend = ggml_backend_sched_get_tensor_backend(sched, input);
-                const int input_backend_id = ggml_backend_sched_backend_id(sched, input_backend);
-                if (input_backend_id >= 0) {
-                    for (int copy_id = 0; copy_id < sched->n_copies; ++copy_id) {
-                        ggml_backend_sched_tp_capture_tensor_meta(
-                                metas,
-                                tensor_copy(input, input_backend_id, copy_id));
-                    }
-                }
-            }
-        }
-
         for (int node_id = 0; node_id < split->graph.n_nodes; ++node_id) {
             ggml_backend_sched_tp_capture_tensor_meta(metas, split->graph.nodes[node_id]);
         }
@@ -2005,12 +1982,90 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         }
     };
 
+    auto find_saved_split_tensor_meta = [&](
+            const ggml_backend_sched_tp_saved_ub & saved,
+            int split_id,
+            const struct ggml_tensor * tensor) -> const ggml_backend_sched_tp_tensor_meta * {
+        if (tensor == nullptr) {
+            return nullptr;
+        }
+
+        if (split_id < 0 || split_id >= (int) saved.split_metas.size()) {
+            return nullptr;
+        }
+
+        const auto & metas = saved.split_metas[split_id];
+        if (split_id < (int) saved.split_meta_index.size()) {
+            const auto & index = saved.split_meta_index[split_id];
+            auto it = index.find(tensor);
+            if (it != index.end() && it->second < metas.size()) {
+                return &metas[it->second];
+            }
+        }
+
+        for (const auto & meta : metas) {
+            if (meta.tensor == tensor) {
+                return &meta;
+            }
+        }
+        return nullptr;
+    };
+    auto apply_saved_tensor_meta_shape_only_one = [&](
+            const ggml_backend_sched_tp_saved_ub & saved,
+            int split_id,
+            struct ggml_tensor * tensor) -> const ggml_backend_sched_tp_tensor_meta * {
+        const auto * meta = find_saved_split_tensor_meta(saved, split_id, tensor);
+        if (meta == nullptr || tensor == nullptr) {
+            return nullptr;
+        }
+
+        tensor->type  = meta->type;
+        tensor->flags = meta->flags;
+
+        for (int i = 0; i < GGML_MAX_DIMS; ++i) {
+            tensor->ne[i] = meta->ne[i];
+            tensor->nb[i] = meta->nb[i];
+        }
+
+        return meta;
+    };
     auto apply_saved_split_tensor_metas = [&](const ggml_backend_sched_tp_saved_ub & saved, int split_id) -> bool {
         if (split_id < 0 || split_id >= (int) saved.split_metas.size()) {
             return false;
         }
 
-        ggml_backend_sched_tp_apply_tensor_metas(saved.split_metas[split_id]);
+        struct ggml_backend_sched_split * split = &splits[split_id];
+        const int split_backend_id = split->backend_id;
+
+        for (int input_id = 0; input_id < split->n_inputs; ++input_id) {
+            struct ggml_tensor * input = split->inputs[input_id];
+            struct ggml_tensor * input_cpy =
+                    input != nullptr ? tensor_copy(input, split_backend_id, sched->cur_copy) : nullptr;
+
+            const auto * input_meta = apply_saved_tensor_meta_shape_only_one(saved, split_id, input);
+            if (input_meta == nullptr) {
+                return false;
+            }
+
+            const auto * input_cpy_meta = apply_saved_tensor_meta_shape_only_one(saved, split_id, input_cpy);
+            if (input_cpy_meta == nullptr) {
+                return false;
+            }
+        }
+
+        for (int node_id = 0; node_id < split->graph.n_nodes; ++node_id) {
+            const auto * node_meta = apply_saved_tensor_meta_shape_only_one(saved, split_id, split->graph.nodes[node_id]);
+            if (node_meta == nullptr) {
+                return false;
+            }
+        }
+        for (int leaf_id = 0; leaf_id < split->graph.n_leafs; ++leaf_id) {
+            const auto * leaf_meta = apply_saved_tensor_meta_shape_only_one(saved, split_id, split->graph.leafs[leaf_id]);
+            if (leaf_meta == nullptr) {
+                return false;
+            }
+        }
+
         return true;
     };
 
@@ -2023,6 +2078,15 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
     auto tp_tensor_is_weight = [&](const struct ggml_tensor * tensor) -> bool {
         ggml_backend_buffer_t buf = tp_tensor_runtime_buffer(tensor);
         return buf != nullptr && ggml_backend_buffer_get_usage(buf) == GGML_BACKEND_BUFFER_USAGE_WEIGHTS;
+    };
+    auto tp_tensor_has_external_input_root = [&](
+            const struct ggml_tensor * tensor) -> bool {
+        for (const struct ggml_tensor * cur = tensor; cur != nullptr; cur = cur->view_src) {
+            if ((cur->flags & GGML_TENSOR_FLAG_INPUT) && !tp_tensor_is_weight(cur)) {
+                return true;
+            }
+        }
+        return false;
     };
     auto tp_find_input_producer_split = [&](
             const ggml_backend_sched_tp_saved_ub & saved,
@@ -2047,13 +2111,23 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         ggml_backend_sched_tp_saved_ub saved;
         saved.turboprefill = ub_id > 0 ? ub_id : -ub_id;
         saved.info_banks.resize(sched->n_splits);
+        saved.live_input_banks.resize(sched->n_splits);
         saved.intermediate_banks.resize(sched->n_splits);
         saved.input_plans.resize(sched->n_splits);
         saved.split_graphs.resize(sched->n_splits);
         saved.split_metas.resize(sched->n_splits);
+        saved.split_meta_index.resize(sched->n_splits);
 
         for (int meta_split_id = 0; meta_split_id < sched->n_splits; ++meta_split_id) {
             capture_tensor_tree_meta_for_split(saved.split_metas[meta_split_id], meta_split_id);
+            auto & index = saved.split_meta_index[meta_split_id];
+            const auto & metas = saved.split_metas[meta_split_id];
+            index.reserve(metas.size());
+            for (size_t meta_id = 0; meta_id < metas.size(); ++meta_id) {
+                if (metas[meta_id].tensor != nullptr) {
+                    index[metas[meta_id].tensor] = meta_id;
+                }
+            }
         }
 
         for (int snap_split_id = 0; snap_split_id < sched->n_splits; ++snap_split_id) {
@@ -2103,13 +2177,19 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
 
                 const bool is_weight = tp_tensor_is_weight(input);
                 const bool is_external = !is_weight &&
-                        (plan_split_id == 0 || (input->flags & GGML_TENSOR_FLAG_INPUT));
-                if (is_external) {
+                        tp_tensor_has_external_input_root(input);
+
+                if (plan_split_id == 0 && !is_weight) {
                     plan.source_kind = GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_SNAPSHOT;
                     continue;
                 }
                 if (is_weight) {
                     plan.source_kind = GGML_BACKEND_SCHED_TP_INPUT_SOURCE_LIVE_WEIGHT;
+                    continue;
+                }
+
+                if (plan_split_id > 0 && is_external) {
+                    plan.source_kind = GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_SNAPSHOT;
                     continue;
                 }
 
@@ -2121,12 +2201,8 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                     continue;
                 }
 
+                plan.source_kind = GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_LIVE_INPUT;
             }
-        }
-
-        static bool tpv14_version_logged = false;
-        if (!tpv14_version_logged) {
-            tpv14_version_logged = true;
         }
 
         if (sched->n_splits > 0 && splits[0].n_inputs > 0) {
@@ -2137,6 +2213,10 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                 auto & entry = saved.split0_inputs.back();
 
                 if (input == nullptr) {
+                    continue;
+                }
+
+                if (tp_tensor_is_weight(input)) {
                     continue;
                 }
 
@@ -2153,32 +2233,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                     memcpy(saved.start_slot.data(), entry.data.data(), nbytes);
                 }
             }
-        }
-
-        saved.graph_inputs.reserve(sched->n_graph_inputs);
-        for (int graph_input_id = 0; graph_input_id < sched->n_graph_inputs; ++graph_input_id) {
-            struct ggml_tensor * input = sched->graph_inputs[graph_input_id];
-            if (input == nullptr) {
-                saved.graph_inputs.push_back({ nullptr, {} });
-                continue;
-            }
-
-            ggml_backend_t input_backend = ggml_backend_sched_get_tensor_backend(sched, input);
-            const int input_backend_id = ggml_backend_sched_backend_id(sched, input_backend);
-            struct ggml_tensor * input_copy = input_backend_id >= 0 ? tensor_copy(input, input_backend_id, sched->cur_copy) : input;
-
-            saved.graph_inputs.push_back({ input_copy, {} });
-            auto & entry = saved.graph_inputs.back();
-
-            if (input == nullptr) {
-                continue;
-            }
-
-            ggml_backend_event_t input_event =
-                    input_backend_id >= 0 ? sched->events[input_backend_id][sched->cur_copy] : nullptr;
-            const size_t nbytes = ggml_nbytes(input);
-            entry.data.resize(nbytes);
-            ggml_backend_sched_tp_tensor_get_to_ram(input_backend, input_event, input, entry.data.data(), nbytes);
         }
 
         for (int info_split_id = 0; info_split_id < sched->n_splits; ++info_split_id) {
@@ -2206,6 +2260,36 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                 const size_t nbytes = ggml_nbytes(input);
                 saved.info_banks[info_split_id].push_back({ input, {} });
                 auto & entry = saved.info_banks[info_split_id].back();
+                entry.data.resize(nbytes);
+                ggml_backend_sched_tp_tensor_get_to_ram(input_backend, input_event, input, entry.data.data(), nbytes);
+            }
+        }
+
+        for (int live_split_id = 0; live_split_id < sched->n_splits; ++live_split_id) {
+            struct ggml_backend_sched_split * live_split = &splits[live_split_id];
+
+            for (int input_id = 0; input_id < live_split->n_inputs; ++input_id) {
+                struct ggml_tensor * input = live_split->inputs[input_id];
+                if (input == nullptr) {
+                    continue;
+                }
+
+                if (live_split_id >= (int) saved.input_plans.size() ||
+                    input_id >= (int) saved.input_plans[live_split_id].size()) {
+                    continue;
+                }
+                const auto & plan = saved.input_plans[live_split_id][input_id];
+                if (plan.source_kind != GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_LIVE_INPUT) {
+                    continue;
+                }
+
+                ggml_backend_t input_backend = ggml_backend_sched_get_tensor_backend(sched, input);
+                const int input_backend_id = ggml_backend_sched_backend_id(sched, input_backend);
+                ggml_backend_event_t input_event =
+                        input_backend_id >= 0 ? sched->events[input_backend_id][sched->cur_copy] : nullptr;
+                const size_t nbytes = ggml_nbytes(input);
+                saved.live_input_banks[live_split_id].push_back({ input, {} });
+                auto & entry = saved.live_input_banks[live_split_id].back();
                 entry.data.resize(nbytes);
                 ggml_backend_sched_tp_tensor_get_to_ram(input_backend, input_event, input, entry.data.data(), nbytes);
             }
@@ -2275,6 +2359,43 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         ggml_backend_sched_tp_tensor_set_from_ram(dst_backend, dst, entry->data.data(), nbytes);
         return true;
     };
+    auto restore_saved_live_input_entry = [&](
+            const ggml_backend_sched_tp_saved_ub & saved,
+            int split_id,
+            struct ggml_tensor * input) -> bool {
+        if (input == nullptr) {
+            return false;
+        }
+        if (split_id >= (int) saved.live_input_banks.size()) {
+            return false;
+        }
+
+        const auto & bank = saved.live_input_banks[split_id];
+        const ggml_backend_sched_tp_info_entry * entry = nullptr;
+        for (const auto & candidate : bank) {
+            if (candidate.key == input) {
+                entry = &candidate;
+                break;
+            }
+        }
+        if (entry == nullptr) {
+            return false;
+        }
+
+        ggml_backend_t input_backend = ggml_backend_sched_get_tensor_backend(sched, input);
+        if (input_backend == nullptr) {
+            return false;
+        }
+
+        const size_t nbytes = ggml_nbytes(input);
+        if (entry->data.size() < nbytes) {
+            return false;
+        }
+
+        ggml_backend_sched_tp_tensor_set_from_ram(input_backend, input, entry->data.data(), nbytes);
+        ggml_backend_synchronize(input_backend);
+        return true;
+    };
     auto saved_input_plan = [&](
             const ggml_backend_sched_tp_saved_ub & saved,
             int split_id,
@@ -2337,33 +2458,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         return true;
     };
 
-    auto load_saved_graph_inputs = [&](
-            const ggml_backend_sched_tp_saved_ub & saved) -> bool {
-        for (int graph_input_id = 0; graph_input_id < (int) saved.graph_inputs.size(); ++graph_input_id) {
-            const auto & entry = saved.graph_inputs[graph_input_id];
-            struct ggml_tensor * dst = const_cast<struct ggml_tensor *>(entry.key);
-
-            if (dst == nullptr) {
-                continue;
-            }
-
-            ggml_backend_t dst_backend = ggml_backend_sched_get_tensor_backend(sched, dst);
-            const int dst_backend_id = ggml_backend_sched_backend_id(sched, dst_backend);
-            if (dst_backend_id < 0) {
-                return false;
-            }
-
-            const size_t nbytes = ggml_nbytes(dst);
-            if (entry.data.size() < nbytes) {
-                return false;
-            }
-
-            ggml_backend_sched_tp_tensor_set_from_ram(dst_backend, dst, entry.data.data(), nbytes);
-        }
-
-        return true;
-    };
-
     auto capture_live_split_snapshots = [&](
             std::vector<ggml_backend_sched_tp_live_split_snapshot> & live_split_snapshots) {
         live_split_snapshots.clear();
@@ -2410,52 +2504,17 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         return true;
     };
 
-    auto restore_saved_split_graph = [&](
-            const ggml_backend_sched_tp_saved_ub & saved,
-            int split_id) -> bool {
-        if (split_id < 0 || split_id >= (int) saved.split_graphs.size()) {
-            return false;
-        }
-
-        auto & split = splits[split_id];
-        const auto & snap = saved.split_graphs[split_id];
-
-        split.backend_id = snap.backend_id;
-        split.n_inputs = (int) snap.inputs.size();
-        GGML_ASSERT(split.n_inputs <= GGML_SCHED_MAX_SPLIT_INPUTS);
-        for (int input_id = 0; input_id < split.n_inputs; ++input_id) {
-            split.inputs[input_id] = snap.inputs[input_id];
-        }
-
-        split.graph.n_nodes = (int) snap.nodes.size();
-        split.graph.nodes = const_cast<struct ggml_tensor **>(snap.nodes.data());
-        split.graph.n_leafs = (int) snap.leafs.size();
-        split.graph.leafs = const_cast<struct ggml_tensor **>(snap.leafs.data());
-
-        for (const auto & node_srcs : snap.node_srcs) {
-            if (node_srcs.node == nullptr) {
-                continue;
-            }
-            for (int src_id = 0; src_id < GGML_MAX_SRC; ++src_id) {
-                node_srcs.node->src[src_id] = node_srcs.src[src_id];
-            }
-        }
-
-        return true;
-    };
-
-    auto saved_split_input_copy = [&](
-            const ggml_backend_sched_tp_saved_ub & saved,
-            int split_id,
+    auto current_split_input_copy = [&](
+            struct ggml_backend_sched_split * split,
             int input_id) -> struct ggml_tensor * {
-        if (split_id < 0 || split_id >= (int) saved.split_graphs.size()) {
+        if (split == nullptr || input_id < 0 || input_id >= split->n_inputs) {
             return nullptr;
         }
-        const auto & snap = saved.split_graphs[split_id];
-        if (input_id < 0 || input_id >= (int) snap.input_copies.size()) {
+        struct ggml_tensor * input = split->inputs[input_id];
+        if (input == nullptr) {
             return nullptr;
         }
-        return snap.input_copies[input_id];
+        return tensor_copy(input, split->backend_id, sched->cur_copy);
     };
     auto run_turboprefill_one_split_diagonal = [&](
         ggml_backend_sched_tp_saved_ub & saved,
@@ -2463,9 +2522,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
         int phase) -> enum ggml_status {
         turboprefill_stage = saved.turboprefill;
         if (!apply_saved_split_tensor_metas(saved, split_id)) {
-            return GGML_STATUS_FAILED;
-        }
-        if (!restore_saved_split_graph(saved, split_id)) {
             return GGML_STATUS_FAILED;
         }
 
@@ -2528,10 +2584,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                 ggml_backend_event_synchronize(compute_done_events[split_id]);
             }
 
-            if (split_id == 0 && !load_saved_graph_inputs(saved)) {
-                return GGML_STATUS_FAILED;
-            }
-
             if (split->n_inputs <= 0) {
                 h2d_started[split_id] = true;
                 h2d_ready_recorded[split_id] = false;
@@ -2551,7 +2603,7 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
 
             for (int input_id = 0; input_id < split->n_inputs; ++input_id) {
                 struct ggml_tensor * input = split->inputs[input_id];
-                struct ggml_tensor * input_cpy = saved_split_input_copy(saved, split_id, input_id);
+                struct ggml_tensor * input_cpy = current_split_input_copy(split, input_id);
                 if (input == nullptr || input_cpy == nullptr) {
                     return GGML_STATUS_FAILED;
                 }
@@ -2570,9 +2622,34 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                     case GGML_BACKEND_SCHED_TP_INPUT_SOURCE_LIVE_WEIGHT:
                         load_ok = copy_live_tensor_like_standard(split_backend_id, split_backend, input, input_cpy);
                         break;
-                    case GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_INTERMEDIATE:
+                    case GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_INTERMEDIATE: {
                         load_ok = load_saved_intermediate_entry(saved, split_id, input, split_backend, input_cpy);
                         break;
+                    }
+                    case GGML_BACKEND_SCHED_TP_INPUT_SOURCE_UB_LIVE_INPUT:
+                        load_ok = restore_saved_live_input_entry(saved, split_id, input) &&
+                                copy_live_tensor_like_standard(split_backend_id, split_backend, input, input_cpy);
+                        break;
+                    case GGML_BACKEND_SCHED_TP_INPUT_SOURCE_LIVE_CURRENT: {
+                        ggml_backend_t input_backend = ggml_backend_sched_get_tensor_backend(sched, input);
+                        if (input_backend == nullptr) {
+                            load_ok = false;
+                            break;
+                        }
+                        const int input_backend_id = ggml_backend_sched_backend_id(sched, input_backend);
+                        ggml_backend_event_t input_event =
+                                input_backend_id >= 0 ? sched->events[input_backend_id][sched->cur_copy] : nullptr;
+                        ggml_backend_sched_tp_copy_via_ram(
+                                sched,
+                                sched->n_splits + split_id * GGML_SCHED_MAX_SPLIT_INPUTS + input_id,
+                                input_backend,
+                                input_event,
+                                split_backend,
+                                input,
+                                input_cpy);
+                        load_ok = true;
+                        break;
+                    }
                     default:
                         load_ok = false;
                         break;
@@ -2627,8 +2704,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                 ggml_backend_event_synchronize(compute_done_events[split_id]);
             }
 
-            size_t stored_intermediate_inputs = 0;
-            size_t stored_intermediate_bytes = 0;
             for (int target_split_id = split_id + 1; target_split_id < sched->n_splits; ++target_split_id) {
                 if (target_split_id >= (int) saved.input_plans.size()) {
                     continue;
@@ -2672,9 +2747,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
                             plan.key,
                             entry->data.data(),
                             nbytes);
-
-                    stored_intermediate_inputs++;
-                    stored_intermediate_bytes += nbytes;
                 }
             }
 
@@ -2696,7 +2768,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
 
         if (turboprefill_stage == 1) {
             saved_ubs.clear();
-            sched->tp_series_begin_us = ggml_time_us();
         }
 
         const int saved_id = turboprefill_stage > 0 ? turboprefill_stage : -turboprefill_stage;
@@ -2718,42 +2789,6 @@ static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t s
 
         const int n_saved = (int) saved_ubs.size();
         const int n_waves = n_saved + sched->n_splits - 1;
-        size_t start_slot_bytes = 0;
-        size_t info_entries = 0;
-        size_t info_bytes = 0;
-        size_t meta_count = 0;
-        for (const auto & saved : saved_ubs) {
-            start_slot_bytes += saved.start_slot.size();
-            for (const auto & split_meta_bank : saved.split_metas) {
-                meta_count += split_meta_bank.size();
-            }
-            info_entries += saved.split0_inputs.size();
-            for (const auto & entry : saved.split0_inputs) {
-                info_bytes += entry.data.size();
-            }
-            info_entries += saved.graph_inputs.size();
-            for (const auto & entry : saved.graph_inputs) {
-                info_bytes += entry.data.size();
-            }
-            for (const auto & bank : saved.info_banks) {
-                info_entries += bank.size();
-                for (const auto & entry : bank) {
-                    info_bytes += entry.data.size();
-                }
-            }
-        }
-        GGML_LOG_INFO(
-                "%s: TurboPrefill final replay: ub=%d saved=%d splits=%d waves=%d start=%.2f MiB info=%zu/%.2f MiB metas=%zu series_ms=%.2f\n",
-                __func__,
-                saved_id,
-                n_saved,
-                sched->n_splits,
-                n_waves,
-                start_slot_bytes / 1048576.0,
-                info_entries,
-                info_bytes / 1048576.0,
-                meta_count,
-                (ggml_time_us() - sched->tp_series_begin_us) / 1000.0);
         for (int wave = 0; wave < n_waves; ++wave) {
             const int split_max = std::min(wave, sched->n_splits - 1);
 
@@ -3022,7 +3057,6 @@ enum ggml_status ggml_backend_sched_graph_compute_async_turboprefill(
         int turboprefill_stage) {
 
     GGML_ASSERT(sched);
-    ggml_backend_sched_tp_log_banner_once();
     if (!sched->is_reset && !sched->is_alloc) {
         ggml_backend_sched_reset(sched);
     }
