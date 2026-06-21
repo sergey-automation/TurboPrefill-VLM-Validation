@@ -1,0 +1,146 @@
+RUN_ID=20260620_194641
+START_TIME=2026-06-20T19:46:41
+SERVER=http://127.0.0.1:8081
+MODEL=Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
+IMAGE_DIR=resolution_samples
+QUESTION=What is happening in this image? Describe the animals, their approximate number, activity, environment, and colors. Which animal appears to be the leader of the group, and what five visual clues made you reach that conclusion?
+MAX_TOKENS=100
+TIMEOUT_S=900
+GPU_SAMPLE_INTERVAL_S=0.5
+
+ENV SETTINGS:
+TURBOPREFILL=
+CTX_SIZE=
+BATCH_SIZE=
+UBATCH_SIZE=
+N_GPU_LAYERS=
+SPLIT_MODE=
+TENSOR_SPLIT=
+FLASH_ATTN=
+CACHE_TYPE_K=
+CACHE_TYPE_V=
+IMAGE_MIN_TOKENS=
+IMAGE_MAX_TOKENS=
+HOST=
+PORT=
+CACHE_RAM=
+PROMPT_CACHE=
+METRICS=
+WEBUI=
+WARMUP=
+OFFLINE=
+MEDIA_PATH=
+
+PARSED SERVER SETTINGS:
+server_n_ctx=16384
+server_n_batch=16384
+server_n_ubatch=128
+server_causal_attn=1
+server_flash_attn=enabled
+server_pipeline_parallel=1
+server_graph_splits=5
+server_sched_copies=4
+server_clip_backend=CUDA0
+server_image_min_pixels=200704
+server_image_max_pixels=5312384
+
+MODEL/KV/COMPUTE BUFFERS SUMMARY:
+load_tensors:   CPU_Mapped model buffer size =   668.25 MiB | load_tensors:        CUDA0 model buffer size =  8476.40 MiB | load_tensors:        CUDA1 model buffer size = 11718.86 MiB | load_tensors:        CUDA2 model buffer size = 11631.18 MiB | load_tensors:        CUDA3 model buffer size = 12718.76 MiB | llama_kv_cache:      CUDA0 KV buffer size =   960.00 MiB | llama_kv_cache:      CUDA1 KV buffer size =  1408.00 MiB | llama_kv_cache:      CUDA2 KV buffer size =  1408.00 MiB | llama_kv_cache:      CUDA3 KV buffer size =  1344.00 MiB | sched_reserve:      CUDA0 compute buffer size =   107.33 MiB | sched_reserve:      CUDA1 compute buffer size =    87.33 MiB | sched_reserve:      CUDA2 compute buffer size =    87.33 MiB | sched_reserve:      CUDA3 compute buffer size =   110.27 MiB | sched_reserve:  CUDA_Host compute buffer size =    40.02 MiB | alloc_compute_meta:      CUDA0 compute buffer size =   705.95 MiB | alloc_compute_meta:        CPU compute buffer size =   292.41 MiB
+
+NVIDIA-SMI START:
+Sat Jun 20 19:46:41 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:82:00.0 Off |                  N/A |
+| 30%   49C    P1             27W /  150W |   15238MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:83:00.0 Off |                  N/A |
+|  0%   52C    P1             22W /  150W |   13382MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:C1:00.0 Off |                  N/A |
+| 30%   51C    P1             23W /  150W |   13294MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:C2:00.0 Off |                  N/A |
+| 30%   50C    P1             23W /  150W |   14342MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      15228MiB |
+|    1   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      13372MiB |
+|    2   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      13284MiB |
+|    3   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      14332MiB |
++-----------------------------------------------------------------------------------------+
+
+FILES ORDER:
+640x360 giraffe_nHD_640x360.jpg 201922
+960x540 giraffe_qHD_960x540.jpg 436031
+1280x720 giraffe_HD720_1280x720.jpg 740203
+1920x1080 giraffe_FHD_1920x1080.jpg 1523751
+3072x2048 giraffe_APSC_3072x2048.jpg 3638845
+
+RUN 2026-06-20T19:46:41 640x360 giraffe_nHD_640x360.jpg
+OK giraffe_nHD_640x360.jpg: wall_ms=12697.69 visual=299 img_dec_ms=772 prompt_tok_s=293.38 tp_active=0 gpu_max_util=60
+
+RUN 2026-06-20T19:46:55 960x540 giraffe_qHD_960x540.jpg
+OK giraffe_qHD_960x540.jpg: wall_ms=13704.96 visual=646 img_dec_ms=1661 prompt_tok_s=324.19 tp_active=0 gpu_max_util=86
+
+RUN 2026-06-20T19:47:09 1280x720 giraffe_HD720_1280x720.jpg
+OK giraffe_HD720_1280x720.jpg: wall_ms=15429.84 visual=1196 img_dec_ms=2928 prompt_tok_s=335.82 tp_active=0 gpu_max_util=86
+
+RUN 2026-06-20T19:47:25 1920x1080 giraffe_FHD_1920x1080.jpg
+OK giraffe_FHD_1920x1080.jpg: wall_ms=20981.87 visual=2691 img_dec_ms=6920 prompt_tok_s=303.01 tp_active=0 gpu_max_util=100
+
+RUN 2026-06-20T19:47:47 3072x2048 giraffe_APSC_3072x2048.jpg
+OK giraffe_APSC_3072x2048.jpg: wall_ms=40510.61 visual=6700 img_dec_ms=17860 prompt_tok_s=242.27 tp_active=0 gpu_max_util=100
+
+END_TIME=2026-06-20T19:48:28
+
+NVIDIA-SMI END:
+Sat Jun 20 19:48:28 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:82:00.0 Off |                  N/A |
+| 30%   50C    P1             35W /  150W |   15238MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:83:00.0 Off |                  N/A |
+| 30%   50C    P1             35W /  150W |   13382MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:C1:00.0 Off |                  N/A |
+| 30%   52C    P1             35W /  150W |   13294MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 5060 Ti     On  |   00000000:C2:00.0 Off |                  N/A |
+| 30%   51C    P1             37W /  150W |   14342MiB /  16311MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      15228MiB |
+|    1   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      13372MiB |
+|    2   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      13284MiB |
+|    3   N/A  N/A           36132      C   ...ma.cpp/build/bin/llama-server      14332MiB |
++-----------------------------------------------------------------------------------------+
