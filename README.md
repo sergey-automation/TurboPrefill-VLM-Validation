@@ -4,20 +4,13 @@ Validation of the applicability of **Intra-Prompt Pipeline Scheduling for Multi-
 
 TurboPrefill cut the waiting time before answer generation nearly in half: from 9.0 s to 4.6 s.
 
-## Example Input
+## VLM Response Latency
 
-![FHD giraffe sample](resolution_samples/giraffe_FHD_1920x1080.jpg)
+![FHD giraffe sample](https://raw.githubusercontent.com/sergey-automation/TurboPrefill-VLM-Validation/main/benchmarks/193452_194641.png)
 
-## Validation Task
-
-Question:
-
-> What is happening in this image? Describe the animals, their approximate number, activity, environment, and colors. Which animal appears to be the leader of the group, and what five visual clues made you reach that conclusion? Use no more than 50 words.
-
-Example answer:
+## Example model answer
 
 > Eight giraffes are walking across a grassy wetland near a river. The animals are light brown with darker patches. The leading giraffe appears to guide the group. Clues: front position, direction of movement, spacing, head orientation, and group alignment.
-
 
 ## Key Result
 
@@ -38,11 +31,11 @@ The observed improvement was achieved solely through changes in execution schedu
 
 ## Result
 
-| Metric | Baseline | TurboPrefill |
-|---|---:|---:|
-| Waiting time before the response started | 9.0 s | 4.6 s |
-| Prefill throughput | 303 tok/s | 604 tok/s |
-| Generation throughput | 8.6 tok/s | 8.6 tok/s |
+| Metric | Baseline | TurboPrefill | Speedup |
+|---|---:|---:|---:|
+| Waiting time before the response started | 9.1 s | 4.6 s | **1.98× faster** |
+| Prefill throughput | 303 tok/s | 604 tok/s | **1.99× higher** |
+| Generation throughput | 8.6 tok/s | 8.6 tok/s | **No change (1.00×)** |
 
 TurboPrefill nearly halved the waiting time before the model started responding, while leaving answer generation speed unchanged.
 
