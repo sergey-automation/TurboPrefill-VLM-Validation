@@ -88,7 +88,7 @@ Implementation files, scripts, input samples, and benchmark logs are published i
 
 Experimental work in progress.
 
-The reported results are based on the current prototype implementation. Text-model validation has been completed successfully. VLM support is still under active investigation, and additional correctness validation is required before drawing final conclusions.
+The reported results are based on the current prototype implementation. Text-model validation has been completed successfully. VLM support is still under active investigation.
 
 ## Repository Structure
 
