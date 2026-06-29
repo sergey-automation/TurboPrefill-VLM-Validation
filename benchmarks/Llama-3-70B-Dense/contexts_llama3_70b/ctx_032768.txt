@@ -1,0 +1,964 @@
+Read the following text.
+
+After reaching the end of the text, output 100 numbered lines.
+
+Each line must contain at least two words.
+
+Do not provide any explanations.
+
+Beginning of the text:
+Elementa artis docimasticae duobus tomis comprehensa, quorum prior theoriam, posterior praxim / [Johann Andreas Cramer].
+Contributors
+Cramer, Johann Andreas, 1710-1777
+Publication/Creation
+Leyden : C. Wishoff & G.J. Wishoff, 1744.
+Persistent URL
+https://wellcomecollection.org/works/z5s4q2md
+License and attribution
+This work has been identified as being free of known restrictions under copyright law, including all related and neighbouring rights and is being made available under the Creative Commons, Public Domain Mark.
+You can copy, modify, distribute and perform the work, even for commercial purposes, without asking permission.
+Wellcome collection
+Wellcome Collection
+183 Euston Road
+London NW1 2BE UK
+T +44 (0)20 7611 8722
+E library@wellcomecollection.org
+https://wellcomecollection.org
+
+Digitized by the Internet Archive in 2018 with funding from Wellcome Library
+https://archive.org/details/b30528045_0001
+
+JOANN. ANDR. CRAMERI ELEMENTA ARTIS DOCIMASTIC&> Duobus Tomis comprehenfa.
+Quorum Prior THEO R. I A M, Pofterior
+P R A X I N, Ex vera Foflilium indole deJudas, atque indubitata Experimentorum , fumma cum accuracione in-ftitutorum , fide finnaras , ordine natural! ' do&rina a’pcrtifiima exhibet.
+EDITIO ALTERA, Emendatior, ac turn in Tbcoria, turn in Praxi, ab Au&ore ipfo multis modis aufta Sc locuplecata. Pars Prima THEORETIC A.
+- LUG DUNIBdTJPORUM, iCONRADUM WISHOFF.i Ариек	e т	f * I744’
+I GEORG. JAC. WISHOFF, Fil. Conr.I Cum Privilege.
+rerbod, dat niemant buiten de Supplten. hunne Erven of regtverkrygende deeze voori'z. Boeken in \ geheel of ten deelc of in war Formaat of Taal het mogtc Zyn , hier te Lande zoude mogen Drukken , doen Drukken of Uitgeeven , of elders nagcdrukt zynde hier te Lande zoude mogen inbrengen , doen ih-brengen, uitgeeven, verruilen, verhandelen, of verkoopen, op verbeurte van alle de naegedrukte, in-gebragte, verruilde, verhandelde of verkogte Exem-plaeren, op zodaenige groore Poene als Wy gewoon Zyn daer tegen te Statucercn. ZOO IS ’T , dat Wy de zaake en ’t vcrzock voorfz. overgemerkt hcbbcndc, cnde geneegcn weezende ter beede van de Suppltcn. uit Onze regte weetenfehap , Souvcraine Magt ende Au&oriteir, dezelve Suppl<cn. Geconfen-fenteert, Geaccordeert en Geoftroyeert hebben, Con-fcnteeren, Accordeeren enO&royeeren Haar by deepen , dat zy gcducrende den tyt van vyftien eerft agter een volgende Jaeren, de voorfz. Boeken --.
+in dier voegen als zulks by de Suppltcu is verzogt, en hier vooren uitgedrukt llaat, binncn den voorfz,. Onzen Lande allecn zullen mogen Drukken, doen Drukken, Uitgeeven cnde Verkoopen , verbiedende daarom alle ende eencn iegelyken , dezelve Boeken in’t gehcel of ten dcelen te Drukken, пае te Druk-ken, te doen naedrukken, te Verhandelen of te Verkoopen ofte ciders naegedrukt binncn dezelvcn onzen Lande te brengen, uit te geeven of te Verhandelen en Verkoopen, op verbeurte van alle de Naegedrukte, Ingcbragte , Verhandelde ofte Verkogte Excmplae-ren, cnde een bocte van drie Duizent gls. daer en bo-yen te verbeuren, te Appliceercn cen derdepart voor den
+
+den Officicr , die de Calange doen zal , ecn dcrde part voor den Armen ter plaetze daar het Cafus voor-vallen zal , endc het rcftecrendc derde part voor de Suppltcn,ende dit t’elkens zoo mecnighmaal als dczel-ve zullen worden agterhaelt : Alics in dien verltan-de , dat Wy de Suppltcn met dcezen onzen O&roye allcen willendc gratificeeren tot verhoeding van hun-ne fchaede door het Naedrukken van de voorfz. Boe* ken, daar door in gcenigen declc verftaen den inhcn-den van dien te Au&orifeeren ofte te Advoueeren, code veel min dezclve ondcr onze prote&ie en be-fcherminge eenigh meerder credit, aanzien ofte re-putatie te geeven : nemaar de Supplten in cas daar in-ne icts onbehoorlyks foude influeeren, alle het zclve tot haeren lafte zullen gchouden weezen te verant-woorden, tot dien einde wel expreflelyk begeerende, dat by aldien zy deezen Onzen Odtroyc voor deceive Boeken zouden willen ftellen , daar van gcene geabbrcviecrde ofte gecontraheerde mentie zullen mo-gen maeken, neemacr gchouden weezen, het zelve O&roy in’t gchecl, cn zonder eenige omiffie daar voor te Drukken, of te doen Drukken, endc dat zy gchouden zullen zyn ccn Exemplaar van de voorfz. Boeken op groot Papier, gebonden 9 cn wel gecon-ditioneerd te brengen in de Bibliotheecq van onze Univcrfitcit te Leyden, binnen den tyt van zes wee-ken, пае dat zy Suppl(en dezelvc Boeken zullen heb-ben beginnen uit te geeven, op ecn boete van zes hondert guldens, пае expiratic dcr voorfz. zes wce-ken by de Suppl'e,‘ tc verbeuren, ten bchocvc van de Nederduitfche Armen van de plaits alwacr de Suppltcn w'oonen, en voorts op pcene van metter daet ver-
+verfteeken te zyn van het effeft van deezcn O&roye* •dac ook de Suppl1*0, fchoon by het ingacn van dit Odroy een Exemplaer geleevert hebbende aen de voorfz, onze Bibhorheecq , by zoo verre zy, gedue-rende den tyt van dit O&roy , dezelve Boeken zou-den willen herdrukken, met eenige Obfervatien, No-ten, Vermeerderingen, Veranderingen, Correctien, of anders hoe genaemt, of ook in cen andcr formaet, gehouden zullen zyn wcedcrom een ander Exemplaar van dezelve Boeken geconditioneert als vooren , te brengen in de voorii. Bibhotheecq binnen den zelven tyt, en op de boeten en poenalireit als voorfz. En ten einde de Suppl*11 deezen onzen Confente ende O&roye moogen genieten als пае behooren ; lallcn wy alien ende cenen iegelyken dien het aengaen magh, dat zy de Suppl*0 van den inhouden van deepen doen laeten ende gedoogen, rullelyk, vreedelyk, ende volkomentlyk genieten ende gebruaken, Cefle-rende al Ie belet rer Contrarie. Gegeeven in den Haege onder onzen Grooten Zegele hier aen doen hangen, op den twintigften April in t Jaar onzes Hecren ende Saligmakers duizent zevenhondert een en vcertig.
+
+******************************************************************************
+
+Validation of the applicability of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill to Vision Language Models (VLMs).
+
+Application of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill nearly halved the waiting time before answer generation: from 9.1 s to 4.6 s.
+
+**************
+
+TurboPrefill is a Proof-of-Concept implementation of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill.
+
+For a detailed architectural discussion, see: RFC: Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill
+
+Multi-GPU prefill acceleration for llama.cpp.
+
+This repository contains a file overlay for llama.cpp and helper scripts for running llama-server benchmarks.
+
+How TurboPrefill Was Created
+For more than 20 years, I worked on the design, construction, and optimization of custom industrial production lines and control systems.
+
+While experimenting with running local AI models using llama.cpp on multi-GPU systems in layer-split mode, I noticed a well-known characteristic of long-context prefill execution.
+
+In layer-split mode, the model is distributed across multiple GPUs by layers. Under the standard execution path, each ubatch passes sequentially through all model layers. As a result, some GPUs remain idle while waiting for the previous ubatch to complete processing through the remaining layers.
+
+While analyzing the scheduler's behavior, I began asking a simple question: does prefill really require waiting for the previous ubatch to traverse the entire model before the next ubatch can begin?
+
+For decode, such a dependency does exist. However, during prefill, the next ubatch can start processing on a layer immediately after the previous ubatch has finished on that layer, without waiting for it to complete the entire model.
+
+To test this idea, I created an experimental execution path that later became TurboPrefill.
+
+The core idea is not to modify the model, mathematical computations, or attention algorithms. TurboPrefill changes only the scheduling strategy used to process a series of ubatches inside the scheduler.
+
+If GPUs are viewed as stations on a production line, the standard approach sends one workpiece through every station before starting the next one. As a result, parts of the equipment periodically sit idle while waiting for previous stages to finish.
+
+TurboPrefill is intended to keep multiple ubatches active within the pipeline simultaneously. This allows each GPU to begin processing the next ubatch as soon as its own work is complete, without waiting for the previous ubatch to finish across the entire GPU chain.
+
+In simplified form:
+
+Standard scheduler:
+
+step    1234567890123
+GPU(1)  #000#000#0000
+GPU(2)  0#000#000#000
+GPU(3)  00#000#000#00
+GPU(4)  000#000#000#0
+TurboPrefill:
+
+step    1234567
+GPU(1)  ###0000
+GPU(2)  0###000
+GPU(3)  00###00
+GPU(4)  000###0
+TurboPrefill does not modify model weights, computations, or inference results. Only the execution order of prefill workloads inside the scheduler is changed.
+
+As a result, idle time between processing stages can be reduced and higher prefill performance can be achieved on long contexts while preserving identical model outputs.
+
+TurboPrefill is not intended to be a universal accelerator for all llama.cpp workloads.
+
+It is specifically designed for long single-request prefill workloads running in multi-GPU layer-split mode, where underutilization of available hardware is most visible.
+
+The idea behind TurboPrefill did not come from modifying the mathematical side of the model. It came from viewing multi-GPU inference as a production pipeline, where the primary focus is hardware utilization, reducing idle time, and improving overall system throughput.
+
+Why TurboPrefill Works Only for Certain Workloads
+TurboPrefill was not designed as a universal acceleration path for every llama.cpp workload.
+
+Instead, it focuses on a specific scenario where the potential benefit is highest: long-context prefill of a single request running on multiple GPUs in layer-split mode.
+
+TurboPrefill can be used in multi-user servers; the scheduling logic operates on individual requests, rather than users.
+
+The reason is simple. TurboPrefill relies on the ability to observe and schedule a series of consecutive ubatches that belong to the same request. This allows multiple ubatches to be active within the pipeline at the same time and reduces idle periods between neighboring processing stages.
+
+Many other workloads do not provide the same opportunity.
+
+For example:
+
+Decode workloads have stronger dependencies between consecutive tokens.
+Single-GPU execution does not suffer from inter-GPU pipeline bubbles.
+Embedding workloads follow a different execution pattern.
+Multi-sequence batches introduce additional scheduling constraints.
+Non-layer-split configurations do not expose the same pipeline structure.
+For this reason, TurboPrefill does not attempt to replace the standard llama.cpp scheduler.
+
+Instead, a dispatcher in llama-context.cpp evaluates each workload and decides whether it matches the conditions required for TurboPrefill. Workloads that do not match these conditions continue to use the standard execution path.
+
+This behavior is intentional.
+
+The goal of TurboPrefill is not to accelerate every possible workload. The goal is to improve utilization and throughput in a specific execution pattern where unused pipeline capacity is most visible.
+
+Why Some Workloads Are Excluded
+Workload	Reason
+Decode	Strong dependencies between consecutive tokens
+Single GPU	No inter-GPU pipeline to optimize
+Embeddings	Different execution pattern
+Multi-sequence batch	Additional scheduling complexity
+Non-layer-split mode	No layer pipeline between GPUs
+Short prefill	Insufficient number of ubatches to benefit from scheduling
+TurboPrefill focuses on workloads where pipeline underutilization is most visible and where scheduling multiple ubatches can improve overall throughput.
+
+Note about llama-bench
+The standard llama-bench pp* benchmark does not represent a pure long-context prefill workload.
+
+A token output is requested at the end of each benchmark prompt, which causes the request to follow the standard execution path instead of the TurboPrefill path.
+
+For this reason, dedicated benchmark scripts are used in this repository to measure TurboPrefill performance on long-context prefill workloads.
+
+How TurboPrefill Works
+The standard llama.cpp scheduler processes each ubatch independently.
+
+A ubatch enters the pipeline, passes through all model layers, and only then the next ubatch begins its full journey through the pipeline.
+
+In layer-split mode this creates a familiar pipeline behavior: some GPUs are busy while others are waiting for work to arrive from previous stages.
+
+TurboPrefill introduces an alternative execution path for eligible long-context prefill workloads. The execution consists of two phases:
+
+Capture Phase
+Instead of immediately executing each eligible ubatch through the entire pipeline, TurboPrefill temporarily stores information about a sequence of consecutive ubatches belonging to the same request. This creates a batch of work that can later be scheduled as a whole.
+
+Replay Phase
+After the capture phase is complete, the stored ubatches are replayed through the multi-GPU pipeline. Instead of processing one ubatch completely before starting the next one, TurboPrefill plans execution so that multiple ubatches can be active at different pipeline stages at the same time.
+
+Conceptually:
+
+Standard:
+
+ubatch1 -> all layers
+ubatch2 -> all layers
+ubatch3 -> all layers
+TurboPrefill:
+
+wave1: ubatch1
+wave2: ubatch2 + ubatch1
+wave3: ubatch3 + ubatch2 + ubatch1
+...
+This allows more GPUs to remain active simultaneously and reduces idle periods between neighboring pipeline stages.
+
+The model, weights, attention algorithms, and numerical results remain unchanged. Only the execution schedule is different.
+
+Architecture Overview
+Request
+   |
+   v
+Prefill Phase
+   |
+   v
+UBatch Classification
+   |
+   +--------------------------+
+   |                          |
+   v                          v
+Standard Path         Intra-Prompt Pipeline
+                      Scheduling
+                               |
+                               v
+                       UBatch Accumulation
+                               |
+                               v
+                       Capture / Replay
+                               |
+                               v
+                      Layer-Split GPU Pipeline
+                               |
+                               v
+                      ggml-backend-sched
+Additional Benchmarks
+Context Length Scaling
+One of the main goals of TurboPrefill is to improve utilization of multi-GPU layer-split pipelines during long-context prefill workloads.
+
+The expected behavior is that the benefit grows as the prompt becomes longer. Longer prompts generate more ubatches, providing more opportunities to keep multiple stages of the pipeline active simultaneously.
+
+To evaluate this effect, GPT-OSS-120B was tested across multiple context lengths using the same hardware and execution settings.
+
+The results show that TurboPrefill provides limited benefit on shorter prompts and increasing benefit as context length grows.
+
+This behavior is consistent with the original design goal of reducing pipeline idle time during long-context prefill workloads.
+
+The largest improvement observed in these tests was approximately 2.23× compared to the standard execution path.
+
+Scaling with GPU Count
+TurboPrefill is designed for multi-GPU layer-split execution, therefore it is important to evaluate how its behavior changes as the number of GPUs changes.
+
+The tests below compare the same GPT-OSS-120B model running on 5 and 8 RTX 5060 Ti 16GB GPUs using identical execution settings.
+
+The results show two effects:
+
+Increasing the number of GPUs improves absolute prefill throughput.
+TurboPrefill continues to provide substantial acceleration on both configurations.
+Multi-GPU Scaling with and without Intra-Prompt Pipeline Scheduling
+
+The highest measured gains were:
+
+Speedup at 16373 Context Tokens
+Configuration	Model	Baseline (tok/s)	TurboPrefill (tok/s)	Speedup
+2× GTX 1080 Ti	GPT-OSS-20B	836	1302	1.6×
+4× RTX 3090	GPT-OSS-120B	1477	2758	1.9×
+5× RTX 5060 Ti	GPT-OSS-120B	1993	3886	1.9×
+8× RTX 5060 Ti	GPT-OSS-120B	1963	4380	2.2×
+10× P104-100 (Pascal)	GPT-OSS-120B	77	345	4.5×
+This suggests that TurboPrefill is not tied to a specific GPU count. The scheduling approach remains effective across different multi-GPU layer-split configurations.
+
+Validation Across GPU Generations
+Prefill Throughput on 4× RTX 3090
+
+Prefill Throughput on 4× RTX 3090
+
+TurboPrefill has been tested on multiple NVIDIA GPU generations and hardware configurations.
+
+Architecture Hardware
+
+Pascal NVIDIA P104-100
+
+Project: gpt-oss-120b-p104-pascal
+
+Ampere NVIDIA RTX 3090
+
+Blackwell NVIDIA RTX 5060 Ti 16GB
+
+The goal of these tests was not to optimize for a specific GPU architecture, but to verify that the scheduling approach remains effective across different generations of hardware.
+
+TurboPrefill is based on pipeline utilization and execution scheduling principles rather than architecture-specific GPU optimizations. The same execution model was successfully validated on three different NVIDIA generations spanning several years of hardware evolution.
+
+The observed improvements therefore appear to be related to scheduler behavior and pipeline utilization rather than to features unique to a particular GPU family.
+
+This suggests that the approach should remain relevant for future GPU generations as long as multi-GPU layer-split execution continues to rely on similar pipeline and scheduling concepts.
+
+Decode Performance
+TurboPrefill targets prefill workloads only. The decode execution path remains unchanged. Testing on multiple models and hardware configurations showed that decode throughput did not meaningfully depend on whether TurboPrefill was enabled or disabled. The measured improvements therefore come from changes in prefill scheduling rather than from modifications to decode execution.
+
+Tested llama.cpp base
+2e97c5f96
+Install
+Clone TurboPrefill:
+
+cd /workspace
+git clone https://github.com/sergey-automation/TurboPrefill.git
+chmod +x /workspace/TurboPrefill/install.sh
+Clone llama.cpp and check out the tested base:
+
+mkdir -p /workspace/projects
+cd /workspace/projects
+
+git clone https://github.com/ggml-org/llama.cpp.git
+cd llama.cpp
+git checkout 2e97c5f96
+git rev-parse HEAD
+Copy TurboPrefill files into the llama.cpp tree: The benchmark scripts are not installed automatically. Copy the benchmark files you want to use into the llama.cpp root directory.
+
+chmod +x /workspace/TurboPrefill/install.sh
+/workspace/TurboPrefill/install.sh /workspace/projects/llama.cpp
+Benchmark scripts (GPT-OSS-20B):
+
+cp -r /workspace/TurboPrefill/benchmarks/gpt20b/* \
+/workspace/projects/llama.cpp/
+Benchmark scripts (GPT-OSS-120B):
+
+cp -r /workspace/TurboPrefill/benchmarks/gpt120b/* \
+/workspace/projects/llama.cpp/
+Build
+cd /workspace/projects/llama.cpp
+
+cmake -B build \
+  -DGGML_CUDA=ON \
+  -DGGML_CUDA_FA=ON \
+  -DGGML_CUDA_GRAPHS=ON \
+  -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build -j4 --target llama-server
+Python dependency
+Benchmark scripts require requests:
+
+pip install requests
+Download models
+Create model directory:
+
+mkdir -p /workspace/models
+cd /workspace/models
+GPT-OSS 20B:
+
+hf download unsloth/gpt-oss-20b-GGUF \
+  gpt-oss-20b-Q4_K_M.gguf \
+  --local-dir /workspace/models
+GPT-OSS 120B:
+
+hf download unsloth/gpt-oss-120b-GGUF \
+  Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf \
+  Q4_K_M/gpt-oss-120b-Q4_K_M-00002-of-00002.gguf \
+  --local-dir /workspace/models
+Check files:
+
+ls -lh /workspace/models
+ls -lh /workspace/models/Q4_K_M
+Benchmark scripts
+Benchmark scripts are designed to be copied into the llama.cpp checkout and executed from there.
+
+Benchmark files must be copied into the llama.cpp root directory. Benchmark scripts must be executed from the llama.cpp root directory. Copy GPT-OSS 20B scripts:
+
+cp -r /workspace/TurboPrefill/benchmarks/gpt20b/* /workspace/projects/llama.cpp/
+Copy GPT-OSS 120B scripts:
+
+cp -r /workspace/TurboPrefill/benchmarks/gpt120b/* /workspace/projects/llama.cpp/
+Run benchmarks
+GPT-OSS 20B baseline:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=0 python3 bench_server_gpt20b.py
+GPT-OSS 20B with TurboPrefill:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=1 python3 bench_server_gpt20b.py
+GPT-OSS 120B baseline:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=0 python3 bench_server_gpt120b.py
+GPT-OSS 120B with TurboPrefill:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=1 python3 bench_server_gpt120b.py
+Reports are saved to the OUTPUT_DIR configured in:
+
+server_config_20b.sh
+server_config_gpt120b.sh If you see:
+$'\r': command not found
+convert shell scripts to Unix format:
+
+sed -i 's/\r$//' *.sh
+Run server UI
+GPT-OSS 20B:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=1 bash run_server_gpt20b.sh
+GPT-OSS 120B:
+
+cd /workspace/projects/llama.cpp
+TURBOPREFILL=1 bash run_server_gpt120b.sh
+On VAST, use SSH tunnel from your local Windows CMD:
+
+ssh -L 8081:127.0.0.1:8081 -p YOUR_SSH_PORT root@YOUR_SSH_HOST
+Example:
+
+ssh -L 8081:127.0.0.1:8081 -p 26865 root@ssh4.vast.ai
+Open in browser:
+
+http://127.0.0.1:8081
+Do not expose llama-server directly to the public internet without access control.
+
+Notes for Windows / WinSCP users
+If you edit .sh files from Windows, save them with Unix line endings: LF, not CRLF.
+
+If you see this error: $'\r': command not found
+
+fix the files:
+
+cd /workspace/projects/llama.cpp
+
+sed -i 's/\r$//' *.sh
+Enable or disable TurboPrefill
+TurboPrefill is controlled at runtime.
+
+Enable:
+
+TURBOPREFILL=1 ./build/bin/llama-server ...
+Disable:
+
+unset TURBOPREFILL
+./build/bin/llama-server ...
+Disabled values are: unset, 0, false, off.
+
+Tested VAST configuration
+VAST Template: NVIDIA CUDA Container disk: 200 GB OS: Ubuntu 24.04.4 LTS GPU: 8x RTX 5060 Ti 16GB Driver: 580.159.03 CUDA: 13.0 nvcc: 13.0.88 gcc: 13.3.0 cmake: 3.28.3 git: 2.43.0 P2P: not supported NVLink: not present
+
+Ongoing Development
+[RFC][PoC] Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill ggml-org/llama.cpp#24219
+
+Initial Proof-of-Concept implementation: https://github.com/sergey-automation/TurboPrefill
+
+Continued development and new functionality: https://github.com/sergey-automation/TurboPrefill-VLM-Validation
+
+Reference implementation branch: https://github.com/sergey-automation/llama.cpp/tree/turboprefill-vlm-support/
+
+Acknowledgements
+Special thanks to Andrii Trykhlieb for technical assistance, testing support, benchmark validation, and countless discussions during the development of TurboPrefill. LinkedIn: https://de.linkedin.com/in/andrii-trykhlieb-826848323
+
+***********************************************************************************
+
+TurboPrefill VLM Validation
+Validation of the applicability of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill to Vision Language Models (VLMs).
+
+TurboPrefill cut the waiting time before answer generation nearly in half: from 9.0 s to 4.6 s.
+
+VLM Response Latency
+FHD giraffe sample
+
+Example model answer
+Eight giraffes are walking across a grassy wetland near a river. The animals are light brown with darker patches. The leading giraffe appears to guide the group. Clues: front position, direction of movement, spacing, head orientation, and group alignment.
+
+Key Result
+Validation on Vision Language Models demonstrates that Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill can significantly reduce user waiting time before answer generation without changing model weights, architecture, quantization, prompts, or inference mathematics.
+
+The observed improvement was achieved solely through changes in execution scheduling during the prefill stage.
+
+Test Configuration
+Parameter	Value
+Model	Qwen2.5-VL-72B-Instruct-Q4_K_M
+Task	Vision-language question answering
+Input	Single Full HD image (1920×1080)
+GPUs	4× RTX 5060 Ti 16 GB
+UBatch size	128
+Split mode	Layer
+Result
+Metric	Baseline	TurboPrefill	Speedup
+Waiting time before the response started	9.1 s	4.6 s	1.98× faster
+Prefill throughput	303 tok/s	604 tok/s	1.99× higher
+Generation throughput	8.6 tok/s	8.6 tok/s	No change (1.00×)
+TurboPrefill nearly halved the waiting time before the model started responding, while leaving answer generation speed unchanged.
+
+Future Relevance
+Validation on NVIDIA Pascal GPUs also demonstrated an approximately 2.2× reduction in prefill latency, suggesting that this optimization opportunity is not tied to a particular class of hardware and will likely remain relevant for future GPU generations.
+
+Background
+The original scheduling mechanism was proposed in:
+
+[RFC][PoC] Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill
+
+ggml-org/llama.cpp#24219
+
+The original proof-of-concept implementation is available at:
+
+https://github.com/sergey-automation/TurboPrefill
+
+Purpose
+This repository validates the applicability of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill to Vision Language Models.
+
+The objective is not to introduce a new scheduling mechanism, but to demonstrate that the original mechanism is applicable beyond text-only LLM workloads.
+
+Validation Implementation
+Reference implementation branch:
+
+https://github.com/sergey-automation/llama.cpp/tree/turboprefill-vlm-support
+
+Scope of the Current Implementation
+The original TurboPrefill PoC intentionally used a conservative dispatcher and left some eligible workloads on the standard llama.cpp execution path.
+
+The current validation implementation enables additional workloads that are still within the original concept of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill, but were not enabled in the first PoC.
+
+Additional workloads currently enabled for the TurboPrefill execution path:
+
+Execution of Text LLM workloads.
+Execution of Vision Language Model (VLM) workloads.
+Execution of multiple concurrent requests in multi-user server mode, provided that requests from different users are not mixed within the same TurboPrefill batch.
+Status
+Work in progress.
+
+Implementation files, scripts, input samples, and benchmark logs are published in this repository.
+
+Experimental work in progress.
+
+The reported results are based on the current prototype implementation. Text-model validation has been completed successfully. VLM support is still under active investigation.
+
+Repository Structure
+files/ — modified llama.cpp source files used for the validation branch.
+scripts/ — scripts used to run the VLM server and resolution tests.
+resolution_samples/ — input images used for validation.
+benchmarks/ — raw benchmark reports and server logs.
+Reproducing the Validation
+1. Obtain the reference implementation
+The validation was performed using the following reference implementation branch:
+
+https://github.com/sergey-automation/llama.cpp/tree/turboprefill-vlm-support
+
+git clone https://github.com/sergey-automation/llama.cpp.git
+cd llama.cpp
+git checkout turboprefill-vlm-support
+2. Build llama.cpp
+Build the reference implementation.
+
+2.1 Download the Qwen2.5-VL-72B GGUF model
+The validation uses the following model files:
+
+Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
+mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf
+Create the expected model directory:
+
+mkdir -p /workspace/models/Qwen2.5-VL-72B
+cd /workspace/models/Qwen2.5-VL-72B
+Download the main model:
+
+wget -c --content-disposition \
+"https://huggingface.co/ggml-org/Qwen2.5-VL-72B-Instruct-GGUF/resolve/main/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf"
+Download the multimodal projector:
+
+wget -c --content-disposition \
+"https://huggingface.co/ggml-org/Qwen2.5-VL-72B-Instruct-GGUF/resolve/main/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf"
+Check the files:
+
+ls -lh /workspace/models/Qwen2.5-VL-72B
+3. Baseline measurement
+Start the VLM server with TurboPrefill disabled:
+
+TURBOPREFILL=0 ./run_vlm_server.sh
+Run the benchmark:
+
+python3 run_vlm_resolution.py
+4. TurboPrefill measurement
+Start the VLM server with TurboPrefill enabled:
+
+TURBOPREFILL=1 ./run_vlm_server.sh
+Run the benchmark:
+
+python3 run_vlm_resolution.py
+5. Compare results
+Input images:
+
+resolution_samples/
+Reference benchmark reports and logs:
+
+benchmarks/
+Compare generated reports against the published benchmark logs included in this repository.
+
+Attribution
+If this work is useful for future implementations of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill, please cite the original RFC proposal:
+
+ggml-org/llama.cpp#24219
+
+*******************************************************************************
+
+RFC][PoC] Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill
+#24219
+Open
+sergey-automation
+wants to merge 1 commit into
+ggml-org:master
+from
+sergey-automation:turboprefill-rfc-poc
++862
+-16
+Lines changed: 862 additions & 16 deletions
+Conversation1 (1)
+Commits1 (1)
+Checks1 (1)
+Files changed5 (5)
+Open
+[RFC][PoC] Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill#24219
+sergey-automation
+wants to merge 1 commit into
+ggml-org:master
+from
+sergey-automation:turboprefill-rfc-poc
+Conversation
+@sergey-automation
+sergey-automation
+commented
+3 weeks ago
+[RFC][PoC] Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill
+1. Status: Proof of Concept (PoC)
+This RFC describes an experimental scheduling mechanism implemented in the TurboPrefill project and intended for discussion of the architectural approach.
+
+2. The Problem
+With split_mode = layer, processing of a single request during the prefill phase is performed by passing each ubatch sequentially through the GPU pipeline.
+
+When processing a single ubatch, GPU stages are utilized sequentially: early GPUs become idle after completing their work, while later GPUs remain idle waiting for input data.
+
+This limits GPU utilization efficiency and reduces performance scaling as the number of devices increases.
+
+3. Proposed Approach
+Within the scope of this RFC, the term Intra-Prompt Pipeline Scheduling refers to the request-internal scheduling mechanism for the prefill phase described below.
+
+The proposed approach does not modify the division of a request into ubatch units.
+
+During the prefill phase, ubatch instances are pre-classified. ubatch instances requiring the standard execution order continue to be processed by the existing scheduling mechanism. ubatch instances suitable for pipeline execution are routed to the Intra-Prompt Pipeline Scheduling mode implemented in TurboPrefill.
+
+In this mode, ubatch instances are accumulated until the final ubatch of the current batch is received, after which they are executed sequentially through the layer-split GPU pipeline.
+
+The next ubatch begins processing immediately after the previous ubatch completes execution on the corresponding GPU stage. It is therefore not necessary to wait for the previous ubatch to pass through all GPUs before starting execution of the next one.
+
+As a result, the number of GPUs simultaneously performing useful work increases.
+
+4. Scope
+Intra-Prompt Pipeline Scheduling is intended to accelerate the prefill phase when processing large single requests on multi-GPU configurations.
+
+The approach is designed for Single-User Mode, where compute resources are dedicated to a single active request.
+
+5. Limitations
+Intra-Prompt Pipeline Scheduling is a request-internal scheduling mechanism. It does not introduce parallelism between independent requests and does not replace existing multi-user batching mechanisms.
+
+The approach is intended to accelerate the prefill phase and does not affect decode performance.
+
+Intra-Prompt Pipeline Scheduling is applied only to ubatch instances that do not contain logits output requests.
+
+For this reason, the standard llama-bench tool is not suitable for evaluating this mode, since its prefill tests contain logits output requests and therefore continue to be processed by the standard scheduling path.
+
+6. PoC Results
+Results for a context length of 16,373 tokens. Full results for all tested context lengths are provided below and are available in the repository.
+
+Platform                      GPU   Baseline   TurboPrefill   Gain
+------------------------------------------------------------------
+10x P104-100                  10       77          181        +135%
+4x RTX 3090                    4     1477         2758         +87%
+5x RTX 5060 Ti                 5     1993         3886         +95%
+8x RTX 5060 Ti                 8     1963         4380        +123%
+7. Computational Correctness
+Intra-Prompt Pipeline Scheduling does not modify the mathematical computation model.
+
+The execution order of individual layers and the order of data propagation through each layer remain unchanged.
+
+Only the execution scheduling order between GPU stages is modified.
+
+8. Discussion Topics
+Possible integration into ggml-backend-sched.
+Applicability to other split modes.
+Applicability to systems with P2P/NVLink support.
+This RFC is published for discussion of the architectural approach and for collecting feedback on possible future directions of development.
+
+9. Implementation Status
+The current implementation is provided as an isolated overlay module and does not require modifications to the model architecture.
+
+The mode can be enabled through the TURBOPREFILL=1 environment variable.
+
+Source code, installation scripts, benchmark data, and measurement results are available in the separate TurboPrefill repository.
+
+10. Full Benchmark Results
+All measurements in this section were performed using GPT-OSS-120B Q4_K_M.
+
+Multi-GPU Scaling with and without Intra-Prompt Pipeline Scheduling
+Multi-GPU Scaling with and without Intra-Prompt Pipeline Scheduling
+
+5× and 8× NVIDIA RTX 5060 Ti 16GB, UB=768.
+
+Prefill Throughput: Baseline vs Intra-Prompt Pipeline Scheduling (4× RTX 3090)
+Prefill Throughput on 4× RTX 3090
+
+4× NVIDIA RTX 3090, UB=768.
+
+Prefill Throughput on 10× NVIDIA P104-100 (Pascal)
+Prefill Throughput on 10× NVIDIA P104-100 (Pascal)
+
+10× NVIDIA P104-100 (Pascal). Baseline UB=32, Baseline UB=512, Intra-Prompt Pipeline Scheduling UB=32.
+
+Author: Serhii Trykhlieb
+
+Proposed mechanism:
+Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill
+
+PoC implementation:
+TurboPrefill
+
+Repository:
+https://github.com/sergey-automation/TurboPrefill
+
+@sergey-automation
+RFC PoC: Intra-Prompt Pipeline Scheduling for prefill
+4a364d0
+@sergey-automation sergey-automation requested a review from ggerganov as a code owner 3 weeks ago
+@github-actions github-actions Bot added the ggml label 3 weeks ago
+@sergey-automation
+sergey-automation
+commented
+5 days ago
+Author
+TurboPrefill-VLM-Validation represents a subsequent implementation of the proposed mechanism in which:
+
+multi-user operation was enabled;
+support for Vision-Language Model (VLM) processing was added.
+Validation of the applicability of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill to Vision Language Models (VLMs).
+
+Application of Intra-Prompt Pipeline Scheduling for Multi-GPU Prefill nearly halved the waiting time before answer generation: from 9.1 s to 4.6 s.
+
+VLM Response Latency
+
+The model was asked:
+
+to describe the scene, estimate the number of animals, identify which animal appeared to be the leader, and explain why using five visual clues.
+
+The waiting time before answer generation was derived from the prompt_eval_ms values reported by llama.cpp.
+
+Example answer:
+
+Eight giraffes are walking across a grassy wetland near a river. The animals are light brown with darker patches. The leading giraffe appears to guide the group. Clues: front position, direction of movement, spacing, head orientation, and group alignment.
+
+Result
+Metric	Baseline	TurboPrefill	Speedup
+Waiting time before the response started	9.1 s	4.6 s	1.98× faster
+Prefill throughput	303 tok/s	604 tok/s	1.99× higher
+Generation throughput	8.6 tok/s	8.6 tok/s	No change (1.00×)
+Validation Repository
+
+*******************************************************************
+
+Report by Sergey Tryklieb.
+What▓s wrong with solar energy?
+
+Physical limitations:
+
+1. Clouds and fog block sunlight; panels cannot generate more energy than the amount of light they receive (adjusted for efficiency).
+At the latitude of Kyiv, between March and October, there are days when the panels generate only 5√30% of the output they would produce under clear skies.
+While generation "dips" during the course of a single day can be smoothed out using a reasonable number of batteries, compensating for the low output of "bad" days using batteries is costly.
+Legal restrictions.
+
+2. It is prohibited to have a solar power system with a capacity exceeding the capacity of the grid connection.
+
+Combining points 1 and 2, it turns out we cannot offset even our daytime consumption using solar power, because we are constrained by law regarding the number of panels and by physics≈specifically, the fact that panels operate at a fraction of their rated capacity most of the time.
+
+Solutions:
+
+3. Physical solution: We need a solar power system with a panel array rated at 5√10 times the capacity we actually require.
+
+4. How to bypass legal restrictions. A poor option: setting up a grid connection with 5√10 times the capacity actually needed.
+5. How to bypass legal restrictions. A suggested option: if the solar power system operates as an "energy island"≈meaning it is not connected to the external grid and cannot feed energy into it≈then there are no restrictions.
+
+Consequences of installing a solar system with 5√10 times the panel capacity.
+
+Potential downsides:
+
+6. It is more expensive, but the panels themselves account for only a small fraction of the total solar system cost. Currently, the price is under $100 per kW of rated capacity. All other things being equal, the batteries, controllers, and inverters remain the same in terms of capacity and price; only the panels and their installation cost more.
+
+7. Technically, different equipment (controllers) will be required, but the price will be comparable.
+Pleasant outcomes.
+
+8. Solar power will cover electricity needs for a significantly greater number of days.
+
+9. There will be many days when the energy generated far exceeds our needs.
+
+What to do with the "surplus" energy
+10. Physically, no action is required; the panels and the system function perfectly well even if no electricity is drawn from them.
+
+11. By installing additional controllers, the "surplus" energy can be utilized for industrial processes that allow for interruptions≈such as supplementary air conditioning and ventilation, reverse osmosis water purification, ice making, hydrometallurgy, electrolytic metal refining (separation), and others.
+
+A brief overview of the design of power supply units, solar controllers, and inverters.
+
+12. Modern server power supplies consist (in simplified terms) of the following: a rectifier (with PFC), which converts 220V AC into 400V DC, and a DC/DC unit, which converts the 400V DC bus voltage into, for example, 12V DC.
+
+13. A solar controller (MPPT) converts the fluctuating DC voltage from the panels into a stable 400V DC bus voltage. An inverter converts the 400V bus voltage into 220V AC.
+
+14. To eliminate two redundant conversions≈first from the solar bus to 220V AC and then to the DC bus of the power supply units≈it is possible to power the DC/DC power supply units directly from the off-grid solar station's DC bus. This same bus can be supplemented by the external power grid when there is insufficient sunlight. Thus, within the system, the off-grid solar station acts as a consumer rather than a generator.
+
+
+I intentionally omitted details regarding the possibility of different DC bus voltages or 380V three-phase AC, as well as specifics concerning batteries and controllers.
+
+******************************************************************************
+
+DETERMINING THE EFFICIENCY OF RESTORED PHOTOVOLTAIC MODULES UNDER NATURAL LIGHTING CONDITIONSIryna ShvedchykovaCorresponding authorDoctor of Technical Sciences, Professor*E-mail: shvedchykova.io@knutd.edu.uaAndrii TrykhliebPhD Student*Serhii TrykhliebChief Engineer LLC "GoldWood"Pestelia str., 6a, Odesa, Ukraine, 65031Svitlana DemishonkovaPhD, Associate Professor*Volodymyr PavlenkoPhD, Associate ProfessorDepartment of Heat and Power EngineeringNational University of Life and Environmental Sciences of UkraineHeroyiv Oborony str., 15, Kyiv, Ukraine, 03041*Department of Computer Engineering and ElectromechanicsKyiv National University of Technologies and DesignMala Shyianovska str., 2, Kyiv, Ukraine, 01011The object of this study is thin­film photovol taic modules without physical damage, manufactured by CIGS technology, affected by potential­induced deg­radation, after restoration. The possibility of improv­ing the efficiency of the array of restored photovol­taic modules of the Q.SMART UF L 105 type has been established experimentally, under natural lighting conditions, up to 50 % and higher with respect to the new reference photovoltaic panel. An expression for evaluating the efficiency of restored photovoltaic panels has been derived. It is proposed to use a rela­tive indicator – the efficiency index, which is calcu­lated based on the specific generation data of photo­voltaic modules. During the experiment, photovoltaic panels were connected to the OpenSCADA dispatch control and data collection system. Experimental studies were carried out in the autumn­winter period under three weather scenarios: clear day, variable cloudiness, continuous cloudiness. The specific month­ly generation of photovoltaic modules was defined as the amount of energy produced during the month per unit of power, which is 100 W. During the experi­ment, minute and hourly fluctuations in the genera­tion of photovoltaic modules were recorded. Based on the results of calculating the efficiency index, it was concluded that the generation of electrical energy by exhausted photovoltaic modules after restoration under real operating conditions allows for the possi­bility of their secondary application.The results of the research could be used as a basis for evaluating the efficiency of restored photovoltaic modules while the resulting statistical data on their performance could be used to devise rules and stan­dards for the secondary application of exhausted photovoltaic panelsKeywords: photovoltaic module, potential­induced degradation, photovoltaic generation, SCADA system, restoration efficiency UDC 535.2DOI: 10.15587/1729-4061.2024.317829How to Cite: Shvedchykova, I., Trykhlieb, A., Trykhlieb, S., Demishonkova, S., Pavlenko, V. (2024). Determining the efficiency of restored photovoltaic modules under natural lighting conditions. Eastern-European Journal of Enterprise Technologies, 6 (8 (132)), 16–24. https://doi.org/10.15587/1729-4061.2024.317829Received 27.09.2024Received in revised form 19.11.2024Accepted 02.12.2024Published 30.12.20241. Introduction Under modern conditions, most countries of the world are moving towards decarbonization of their energy systems. The European Union has taken a course on the green transition, the goal of which is to achieve climate neutrality by 2050 with the replacement of fossil fuels with renewable energy sources by 2035 [1]. In view of this, in various branches of industry, agriculture, transport, as well as in the private sector, there is a rather rapid increase in the capacities of installed photovoltaic systems (IPSs) [2, 3]. At the end of 2018, the total installed capacity of IPSs was 515 GW; at the end of 2022, it reached a value of 1050 GW [4], continuing to grow until now.In most developed countries, large-scale photovoltaic in-stallations appeared around the beginning of the 2000s. Given that photovoltaic modules (PVMs) are designed for a service life of 20 to 30 years, a significant part of them is at the end of its operational life cycle. It is expected that after 2030 a con-siderable volume of photovoltaic waste will appear [5]. The International Renewable Energy Agency (IRENA) [6] pre-dicts that by 2030 there will be from 1.7 to 8 million tons, and by 2050 – from 60 to 78 million tons of photovoltaic waste.Quite a large amount of waste from solar cells is a conse-quence of the delay between the moment of installation and the final stage of the PVM life cycle [7], so often FMs do not meet the stated service life. As an example, we could note the So-larpark Ammerland solar power plant, built in the fall of 2011 by GP JOULE in Germany. About 196,000 thin-film modu-les Q-Cells CIGS, type Q.SMART, with an installed capacity of 21 MW were placed on an area of 57 hectares [8]. However, in 2017, the operation of the solar park stopped, all FMs were replaced by the owners with 80,000 new silicon panels because the thin film modules did not have the stated warranty period of 25 years of operation. Thus, the actual volume of photovol-taic waste may turn out to be higher than predicted, and the waste may appear earlier than expected.
+Energy-saving technologies and equipment17All over the world, exhausted PVMs are traditionally either destroyed or landfilled, resulting in the loss of valuable metals and environmental degradation due to leakage of toxic materials. It is possible to reduce the negative impact on the environment by recycling photovoltaic waste or further exploitation of PVMs. Complete recycling of PVMs is a prob-lematic task. In Ukraine, there are no PVM processing enter-prises, as well as special requirements for their disposal [9]. At the same time, extending the service life of PVMs has not only significant environmental advantages but also makes it possible to obtain a certain economic effect. Thus, secondary use IPSs could be used as backup power sources at small business enterprises, reducing the cost of purchasing new equipment. Extending PVM operation could prove useful for the private sector as well. Therefore, under these conditions, the development of technologies for the recovery of exhausted PVMs with the extension of their service life appears to be promising. And assessing the effectiveness of PVMs in secon-dary use is a relevant area of scientific research.2. Literature review and problem statementIn [10], a comprehensive review of the degradation factors that are associated with the aging of PVMs and that signifi-cantly affect the performance and service life of IPSs is given. In particular, factors such as surface contamination with soil particles, dust, snow, building materials, as well as discolo-ration, cracks, and delamination were considered. High tem-peratures, ultraviolet radiation, high air humidity, extreme weather conditions (hail, heavy snowfall, or wind) that could lead to physical damage to the panels are also included in [11] as factors that impair PVM operation. But questions related to how these factors affect the development of potentially in-duced degradation (PID) remained unresolved because of the complexity of studying the mechanism of this phenomenon.The physical basis of the mechanism of PID occurrence is considered in [12]. During PID, there is a gradual loss of PVM performance because of the high potential difference between the cell (semiconductor) and other grounded parts of the module, e.g., frame, glass. This leads to current leakage and ion migration, which weakens the photoelectric effect and causes a gradual loss of PVM power. However, in work [12], the main emphasis is on the physical features of the degrada-tion process of PVM based on crystalline silicon. The PID mechanism for thin film modules was not considered.Studies of the PID effect show varying levels of degrada-tion impact on photovoltaic technologies such as crystalline silicon and copper indium gallium selenide (CIGS). Thus, in [13], it was concluded that photovoltaic systems based on CIGS have a higher resistance to PID compared to crys-talline silicon under identical test conditions. Possible stra-tegies for mitigating degradation are also presented in [13]. However, a thorough analysis of PID prevention issues is lacking. This problem is also complicated by the gradual in-crease in the rated power of PVM (more than 600 W).An option to mitigate or prevent PID is to use new ma-terials and design solutions. An important role in protecting sensitive solar cells from degradation and damage belongs to the film material of the back sheet of the solar panel. Work [14] reports the study of the relationship between PID and a change in the degree of crystallinity of the back layer of the solar module during degradation tests. The research results in [14] are aimed at mitigating the consequences of degradation. At the same time, issues related to the preven-tion of PID have been neglected by researchers.Research results reported in [15] showed that the use of materials with higher resistance to moisture penetration, such as fluorine-doped tin oxide (SnO2) (FTO), is an effec-tive means of preventing PID. This material is used as the front electrode material in PVM. The risk of PID could be reduced, as shown in [16], by glass with a metallic coating applied by sputtering, the thickness of which could be con-trolled. However, it should be noted that the methods for preventing degradation, presented in [15, 16], were used during the manufacture of PVMs.In [17], several strategies for PID mitigation that could be used during the operation of a IPS are defined. Specifically, strategies such as sealing PVM edges, using ventilation to reduce temperature, avoiding the use of certain chemicals, and using proper grounding techniques during PVM installa-tion. At the same time, it is important for solar IPS owners to maintain and monitor PVMs to reduce the negative effects of PID and extend the life of PVMs. In work [17], these issues were not considered. A monitoring system for detecting surface or structural damage to solar panels during their installation and oper-ation using drones is proposed in [18]. In this case, PVMs are checked for defects and measures are taken to improve electricity production, for example, through a panel cleaning mechanism. Artificial intelligence methods are proposed for image processing, in particular, pattern recognition. However, the system proposed in [18] should be used only at large in-dustrial solar IPSs.Maximum power point tracking (MPPT) algorithms are also used to detect PVM faults [19]; wavelet transform for analyzing the frequency spectrum of microgrid photovoltaic system data and detecting anomalies that may indicate a mal-function [20]. However, in [19], there are no practical recom-mendations for using the proposed MPPT tracking algorithm under conditions of partial PVM shading. In [20], a method of protection against short circuits in a microgrid is proposed, which is suitable for detecting short circuits in limited cases. Insufficient attention to the study of technical monitoring issues is due to the fact that PVMs are usually sold as energy sources that do not require additional maintenance. There is also a lack of scientific research on end-of-life PVM management, including recycling, reclamation, repair, recovery, and reuse of end-of-life PVMs, which is reviewed in [21]. It is concluded that research and development for the recovery of end-of-life PVMs remains scarce, and best practices and commercial services for reliability testing and re-certification, as well as for the trade of secondary PVMs, are not standardized.An analysis of methods for restoring degraded PVMs is given in [12]; the authors suggested using a reduction of the applied voltage; reverse voltage; active or passive methods of thermal management; decrease in current density; PVM stor-age in a dark place. As noted in [22], most research on PVM recovery is related to standard modules based on crystalline silicon because they dominate the IPS market. In [22] it was shown that thermal recovery, reverse voltage, and their com-binations are able to restore the efficiency of PVMs based on crystalline silicon, and could also be applied to other photo-voltaic technologies, in particular, CIGS. However, a serious problem is that most of the proposed methods and technical solutions for PVM recovery do not provide the desired effi-ciency or increase the cost of recovered PVMs.
+Eastern-European Journal of Enterprise Technologies ISSN 1729-3774 6/8 ( 132 ) 202418In [23], the scenarios of PVM recycling at the end of their life cycle are considered, in particular: reuse of the mo-dule, extraction of components, and extraction of material. The work concludes that the reuse of PVM is distinguished by the least number of processing stages and could bring the highest income. The main problem is to find sales markets for the reuse of exhausted PVMs after their recovery.Thus, our review of the literature [10–23] demonstrated that current research mostly tackles the influence of various factors on the performance of PVMs under which they could enter the waste stream. Peculiarities of the mechanism of degradation and issues related to the use of new materials and structural solutions to mitigate the consequences of degrada-tion are also considered. At the same time, there is a certain lack of research and publications on technical monitoring and recovery of exhausted PVMs for the purpose of their fur-ther use under cyclical economy conditions. Without proper maintenance, PVMs could experience reduced efficiency, increased downtime, and equipment failure. In turn, the restoration of decommissioned PVMs is complicated by the lack of a procedure for checking (certification) of secondary PVMs and, as a result, the difficulty of implementing them for reuse. There is also a lack of actual (experimental) data on the effectiveness of the secondary application of various types of PVMs after restoration. All this allows us to state that the issues of assessing the functionality and efficiency of PVMs under real operating conditions after their restoration require additional investigation and generalization.3. The aim and objectives of the studyThe purpose of our study is to determine experimentally under actual natural lighting conditions the effectiveness of PVMs prone to potentially induced degradation, after their restoration. The results of the research will make it possible to evaluate the functionality of recovered PVMs with respect to new solar panels and justify the expediency of their secondary use. This will ensure the extension of the service life and, as a result, an increase in the environmental sustainability of PVMs through the reduction of photovol-taic waste and its negative impact on the environment. In addition, statistical data on the performance of recovered PVMs could be used to devise rules and standards for the reuse of PVMs.To achieve the goal, the following tasks were set:– to obtain an expression for calculating the efficiency of restored photovoltaic panels;– to conduct experimental studies to determine the func-tionality of restored PVMs under natural lighting conditions.4. The study materials and methodsExhausted thin-film PVMs without physical damage, produced by CIGS technology, affected by PID degrada-tion were chosen as the object of our research. The subject of the study is a comparative analysis of the performance of degraded PVMs after their restoration with respect to new monocrystalline panels under different natural lighting conditions. The main hypothesis of the study assumes that the generation of electrical energy by exhausted PVMs after recovery under real operating conditions could be sufficient for their reuse.During the experiment, photovoltaic panels were connected to the OpenSCADA supervisory control and data acquisition system, which is an open implementation of SCADA (Supervi-sory Control And Data Acquisition) and HMI (Human-Ma-chine Interface) systems. OpenSCADA is built on the princi-ples of modularity, cross-platform, and scalability [24].For experimental research, 24 exhausted photoelectric thin film modules (CIGS) of the Q.SMART UF L 105 type, produced in 2011, were purchased. According to the data gi-ven in [25], in 2011 similar panels were produced in the world with a total capacity of more than 3000 MW and a weight of more than 500 thousand tons. In 2011, First Solar, Inc. (USA) became the largest producer of thin-film PVMs in the world in terms of capacity (1,981 MW) [25].Thin-film modules of the Q.SMART type, because of the damage from PID degradation, produced at the initial stage from 2 to 10 % of the rated power Pmax = 105 W for standard test conditions (STC) [11]. Standardized conditions assume a solar radiation intensity of 1000 W/m2 at a module tem-perature of 25 °C in the absence of wind. In this case, the photovoltaic panel must be oriented southwards.As mentioned above, PID-prone PVM recovery methods provide an opportunity to restore the functionality of failed modules. Using the method described in [26], by tracking the change in the volt-ampere characteristic of PVM on a specially built bench, it was possible to increase the per-formance of some panels. Studies on the restoration of PVM productivity were conducted in 2022 over 3 months. The maximum PVM power after recovery was 30 % (33.5 W) of the STC-declared rated power Pmax (105 W) and was obtai-ned for a sun-facing PV panel on a sunny, windless day (Oc-tober 16, 2022).PVM efficiency ηef is determined from the following expression [11]:ηefradPPPES==⋅()maxmax//,(1)where Prad is the power of incident radiation; E – intensity of solar radiation according to STC (1000 W/m2); S is the PVM area.The efficiency ηef of the Q.SMART UF L 105 module un-der standardized conditions is 11.2 % [27], and the efficiency of the restored module was 3.57 %, respectively. Comparison of the technical characteristics of restored PVMs with pa-rameters of PVMs according to STC is not correct. Stan-dardized conditions are ideal conditions that do not reflect the real pattern of PVM electrical energy generation. The performance of exhausted PVMs after restoration should be evaluated with new solar panels of a similar configuration under real operating conditions.It should be noted that at the time of the experiment, the new PVM Q.SMART UF L 105 were not available for order. Therefore, for observation under real natural lighting conditions, together with an array of restored Q.SMART UF L 105 panels, an available new monocrystalline panel Risen Energy RSM110-8-545 was installed, which served as a reference. Specifications, according to STC, of the re-stored Q.SMART UF L 105 [27] and reference Risen Energy RSM110-8-545 [28] panels are compared in Table 1.Thus, taking into account the features and technical cha-racteristics of the restored panels Q.SMART UF L 105, selected for our experiment, it is proposed to determine the efficiency of the array of restored panels in comparison with the reference monocrystalline panel Risen Energy RSM110-8-545.
+Energy-saving technologies and equipment195. Results of analyzing the generation of electrical energy by photovoltaic modules prone to degradation after restoration5. 1. Expression for calculating the efficiency of re-stored photovoltaic panelsEvaluation of the efficiency of restored PVMs was car-ried out using a relative indicator – the IE efficiency index. The calculation of the IE indicator was carried out through the value of the specific generation of the array of restored Q.SMART UF L 105 modules and the reference photovoltaic panel Risen Energy RSM110-8-545.The specific generation of PVM was defined as the amount of energy produced during a certain period of time per unit of base power, which is chosen for convenience as 100 W. Recalculation of PVM power was carried out in re-lation to 100 W of the installed rated power Pmax according to STC (Table 1). The power conversion factor k = Pmax/100 was, respectively: k = 545/100 W = 5.45 – for PVM of type Risen Energy RSM110-8-545; k = 105n/100 = 1.05n = 25.2 (n = 24 – the number of solar panels in the array) – for re-stored PVMs of the Q.SMART UF L 105 type.Specific indicators of hourly pPV and monthly wPV (for a period of time T) of electric energy generation, reduced to 100 W of the installed rated power of PVM, were deter-mined as follows:pPkPVPVi=/,wpTPTkPVPVPVi=⋅=⋅/,(2)where PPVi is the PVM generation power at the i-th time point.With the help of the IE efficiency index, the energy of the array of restored panels generated during the month of observation wPVD is compared with the specific indicator wPVEfor the generation of the reference PVM. The value of the IEis calculated from the following formula:IwwPVDPVE=⋅100%.(3)If the condition IE ≥ 50 % is met, the efficiency of restored photovoltaic panels could be considered sufficient to ensure the possibility of their reuse.5. 2. Experimental studies on the functionality of restored photovoltaic modules under natural lighting conditionsTo determine the real data on the generated PVM ener-gy of the Q-Cells Q.SMART UF L-105 type, an array of 24 parallel-connected restored panels with a total rated power of 2520 W was assembled. The Q-Cells Q.SMART UF L-105 PV array and the new Risen Energy RSM110-8-545 panel were installed at the same angle of 68° and azimuth of 206° (southwest).The experiment was conducted in the Kyiv oblast, the average annual insolation rate for which, according to NASA observations, is 3.1 kWh/m2/day. PVM generation was mea-sured from October 2023 to February 2024. This is a period of low solar activity when the average value of the insolation index does not exceed 1.35 kWh/m2/day.Research into the generation of solar panels was carried out in the winter period, which is the worst in terms of solar insolation. For the region of the city of Kyiv, the indicators of solar insolation in winter, respectively, are [29] as follows: December – 0.86, January – 1.07, February – 1.87 kWh/m2/day. Days with different cloudiness coefficient values (Table 2) were chosen, which corresponded to the following three weather scenarios:– scenario 1 – a clear day (January 30, 2024), the cloudi-ness factor changes from 0 to 2;– scenario 2 – variable cloudiness (January 31, 2024), the cloudiness factor changes from 4 to 7;– scenario 3 – solid cloudiness (December 6, 2023, January 11, 2024, February 1, 2024), the cloudiness factor changes from 7 to 8.On the days of observations given in Table 2, wind speed and air temperature were approximately the same: wind speed varied from 2 to 4 m/s, air temperature ranged from –2 to +4 °C. There was no precipitation during the day. Under different weather scenarios (30.01.2024, 31.01.2024, and 01.02.2024), the restored PVMs Q-Cells Q. SMART UF L-105 were installed both at an angle and horizontally. PVM generation schedules with hourly and minute averaging were registered. Table 2 gives values of specific peak power for each type of PVM based on an hourly average.As mentioned above, during the experiment PVMs were connected to the OpenSCADA dispatch control and data collection system [24].Table 1Specifications of restored Q.SMART UF L 105 and reference Risen Energy RSM110-8-545 photovoltaic panelsParameterRSM110-8-545MQ.SMART UF L 105Rated power Pmax, W545105Idle voltage Uoc, V 38.0293.1Short-circuit current lsc, A18.231.63Voltage at the point of maximum power Umpp, V31.6671.5Current at the point of maximum power lmpp, A17.221.47Module efficiency, %20.911.2Solar cellsMonocrystallineThin-film (CIGS)Module dimensions, mm2384×1096×351190×789×7.3Weight, kg2916.5
+Eastern-European Journal of Enterprise Technologies ISSN 1729-3774 6/8 ( 132 ) 202420PVM generation was measured with minute and hourly averaging under the following weather scenarios.Weather scenario 1. Fig. 1 shows plots for the specific generation of PVM per light day for the conditions of a clear winter day (January 30, 2024). On this day, the maximum generation of PVM was observed. The specific hourly peak power was 74.98 W – for Risen Energy RSM110-8-545; 35.73 W and 7.5 W – for an array of restored Q-Cells Q.SMART UF L-105 panels installed at an angle and hori-zontally, respectively.112323abFig. 1. Specific generation pPVover a light day on January 30, 2024: a– minute averaging; b– hourly averaging;1 – new Risen Energy RSM110-8-545 monocrystalline panel; 2 – restored Q-Cells Q.SMART UF L-105 panels, located at an angle; 3 – restored panels Q-Cells Q.SMART UF L-105, located horizontallyDuring the day on January 30, 2024, there were some small clouds, the cloudiness coefficient varied from 0 to 2 points. When the cloud density changes, fluctuations in the gene ration of Risen Energy RSM110-8-545 (Fig. 1, a) are noticeable, which are not visible on the generation plot for Q-Cells Q.SMART UF L-105. This is due to the fact that the array of Q-Cells Q.SMART UF L-105 consists of many panels and occupies a large area compared to the area of the new PVMs, so the effect of cloud shading is averaged out.Weather scenario 2. Fig. 2 shows plots of the specific generation by PVMs over a light day for variable cloudiness conditions (January 31, 2024), when the cloudiness factor varied from 4 to 7 points.123123abFig. 2. Specific generation pPVover a light day on January 31, 2024: a– minute averaging; b–hourlyaveraging; 1 – new Risen Energy RSM110-8-545 monocrystalline panel; 2 – restored Q-Cells Q.SMART UF L-105 panels, located at an angle; 3 – restored panels Q-Cells Q.SMART UF L-105, located horizontallyTable 2Specific peak powers of the array of restored Q.SMART UF L 105 and reference Risen Energy RSM110-8-545 photovoltaic panels under different weather conditionsNo.DateCloudiness in points during the daytimeSpecific hourly peak power of PVM, WRisen Energy RSM110-8-545Q-Cells Q.SMART UF L-105Installed at an angleInstalled horizontally106.12.20237–87.53.55–211.01.202483.51.48–330.01.20240–2 74.9835.737.5431.01.20244–772.533.77.6501.02.2024 7–85.62.453.2
+Energy-saving technologies and equipment21On January 31, 2024, reasonably high generation was also observed. The specific hourly peak power was 72.5 W – for Risen Energy RSM110-8-545; 33.7 W and 7.6 W – for an array of restored Q-Cells Q.SMART UF L-105 panels installed at an angle and horizontally, respectively. Compa-red to the previous plots (Fig. 1, a), the impact of clouds on both arrays of panels (Fig. 2, a) could be observed with mi-nute averaging.Weather scenario 3. Fig. 3–5 show plots for the specific ge-neration by PVMs pPV over a light day for the conditions of con-tinuous cloudiness (06.12.2023, 11.01.2024, 01.02.24), when the cloudiness coefficient was the highest, varying from 7 to 8 points.12121212abFig. 3. Specific generation pPVover a light day of 06.12.2023: a– minute-by-minute averaging; b– hourly averaging; 1 – new Risen Energy RSM110-8-545 monocrystalline panel; 2 – restored Q-Cells Q.SMART UF L-105 panels, located at an angle1212a1212bFig. 4. Specific generation pPVover a light day of January 11, 2024: a– minute-by-minute averaging; b– hourly averaging; 1 – new Risen Energy RSM110-8-545 monocrystalline panel; 2 – restored Q-Cells Q.SMART UF L-105 panels, located at an angleab123132123132Fig. 5. Specific generation pPVover a light day of February 1, 2024: a– minute averaging; b– hourly averaging; 1 – new Risen Energy RSM110-8-545 monocrystalline panel; 2 – restored Q-Cells Q.SMART UF L-105 panels, located at an angle; 3 – restored panels Q-Cells Q.SMART UF L-105, located horizontally
+Eastern-European Journal of Enterprise Technologies ISSN 1729-3774 6/8 ( 132 ) 202422As could be seen from Fig. 3, generation on a gloomy win-ter day on December 6, 2023, was low enough without sharp jumps. Specific hourly peak power was 7.5 W – for Risen Energy RSM110-8-545; 3.55 W – for an array of Q-Cells Q.SMART UF L-105 panels installed at an angle.Fig. 4 shows PVM generation on a cloudy winter day on January 11, 2024, when it was completely cloudy with dif-ferent cloud densities. Low generation was observed, but no-ticeable changes in generation with changes in cloud density. The specific hourly peak power was 3.5 W – for Risen Energy RSM110-8-545; 1.48 W – for an array of Q-Cells Q.SMART UF L-105 panels installed at an angle.Fig. 5 also shows a plot with low PVM generation on a cloudy winter day on February 1, 2024; there are noticeable changes in generation with changes in cloud density. How-ever, in Fig. 5, one can see that a horizontally located array of restored PVMs generates more energy under diffused lighting than panels installed at an angle. Specific hourly peak power was 2.45 W and 3.2 W for an array of Q-Cells Q.SMART UF L-105 restored panels installed at an angle and horizontally, respectively. The horizontal arrangement of the panels is inferior in direct sunlight, but provides an advantage in dif-fused lighting, which is often seen in the winter months or on cloudy days. This could be useful for stand-alone IPSs when energy is needed under all lighting conditions.The general statistics on the generation by renewable photovoltaic panels Q-Cells Q.SMART UF L-105 and the new panel, as well as the IE efficiency index of recovered PVMs, are given in Table 3 for two characteristic months of the fall (October 2023) and winter (January 2024) seasons. Table 3 also gives specific monthly generation of electrical en-ergy, reduced to 100 W of the installed rated power of PVM.Table 3Indicators of electric energy generation by the reference monocrystalline panel Risen Energy RSM110-8-545 and the array of restored panels Q-Cells Q.SMART UF L-105IndicatorMonthOctoberJanuaryRisen Energy RSM110-8-545Monthly electricity generation, kWh31.47613.852Specific monthly generation wPVE, kWh5.7752.542Q-Cells Q. SMART UF L-105Monthly electricity generation, kWh72.53532.55Specific monthly generation wPVD, kWh2.8781.292Efficiency Index ІE, %5051Thus, our experimental studies have shown that exhaus-ted PVMs manufactured by CIGS technology and without physical damage could provide IE efficiency at the level of 50 % and higher compared to new PVMs.6. Discussion of results based on the research on electricity generation by photovoltaic modules under natural lighting conditionsIn our work, the main efforts were focused on conducting experimental studies to evaluate the generation of electri-cal energy by restored thin-film PVMs of the Q.SMART UF L 105 type under natural lighting conditions. It should be noted that in most works, in particular in [22], the issue of PVM recovery based on crystalline silicon is considered due to their dominance in the IPS market.This work is a continuation of the research started in [26]. The results of the process of restoration of thin-film PVMs, highlighted in [26], showed that the highest generation power of the photovoltaic system could be obtained under conditions close to ideal according to STC. Under real operating condi-tions, the generation indicators of recovered PVMs should be compared with the generation indicators of the reference photo-voltaic panel, which could be selected according to two options: – option 1 – a new photovoltaic panel of the same type (Q.SMART UF L 105), as it is done, for example, in [11], or a new panel with similar technical parameters is taken as a reference;– option 2 – a new photovoltaic panel with arbitrary pa-rameters, which is available, is accepted as a standard. The practical implementation of the first option turned out to be problematic because the newly available monocrystalline panel of the Risen Energy RSM110-8-545 type [28] with the parameters listed in Table 1 was chosen as the reference.In the work, an expression was derived for determining the efficiency of restored PVMs. The proposed quantitative indicator is the IE efficiency index, which is calculated using the indicators for specific PVM generation according to ex-pressions (2), (3). It is recommended to consider the condi-tion IE ≥ 50 % reasonable to ensure the possibility of reusing the recovered PVMs, for example, for small manufacturing enterprises or for domestic purposes ay private households.During the experimental research, an array of 24 paral-lel-connected restored PVMs of the Q.SMART UF L 105 type with a total power of 2520 W was assembled. Different modes of operation of restored and reference photovolta-ic panels were studied depending on weather conditions. In particular, in the winter period on a clear day (fluctuations of the cloudiness coefficient from 0 to 2), a high enough ge-neration was observed, as shown in Table 2 and Fig. 1. No-ticeable are minute-by-minute fluctuations in the generation by Risen Energy RSM110-8-545 (Fig. 1, a), which are not visible on the generation plot for restored Q-Cells Q.SMART UF L-105 panels. Under conditions of variable cloudiness, as shown in Table 2, a reasonably high generation is also observed, but clouds affect both arrays of panels (Fig. 2, a) during minute averaging. Finally, under conditions of contin-uous cloud cover, as could be seen from Table 2 and Fig. 3–5, PVM generation significantly decreases. However, as could be seen from Fig. 5, a horizontally located array of recovered PVMs under diffused lighting generates more energy than panels installed at an angle, which must be taken into account in the autonomous power supply to local consumers.The results of our calculation of the IE efficiency index that are given in Table 3 satisfy the condition IE ≥ 50 %. Therefore, the generation of electrical energy by exhausted PVMs after recovery under real operating conditions is sufficient for their reuse. In addition, recovered PVMs will continue to contribute to the decarbonization of the energy sector instead of filling landfills.Our results are similar to the findings reported in [30], in which the authors confirm in practice that the PVM power loss under the influence of PID could be up to 40 % in an open area. In [22], degradation exceeding 50 % is defined as significant.Certain limitations of this study are:– the choice of a monocrystalline panel of the Risen Energy RSM110-8-545 type as a benchmark because of the 
+Energy-saving technologies and equipment23difficulty of ordering a new PVM with parameters similar to the renewable PVM of the Q.SMART UF L 105 type;– the insufficient validity of the IE ≥ 50 % condition due to the lack of a secondary PVM certification procedure; this condition was determined based on the practical experience of using IPS.The main drawback of our study is that it does not take into account the influence of different photovoltaic techno-logies (crystalline silicon or CIGS) on the results of compa-rative analysis of PVM generation.Further prospects for this research involve determining experimentally the efficiency of renewable PVM generation, taking into account the influence of ambient temperature in the spring-summer period.7. Conclusions1. To evaluate the efficiency of restored photovoltaic panels, a relative indicator – the IE efficiency index – has been proposed. An expression for calculating the IE indica-tor using specific PVM generation data has been derived. A conversion factor of the generated PVM power with re-spect to 100 W of the installed rated power of photovoltaic panels has been determined, which is 5.45 for the Risen Ener-gy RSM110-8-545 type PVM; 25.2 for an array of restored panels of the Q.SMART UF L 105 type, respectively.2. Experimental studies were conducted to determine the functionality of restored PVMs under real lighting condi-tions in the autumn-winter period under three weather sce-narios: clear day, variable cloudiness, continuous cloudiness. It has been established that the IE efficiency index of pho-tovoltaic panels of the Q.SMART UF L 105 type restored without physical damage, manufactured according to CIGS technology, satisfies the condition IE≥50 %. Ensuring the efficiency of exhausted PVMs at the level of 50 % and higher with respect to the reference solar panel is the basis for mak-ing a decision to extend the service life of exhausted PVMs.Conflicts of interestThe authors declare that they have no conflicts of interest in relation to the current study, including financial, personal, authorship, or any other, that could affect the study, as well as the results reported in this paper.FundingThe study was conducted without financial support.Data availabilityThe data will be provided upon reasonable request.Use of artificial intelligenceThe authors confirm that they did not use artificial intel-ligence technologies when creating the current work.References1. Transforming our world: The 2030 Agenda for Sustainable Development. Available at: https://sdgs.un.org/2030agenda2. Shavolkin, O., Shvedchykova, I., Gerlici, J., Kravchenko, K., Pribilinec, F. (2022). Use of Hybrid Photovoltaic Systems with a Storage Battery for the Remote Objects of Railway Transport Infrastructure. Energies, 15 (13), 4883. https://doi.org/10.3390/en15134883 3. Shavolkin, O., Shvedchykova, I., Lishchuk, V., Stanovskyi, Y. (2023). Improving a model of the hybrid photovoltaic system with a storage battery for local object’s self-consumption involving the setting of power consumed from the grid. Eastern-European Journal of Enterprise Technologies, 3 (8 (123)), 6–16. https://doi.org/10.15587/1729-4061.2023.280053 4. Installed solar energy capacity (2024). Our World in Data. Retrieved. Available at: https://ourworldindata.org/grapher/in-stalled-solar-pv-capacity5. Domnguez, A., Geyer, R. (2019). Photovoltaic waste assessment of major photovoltaic installations in the United States of America. Renewable Energy, 133, 1188–1200. https://doi.org/10.1016/j.renene.2018.08.063 6. Weckend, S., Wade, A., Heath, G. (2016). End of Life Management: Solar Photovoltaic Panels. Office of Scientific and Technical Information (OSTI). https://doi.org/10.2172/1561525 7. Yu, H. F., Hasanuzzaman, Md., Rahim, N. A., Amin, N., Nor Adzman, N. (2022). Global Challenges and Prospects of Photovoltaic Materials Disposal and Recycling: A Comprehensive Review. Sustainability, 14 (14), 8567. https://doi.org/10.3390/su14148567 8. Solarpark Ammerland. GP JOULE. Available at: https://www.gp-joule.com/en/references/solar/solarpark-ammerland9. Pundiev, V., Rieztsov, V., Surzhyk, T., Shevchuk, V., SheikoІ. (2020). Disposal of photovoltaic modules. Problems and international experience. Vidnovluvana Energetika, 3 (62), 27–34. https://doi.org/10.36296/1819-8058.2020.3(62).27-34 10. Rahman, T., Mansur, A., Hossain Lipu, M., Rahman, Md., Ashique, R., Houran, M. et al. (2023). Investigation of Degradation of Solar Photovoltaics: A Review of Aging Factors, Impacts, and Future Directions toward Sustainable Energy Management. Energies, 16 (9), 3706. https://doi.org/10.3390/en16093706 11. Pavlk, M., Bea, L., Medved’, D., onka, Z., Kolcun, M. (2023). Analysis and Evaluation of Photovoltaic Cell Defects and Their Impact on Electricity Generation. Energies, 16 (6), 2576. https://doi.org/10.3390/en16062576 12. Ohdaira, K., Komatsu, Y., Yamaguchi, S., Masuda, A. (2023). Second-stage potential-induced degradation of n-type front-emitter crystalline silicon photovoltaic modules and its recovery. Japanese Journal of Applied Physics, 62 (SK), SK1033. https://doi.org/10.35848/1347-4065/accb60 13. Yilmaz, P., Schmitz, J., Theelen, M. (2022). Potential induced degradation of CIGS PV systems: A literature review. Renewable and Sustainable Energy Reviews, 154, 111819. https://doi.org/10.1016/j.rser.2021.111819 
+Eastern-European Journal of Enterprise Technologies ISSN 1729-3774 6/8 ( 132 ) 20242414. Zhang, J., Cao, D., Cui, Y., Wang, F., Putson, C., Song, C. (2019). Influence of potential induced degradation phenomena on electrical insulating backsheet in photovoltaic modules. Journal of Cleaner Production, 208, 333–339. https://doi.org/10.1016/j.jclepro.2018.10.057 15. Krsov, H., Neumann-Spallart, M., Tarbkov, H., Pauov, ., Janda, P., Maixner, J. et al. (2021). Reconstruction of SnO2 after ca-thodic polarization of FTO films - A simple way of fabricating orthorhombic SnO2. Materials Chemistry and Physics, 273, 125038. https://doi.org/10.1016/j.matchemphys.2021.125038 16. Yu, J., Li, J., Zhao, Y., Lambertz, A., Chen, T., Duan, W., Liu, W. et al. (2021). Copper metallization of electrodes for silicon hete-rojunction solar cells: Process, reliability and challenges. Solar Energy Materials and Solar Cells, 224, 110993. https://doi.org/10.1016/j.solmat.2021.110993 17. Kazem, H. A., Chaichan, M. T., Al-Waeli, A. H. A., Aloqab, W. T., Alnaser, W. E. (2024). Causes, consequences, and treatments of induced degradation of solar PV: a comprehensive review. Arab Journal of Basic and Applied Sciences, 31 (1), 177–191. https://doi.org/10.1080/25765299.2024.2318908 18. Dwivedi, D., Babu, K. V. S. M., Yemula, P. K., Chakraborty, P., Pal, M. (2024). Identification of surface defects on solar PV panels and wind turbine blades using attention based deep learning model. Engineering Applications of Artificial Intelligence, 131, 107836. https://doi.org/10.1016/j.engappai.2023.107836 19. Millah, I. S., Chang, P. C., Teshome, D. F., Subroto, R. K., Lian, K. L., Lin, J.-F. (2022). An Enhanced Grey Wolf Optimization Al-gorithm for Photovoltaic Maximum Power Point Tracking Control Under Partial Shading Conditions. IEEE Open Journal of the Industrial Electronics Society, 3, 392–408. https://doi.org/10.1109/ojies.2022.3179284 20. Seo, H.-C. (2022). Development of New Protection Scheme in DC Microgrid Using Wavelet Transform. Energies, 15 (1), 283. https://doi.org/10.3390/en15010283 21. Tsanakas, J. A., van der Heide, A., Radaviius, T., Denafas, J., Lemaire, E., Wang, K. et al. (2019). Towards a circular supply chain for PV modules: Review of today’s challenges in PV recycling, refurbishment and re-certification. Progress in Photovoltaics: Research and Applications, 28 (6), 454–464. https://doi.org/10.1002/pip.3193 22. Luo, W., Khoo, Y. S., Hacke, P., Naumann, V., Lausch, D., Harvey, S. P. et al. (2017). Potential-induced degradation in photovoltaic modules: a critical review. Energy & Environmental Science, 10 (1), 43–68. https://doi.org/10.1039/c6ee02271e 23. Tao, M., Fthenakis, V., Ebin, B., Steenari, B., Butler, E., Sinha, P. et al. (2020). Major challenges and opportunities in silicon solar module recycling. Progress in Photovoltaics: Research and Applications, 28 (10), 1077–1088. https://doi.org/10.1002/pip.3316 24. OpenSCADA. Available at: http://oscada.org/ua/golovne/25. Largest manufacturers of thin-film solar cells: By capacity. Statista. Available at: https://www.statista.com/statistics/244962/thin-film-solar-cell-manufacturers-based-on-capacity/26. Trykhlieb, A. S., Panasiuk, I. V. (2023). Research of the process of restoration of degraded solar panels. Technologies and Engineer-ing, 5, 27–34. https://doi.org/10.30857/2786-5371.2022.5.3 27. Q.Smart UF L 105. SecondSol GmbH. Available at: https://www.secondsol.com/en/anzeige/20107/modules/thin-film/cis-cigs/q-cells/q-smart-uf-l-10528. Soniachna batareia Risen RSM110-8-545M TITAN, 545 Vt. Available at: https://solar-tech.com.ua/ua/solar-electricity/solar- panels/solnechnaya-batareya-risen-rsm110-8-545m-titan.html29. Insoliatsiya: Vplyv na vyrobnytstvo elektroenerhiyi soniachnymy paneliamy. Solar Garden. Available at: https://www.solargarden.com.ua/insolyatsiya-vplyv-na-vyrobnytstvo-elektroenergiyi-sonyachnymy-panelyamy/30. Ohdaira, K., Akitomi, M., Chiba, Y., Masuda, A. (2023). Potential-induced degradation of n-type front-emitter crystalline silicon photovoltaic modules – Comparison between indoor and outdoor test results. Solar Energy Materials and Solar Cells, 249, 112038. https://doi.org/10.1016/j.solmat.2022.112038
+
+Д FV4 Проф. в’ я мостович
+ПРОБИРНОЕ ИСКУССТВО
+МЕТОДЫ СУХОГО ПУТИ
+Третье дополненное издание
+Рекомендовано ГУУЗ НКТП в качестве учебника для ВТУЗое цветной металлургии
+' ОСУ ДАРСТВЕН НОЕ НАУЧНО-ТЕХНИЧЕСКОЕ ИЗДАТЕЛЬСТВО
+1 О ЧЕРНОЙ И ЦВЕТНОЙ МЕТАЛЛУРГ. ИИ
+Л ЭСКВА	ЛЕНИНГРАД	СВЕРДЛОВСК	ИЖ*
+АННОТАЦИЯ
+нига представляет обстоятельное изложи Ъухах способов определения золота и серебра в рудах, сплавах и заводских полуфабрикатах.
+Книга рассчитана на техников и инженеров, работающих как в специальных пробирных лабораториях. так и общезаводских лабораториях, а также как руководство для студентов высших тех я учебных заведений,
+В настоящем третьем издании сделан ряд дополнений по материалам, появившимся я пе* риод после второго издания—1931 &
+ПРЕДИСЛОВИЕ К ПЕРВОМУ ИЗДАНИЮ
+В 1915 г, студенческим техническим! кружком при Томском, ныне Сибирском, технологическом институте был издан составленный мною конспект лекций по пробирному искусству в литографированном гиде, служивший до настоящего времени пособием для практических занятий наших студентов в лаборатории металлургии цветных металлов.
+Со времени появления литографированного курса прошло 11 лет. За это время литература по пробирному искусству обогатилась большим числом как журнальных статей , так и несколькими руководствами, главным образом на английском языке.
+в Среди Последних заслуживает особенного внимания прекрасная книга профессора Бостонского технологического института Е. Bugbee, «А Textbook of Fire Assaying», вышедшая в Нь.о-Йорке в 1922 г.
+Полная переработка «Пробирного искусства», изданного в 1915 г., потребовала бы гораздо больше времени, чем имеется в моем распоряжении* Поэтому по моей просьбе преподаватель металлургии и пробирного искусства нашего института В. Г, Агеенков взял на себя труд по просмотру курса и ввел в настоящее издание наиболее необходимые и важные дополнения и изменения.
+За выполнение этого труда приношу В. Г. Агеенкову глубокую благодарность.
+Надеюсь, что книга окажется полезным руководством как для студентов высших технических школ, изучающих пробирное искусство; так и для лиц, работающих в производстве.
+В. Atocinwav.
+Томск. 1027 г.
+Сибирский технологический институт
+Предмет пробирного искусства и его цели
+Предметом пробирного искусства является описание наиболее простых скорых и дешевых способов количественного анализа руд и продуктов горнозаводских производств* Преследуя тс же цели, что и обыкновенный химический анализ, пробирный анализ отличается тем, что определению подлежат один или несколько наиболее важных в техническом отношении колшонентов руд или продуктов, в то время как конечной целью чисто химического анализа является установление полного состава данного вещества*
+При пробирных методах преследуется достаточная для технических целей точность пробы, простота, быстрота и дешевизна определения*
+Встарину, при слабом развитии аналитической химии, в пробирном искусстве пользовались почти исключительно сухим путем отделения и определения металлов и чисто эмпирическим путем создали целый ряд весьма сложных проб, подражая в малом масштабе тем металлургическим операциям, какие применялись для получения этих металлов в заводском масштабе* Так, мы встречаем в литературе по пробирному искусству сухие пробы для Fe, Си, Zn, Sb и т* д. Но большинство этих сложных проб отличалось малой точностью, и по мере развития методов аналитической химии в пробирном искусстве вводится более точный анализ мокрым путем (электролитические, колориметрические пробы), который вытеснил большинство сухих проб*
+В настоящее время сухие пробы применяются лишь для определения Au, Ag, Pb, Ni, Sn и Pt*
+Что касается точности сухих проб, то для Au и Ag они являются единственными наиболее точными и позволяют устанавливать даже самое незначительное содержание этих металлов в рудах и заводских продуктах с такой степенью точности, какая недостижима при обыкновенных аналитических, чисто химических способах* Для Ni, Со и РЬ при чистых рудах получают весьма хорошие результаты, и на заводах, выплавляющих никель, сухая никелевая проба нашла широкое применение*!
+Свинцовая проба отличается большой быстротой выполнения, но дает несколько низкие результаты* Но так как потеря металла при пробе остается почти постоянной и легко устанавливается путем опыта, то сухая свинцовая проба сохранилась и по настоящее время в свин-цовОхМ производстве и не вытеснена мокрыми пробами.
+Пробирное искусство, будучи ветвью металлургии, развивалось параллельно с последней, и его начало так же трудно указать, как Начало самой металл ургии ь
+Первое систематическое изложение пробирного искусства мы находим в сочинении Георгия Агрикола «De re metallica^ первое латипскос издание которого появилось в 1556 г* В 1912 г. это сочинение переведено Гувером на английский язык* В 1929 г* эта книга переведена на немецкий язык* В седьмой книге этого классического труда мы встречаем подробное изложение пробирного искусства до XV! в* включительно, причем описываемые методы анализа уже в то время были весьма хорошо разработаны, В основном эти методы практикуются без изменений и по настоящее время, они лишь усовершенствованы в деталях. Уже в то время пробирное искусство имело большое значение в практике* Пробирными исследованиями решались весьма важные вопросы: о пригодности данной руды для обработки, о возможной степени и способе извлечения металла из руды, о дальнейшем направлении оборотных продуктов и т* д* Не меньшее значение в практике имеет пробирпос искусство и теперь*
+Непрерывное отбирание и исследование проб, или так называемое опробование руд и заводских продуктов, является необходимым делом в каждом правильно организованном горнозаводском предприятии.
+При опробовании преследуются, главным образом, две цели.
+1* Установление содержания металла в рудах и конечных заводских продуктах, что необходимо для определения ценности или продажной цены этих материалов.
+При этом в пробах определяют не только содержание ценных металлов, добываемых из руд или продуктов, но и такие компоненты их, которые так или иначе влияют на дальнейшую переработку исследуемых материалов, являясь вредными или полезными примесями, 2* Контроль и учет производства.
+Лишь путем опробования руд и заводских продуктов контролируется работа завода. Зная содержание металла в поступающих в плавку материалах и пробу промежуточных, конечных и побочных поэ-дуктов, как-то: металлического штейна, шлака, пыли, можно установить потеря металла, источники и причины этих потерь.
+Па обогатительных фабриках берут пробу продукта от каждого прибора, чтобы выяснить степень правильности его действия.
+Наконец, проба необходима для заведующего производством, так как по пробе продукта определяется дальнейший оборот его.
+Ввиду всего этого отбиранию и исследованию проб на хороших заводах уделяют весьма много внимания.
+Опробование состоит из двух операций: 1) взятия небольшого количества вещества, так называемой пробы, соответствующей по составу первоначальной массе вещества и удобной для анализа^ и 2) анализа этой пробы* Соответственно с этим пробирное искусство' распадается на две самостоятельные части: I— пробоотбира-ние и Н —пробирнмп а и а и и з. В частя I рассматриваются ппинципы и приемы, при помощи которых достигается получение из ^льшой массы руды правильной пробы. В части II излагаются мепщы пробирного ан а ni-гю на Au, Ag, Pt, Pb, Sn и Mi, т. e. дается описание так называемых сухих проб на эти металлы*
+I. ПРОБООТБИРАНИЕ
+Средняя строка и ее получение
+Опробованию подлежат самые разнообразные продукты и материалы как по физическим свойствам, так и по химическому составу: газы, жидкости, твердые тела, руды, шлаки, сплавы; эти вещества могут быть в самых разнообразных количествах и форме. Они также различны по строению: однородные и неоднородные. Взятие проб от материалов однородных осуществляется просто и легко, но в случае неоднородности п больших количеств задача сильно усложняется. В особенности трудным является отбирание проб от руд, так как в природе нет абсолютно однородных руд, В большинстве случаев они отличаются крайней неоднородностью и разнообразием по составу, Проба, поступающая в анализ, весит от 0,5 до 100 а и более и соответствует часто массе материала в десятки и сотни т весом. Ясно, что анализ лишь тогда может дать верное суждение о веществе, если лабораторная проба по своему составу возможно ближе подходит к среднему составу всей массы вещества, от которого проба отобрана. Такую пробу, т, е, малую порцию вещества, содержащую все компоненты в той пропорции, в которой они заключаются во псей первоначальной массе вещества, называют и р а в и л ь н о й средней пробой. В процессе просоотбщ.щшя и стремятся получить правильную среднюю пробу.
+Достижение последней том труднее, чем вещество, например руда. Крупнее по величине кусков, чем оно менее однородно как по величине кусков, так и по физическим свойствам и химическому составу, чем больше та масса вещества, от которой требуется отобрать среднюю пробу, и чем, наконец, выше ценноегь вещества.
+£?зя;.чщ? средней пробы па умепыиагиг, Пробоотбирание в оСишх чертах сводится к следующему, От подлежащей опрьбс екщпю щтесл вещества методически считанными ниже способами отбирают не кого-рую меньшую часть его, так называемую и е п в у ю ■- р с д н ю ю пробу. От этой первой пробы таким же путем снов к бср\ г иеко сирую часть — первую сокращенную пробу, которую
+сокращают в з<ее и т. д.т пока вес пробы не доекк ц / >■-—J2 дщ Эса последняя носит название средней генеральной а р о-б ы и отправляется в лабораторию для анализа. Здесь она подверга ется постепенному сокращению до порции весом от 0,3 до 2 кг, и эта порция называется средней лабораторной нробо й. Из нее уже берут навески для анализа, Процесс получения от большой массы Естества малого количества его — лабораторной пробы -называется взятием пробы на уменьшение.
+Процесс получения правильной средней пробы. Взятие правильной средней пробы — очень простая операция, если вещество совершенно однородно по составу. Например, если у нас имеется цинковая руда ввиде кусков сплошной цинковой обманки, содержащей серебро, равномерно распределенное ввиде изоморфного серебряного блеска, то каждый кусок такой руды будет представлять собой правильную среднюю пробу. Но, как сказано, в природе нет совершенно однородных руд. Обычно они в разных частях даже одного куска имеют различный состав. Например, в медистом колчедане можно встретить то куски чистого пирита, то куски чистого медного колчедана, то куски пирита с большим или меньшим количеством примазок медного колчедана. Кроме того состав руды обыкновенно усложняется благодаря присутствию сопровождающей пустой породы. В таком случае ни один кусок не будет представлять собой средней пробы, И для того чтобы получить последнюю, нужно всю массу руды искусственно привести в состояние однородности, т. е. изолировать и уединить все минералы руды и тщательно ее перемешать, тогда отобранная порция и будет средней пробой.
+Идеальным способом получения средней пробы от большой массы руды было бы измельчение всей руды до тонкого порошка, 40—48 отверстий в 1 линейном сму при котором наступает полная изоляция отдельных компонентов, тщательное смешение полученной мелочи и методическое сокращение ее по описанным ниже способам до получения средней пробы требуемого веса.
+Если измельчение будет достаточно тонкое и смешение полное, то в отобранной пробе в среднем получится такой же процент минеральных составляющих, как и во всей массе руды, т. е. проба будет правильная.
+Если этот способ вполне пригоден для малых количеств в несколько кг вещества, то для больших количеств, в десятки и сотни т, он совершенно непригоден по следующим причинам: во-первых, он требует слишком много труда и времени, следовательно, чересчур дорог; во-вторых, мелкое состояние весьма часто мешает дальнейшей переработке руды, в особенности в шахтной печи, для которой наивыгоднейшей считается величина кусков от 5 до 12,5 см^
+Ввиду этого общепринятым считается следующий компромиссный способ. Всю массу руды или вещества дробят до некоторой определенной максимальной величины кусков и отбирают определенное количество вещества в качестве первой фракции или пробы. Последнюю подвергают уже дальнейшему измельчению и сокращению и повторяют этот процесс до получения окончательной средней пробы требуемого веса.
+Что касается степени измельчения всей массы руды до взятия первой пробы и веса этой последней, то из экономических соображений необходимо стремиться к следующему: 1) измельчение или дробление всей массы руды должно производиться не далее того максимального предела, какой обеспечивает получение правильной первой пробы, 2) первая отобранная проба, подлежащая дальнейшему сокращению, должна быть возможно меньше. 1
+Максимальная величина кусков, до которой вся руда, подлежащая опробованию, должна быть измельчена до взятия первой пробыt
+зависит от ценности руды и степени ее однородности по составу. Чем однороднее руда по составу и чем опа беднее, тем крупнее может быть после первого дробления величина кусков, и тем меньше вес первой отобранной пробы. Наоборот, чем богаче и менее однородна руда, тем меньше должны быть куски до первого сокращения, так как изоляция отдельных компонентов руды при этом должна быть более полная» и тем больше должен быть вес первой пробы. Степень дробления до взятия первой пробы также должна быть тем больше (величина куска тем меньше), чем больше разница в содержании отдельных компонентов руды.
+Так как полная однородность почти никогда нс встречается в составе большинства руд, то, очевидно, нельзя обойтись без измельчения руды до некоторой величины кусков. Степень первого дробления определяется, как сказано, ценностью руды и экономическими соображениями.
+Более ценные и богатые руды (являющиеся и наименее однородными по составу) должны опробоваться и более тщательно, так как для них ошибка в опробовании даже в долях процента является слишком существенной. Например» для руды дешевого металла — свинца— ошибка в определении содержания его в 1 % вполне допустима (и ана-лиз сухой пробой не дает большей точности), в то время как для более ценного металла — меди — такая ошибка недопустима, так как содержание меди в обычных рудах не превышает 3—5%> Для золото содержащих руд ошибка даже в 0,001%является недопустимой, так как это составляет 10 г на 1 т.
+Каждое более или менее крупное предприятие имеет свои нормы относительно степени первого дробления руды, устанавливаемые посредством опыта и зависящие от способа обработки руды. Если руда подвергается обработке мокрым путем, то она обычно тонко измельчается; свинцовые и цинковые руды, подвергающиеся предварительному обжигу, также измельчаются до зерна в 2 для цинковой обманки, 3—5 мм для свинцового блеска. В этом случае нет большого ограничения в смысле степени измельчения до первого сокращения*
+Для медных руд величина кусков определяется весом отдельных партий руды, поступающей на завод, как это, например, показывает табл, 1.
+Таблица 1
+одвоЗ партия Си-руды ГЛ	Яелцчяал кусков it осле iiejiwru дройлвЕяя до первого сокр&щеавл с*
+30	1,25
+100	5,00
+200	6*25
+400	8,75
+500	10,00
+Но имеются принципы, на которых базируются эти нормы, и существует определенная зависимость между величиной кусков руды до первого сокращения и весом первой пробы. Эти принципы устраняют произвол и позволяют в каждом данном случае сделать правильный выбор степени измельчения при пробоотбирании.
+Принципы пробоотбирания
+Зависимость веса пробы от величины кусков. Правило В е з и-н а* Проба тогда будет иметь средний состав руды, когда в нее будут отобраны все компоненты в той же пропорции, в какой они находятся в руде* И отклонение в составе любой пробы, взятой от данной руды, от среднего состава последней объясняется избытком или недостатком в ней одной или более частиц какого-нибудь компонента против указанной пропорции* В случае если отдельные компоненты руды совместно присутствуют в одной частице (т* е, не изолированы), как это ча-сто встречается в действительности, то отклонение состава пробы от среднего обязано избытку или недостатку одной или нескольких частиц, наиболее богатых каким-нибудь компонентом* Влияние на состав пробы этих избыточных или недостающих частиц будет наибольшее, если они имеют наибольшие величину, удельный вес и наибольшее отклонение по содержанию от срсднего»еодсржания всей руды*
+Предположим, что частицы руды приблизительно одинаковы по величине* В таком случае очевидноt что для получения правильной пробы последняя должна заключать достаточно много частиц и именно столько, чтобы не только одна, но и несколько излишне введенных иди недостающих частиц наиболее богатого минерала практически нс изменяли бы среднего содержания пробы, т. е* это изменение не могло бы быть обнаружено анализом* Считают, что для этого при обычных рудах достаточно иметь в пробе от 5GO ООО до5000000 частиц* На основании этих заключений, установив, какое число частиц необходимо иметь в пробе, Везип предложил при взятии пробы па уменьшение руководствоваться следующим принципом; при каждом сокращении брать в пробу одинаковое раз установленное число частиц* Очевидно, что по мере сокращения — уменьшения количества руды, идущей в пробу, — необходимо руду измельчать перед каждые сокращением. Только тогда в пробу можно будет взять установленное число частиц. При условии полной изоляции компонентов или минералов руды одна излишне введенная или недостающая частица в пробе после каждого сокращения будет влиять па результат одинаковым образо*м, независимо от изменяющейся после измельчения величины частиц, так как большая проба заключает столько же крупных частиц, сколько меньшая соответственно более мелких* Если установлено достаточное число частиц, поступающих в пробу, т* е, такое, при которой! отклонение состава пробы от среднего содержания не наблюдается, то при указанном условии после каждого сокращения будет получаться правильная средняя проба.
+На практике было бы неудобно определять счетом число частиц, поступающих в пробу- Значительно удобнее отобрать определенное число частиц руды взвешиванием* Допустим, что все частицы данной порции руды'одинаковой величины имеют форму куба со стороной, равной d, и удельный вес, равный у, тогда N частиц будут иметь следующий вес:
+М/ = (вес одной частицы х число частиц) — fla}ZVf или
+v V/
+число частиц /V — — • d8 у
+Если мы измельчим эту порцию так, что в результате получим новые одинаковой величины частицы кубической формы со стороной, равной <Л, и отберем пробу такого веса lVlf чтобы число частиц, согласно принципу Везина, осталось прежнее, равное Л/,то вес этой пробы будет:
+ИЛ - ЙМ а отношение веса пробы к весу первоначальной порции руды будет:
+W ” (РуN d* '
+Отсюда выводится правило Везина: веса проб при последовательном сокращении должны от н о-с ить с я между с о б о й, как кубы диаметров наибольших кусков в них, и это раз установленное отношение должно сохраняться при в се х дальнейших сокращениях отобранной пробы.
+Число частиц, поступающих в пробу, фиксированное, как этого требует правило Везпна, по диаметру наибольших кусков, обеспечивает получение пракяльной средней пробы. Поэтому проба в дейстзп-тельности должна быть тем более правильна, что обыкновенно в рудах наряду с крупными кусками имеется много мелких и, следовательно, в пробу поступает больше частиц, чем установлено.
+Правило Ричардса. Однако теоретическое правило Ее-зина, предложенное еще в 1866 г., не удовлетворило практику, н она бессознательно уклонялась от него при методическтхм прсбоотбирании в сторону меньшего сокращения веса, т- е. при сокращении обыкновенно брали большие веса пробы, чем следовало бы по правилу Везина.
+Причину втого уклонения лроф. Ричарде формул провал следующим принципом: в обыкновенных случаях большие к у с к и руд ы п л и вообще всякого неизолированного вещества более приближаются к с р е д-н е м у с о де п -к а н и ю, чем м е н ын и е в том же с а-хм о м ч н с л е.
+Большие куски руды обыкновенно заключают л себе все минерал ы, ее составляющие, т. с, компоненты обычно не изолированы друг от Друга, и в разных кусках они находятся лишь в различных количествах, в особенности в неоднородных рудах.
+Для получения правильной сред [[ей пробы нужно, как сказано выше, иметь в пробе определенное большое число этих кусков (скажем 50 ОСЮ). Но при последующем сокраптенни, а следовательно, и измельчении куски уменьшаются, и компоненты руды асе более и более изолируются друг от друга, так что отдельный кусок руды уже не будет включать ь собе все минералы, а только часть их или даже один какой-либо К№ШШС[[Т.
+Такой кусок изолирован[юго минерала, излишне введенный в пробу, будет сказывать большее влияние на отклонение пробы от средней, чем неизолированный кусок*
+Отсюда следует, что заранее фиксированное число частиц измельченной руды, взятое в пробу, в меньше!! степени отв*?чае; истинному среднему содержанию всей руды, чем то же число, но и о лее крупных#
+Кусков той же руды. Поэтому по мере измельчения последней необходимо брать для пробы все возрастающее число частиц, а так как большее число частиц дает и больший вес, то по мере измельчения руды нужно брать все возрастающие веса проб против весов, требуемых правилом Везина.
+Иными словами, сокращение пробы должно производиться в меньшей степени, чем то соответствует отношению кубов диаметров наибольших кусков руды. Для удовлетворения этого условия проф, Ричардс предложил следующее правило: для каждой данной руды количество последней, отобранное в качестве пробы, должно быть пропорционально квадрату диаметра наибольшего куска, или веса проб должны относиться между собой при последовательном сокращении, как квадраты диаметров наибольших кусков.
+Правило это хорошо согласуется с практикой пробоотбирания и является общепринятым. На основании его и данных из практики проф, Ричардс составил нижеследующую таблицу (табл. 2).
+Таблица 2
+	1	■г	1	3	<	!	Г.		6
+Вес первой		Д в к к	I р Ы 1 ц б	о j ь in t г о	х у с х ।	
+			«нм			
+пробы хз	очень бедаые влн очень однородные руди (Те) 1	бедные и» : однородные руды (Pb, Zn, Со, Ag, Ан)	средине руды	I [Ан, Ае, (Си, РЬ,	| Zn — вей дворо ДНЫ&)!	!		богатые руды с кстялдлче-скнии включении н (Au, Ag)	очень богатые руды с нетнд-днческнлн вклфчепнямн (Аи. Ag)
+9,000	207,00	114,00	76.20	50,80	31,60	5,40
+4,500	147,00	80,80	58,90 88,10	35,90	22ДО	3,80
+2,250	107,00	56,80		25,40	15,80	2,70
+900	65.60	35,90	24.10	16.10	10,00	1,70
+450	46,40	25,40	17,00	11,40	7,10	1,20
+225	32,SO	18,00	12,00	8,00	5,00	0,85
+90	20,70	11,40	7,60	5,10	3*20	0,54
+45	14.70	8,00	5,40	8.60	2,20	0,3g
+22,5	10,70	5,70	3,80	2,50	1,60	0,27
+9,0	6,60	3,60	2,40	1,60	L00	0Д7
+4,5 2,25	4,60	2.50	1,70	1.Ю	0,71	0,12
+	3,30 2,10	1,80	1,20	0,80	0,50	—
+0,00		1Д0	0,76	0,51	0,32	—
+0,45 0,225	1,50	0,80	0,54	0,36	0,22	—
+	ЦОО	0,57	0,88	0,25	0,16	—
+0,090	0.66	со С-1 О*	0,24	оде	0,10	—
+0,045	0,46	0,25	0,17	0,11	—	—
+0,0225	0,33	0,18	0,12	——		—
+0,0090	0,21	0,11	—	—	—	—
+0,0045	0,15	—	—	—	—	—
+0,00225	0,10					
+Таблица облегчает определение веса пробы при последовательном сокращении и позволяет выбирать надежный вес первой пробы в различных случаях, имеющихся на практике.
+Таблица составлена следующим образом, В первой вертикальной графе приведен ряд круглых цифр весов, начиная от 5,000 до 0,00225 кг.
+Для каждого веса рассчитан по правилу квадратов диаметров соответствующий этому весу диаметр наибольшего зерна, причем в качестве исходных цифр для каждого из шести различных сортов руд (в шести вертикальных графах) взяты цифры из практики хорошо работающих заводов, установленные долголетним опытом* Первая вертикальная графа относится к железным рудам; вторая — к бедным свинцовым, цинковым и медным рудам, а также к убогим золотосодержащим колчеданистым рудам, в которых нет включений самородного золота, и колчедан (пирит) равномерно распределен по всей руде: третья и четвертая — к рудам со средним содержанием, в которых ценные минералы распределены менее равномерно; пятая и шестая— к богатым рудам со включением металлических золота и серебра, теллуридов и т. д.
+При пользовании таблицей, конечно, нет надобности измельчать пробу последовательно, до всех размеров, указанных в одной и той же вертикальной графе* Руда может быть измельчена до любой практи* чески выгодной величины кусков, и тогда можно отбирать для пробы лишь количество} соответствующее данному размеру и указанное в первой графе, и наоборот, если для пробы взято любое количество руды, указанное в первой графе, то руда должна быть сперва измельчена до соответствующего размера, указанного в одной из следующих граф*
+Например, при партии бедной руды в 10 гл можно измельчить всю руду до 25,4 мм и отобрать для пробы 450 кг. Если бы руда была измельчена до 2,5 мм, то для первой пробы достаточно было бы взять 4,5 кг; измельчив это количества до 0,80 (приблизительно 20 отверстий), можно бы сократить вес пробы до 0,45 кг.
+Золотосодержащая медная руда типа 4 поступает на завод в кусках 25,4 мм, партиями в 10 гл каждая. Тогда для первой пробы отбирают, согласно первой графе, 2,250кг, измельчают пробу до 11,4 лш и сокращают до 450 кг; измельчают эти 450 кг до 5,10 мм и сокращают пробу до 90 кг; если бы желали сократить далее до 4,5 кг, то пробу (90 кг) надо было бы измельчить до 1,10 мм.
+Как видно из таблицы, веса пробы при последовательном сокращении относятся, как квадраты диаметров наибольших кусков. Если необходимо уменьшить до минимума количество мелочи, то последовательные веса пробы при сокращении могут быть 2250; 450: 90; 22,5; 4,5; 0,45 кг при соответствующем измельчении, согласно графам 1—б, в зависимости от богатства и характера руды*
+Рассмотренные выше правила пробоотбирания неприменимы к рудам, содержащим включения Au, Ag, Ag$S, AgCl и т* д* в значительных размерах. Эти включения, будучи вязкими, расплющиваются при измельчении руд* Для подобных руд существуют особые правила - взятия пробы.
+Формула Брунтона* Вес пробы является функцией от величины кусков руды при данных факторах, влияющих на получение правильной средней пробы* Некоторые из этих факторов — степень однородности, богатство по содержанию и ценности руды — достаточно для практических целей учитываются таблицей Ричардса; другие, как-то: удельный вес наиболее богатого минерала, отношение содержания наиболее богатого минерала к среднему содержанию и пр.,
+учитываются лишь отчасти* Ввиду этого при особо тщательном опробовании, в особенности руд благородных металлов, пользование таблицей Ричардса может не обеспечить получение правильной пробы. В таких случаях можно пользоваться следующей формулой, предложенной Брунтоном, которая включает все факторы, влияющие на средний состав пробы:
+Р = 0,б5]/^Ч:.
+где IV — вес пробы в английских фунтах;
+к — содержание наиболее богатого минерала в унциях на 1 ш;
+с — среднее содержание в руде в унциях на 1 т;
+з — удельный вес наиболее богатого минерала;
+п — число наибольших частиц наиболее богатого минерала, заключающихся в пробе в избытке или недостатке;
+/ — фактор, выражающий отношение действительного веса наибольшей частицы наиболее богатого минерала, которая проходит через отверстия данного сита, к весу наибольшего куба этого минерала со стороной, равной отверстию того же сита;
+р —допустимый процент ошибки в пробе;
+D — диаметр отверстий сита в дюймах или другой нортйальныи диаметр, до которого измельчены частицы руды*
+Лабораторными опытами Брунтон определил значение п в пределах от 2,64 до 3,14* Принимая допустимую ошибку р = 1, среднее значение для п — 3, подставив эти значения в формулу и возведя обе стороны ее в куб, получим окончательно:
+10t8 ' fs (к — с) ' или
+и/ =	фРЦк — с}
+w	с
+По этой формуле можно определить надежный вес пробы в английских фунтах при данном наибольшем диаметре частиц руды и, наоборот, — величину кусков при данном весе пробы*
+При этом предполагается некоторое знание характера опробуемой руды*
+В качестве примера, взяв наиболее богатые минералы: пирит, свинцовый блеск, самородное серебро и самородное золото, и придавая различные значения О, к, си/, Брунтон составил для этих четырех сортов руд следующую таблицу (табл* 3)*
+Значения для /по опытам Брунтона составляли: для пирита и свинцового блеска 4 и для самородных серебра и золота — 6 при тонком измельчении. По мере увеличения размера зерен эти значения постепенно уменьшаются, становясь при диаметре в I" равными единице. Это изменение компенсирует большую однородность больших кусков, так как оно входит в числитель в формулу для веса пробы.
+Однако и таблица Бруитора не может охватить всех случаев практики. Например, при опробовании руды, в которой ценный минерал равномерно распределен в породе^ в пробу, пока куски руды крупные, может быть взят значительно меньший вес против указан
+ного в таблице, при мелких же размерах частиц его нужно брать полностью, согласно таблице* Другая руда с совершенно таким же отношением содержания наиболее богатого минерала к среднему содержанию, каки предыдущая, по заключающая наиболее богатый минерал ввиде отдельных скоплений или кристаллов, должна быть опробуема согласно таблице в течение всей операции. Во всяком случае для опробования руд благородных металлов таблица Бруптона рекомендуется как наилучшая* Некоторые случаи, не предусматриваемые таблицей, люгут быть разрешены помощью формулы Бруптона* Пользование таблицей Брунтона аналогично пользованию таблицей Ричардса*
+Таблица 3
+Удельный Jii.-u пан-1 6<j*q e<?	mk-| нерала	1	Размер з&риа		Надежный i^c пробы ъ «г пу>1 диаметре яанйодыпего указанном по нт^рон грифе					
+	оти. в ) ЛИН.	5 • 1 * з «	отношение содср^^дШ1'1' ндаСл.лсг: богатого няньрала к среднику содержании е руде					
+			W	5ft	?ЛЮ	соо	1^00	25ftfi
+Пирнт 5,0	|||	и- ел 5 ЕЗ | 1 1 ‘	м* о о о 1 ..	0,109 0.14 0,254 0,925 3,68 8,58 12,7 25,4	0,00013 0,00072 0,0265 1,33 13.6 34,6 220	0*0008 0,0043 0,145 7,3 74 187 1200	0,0013 0,0032 0,0176 0,585 29,7 301 763 4850	— 0,0045 0,0090 0,052 1,77 8’5,5 905 2290 14650	0,011 0,024 0,135 4,42 224 2265 5720 SG700	0,019 0*0405 0,22 7,4 373 3780 9570 6350О
+Свинцовый блеск 7,5	1 120 100 50 14 J	0Д09 0,14 0,254 0,925 3,68 8,58 12,7 25,4	0,00023 0,0012 0,04 2,015 20 51,7 330	0,00127 0,0065 0,218 11,1 111 280 1800	0Ю(Ж 0,005 0,026 0,88 44,5 451 1140 7300	0,0068 0,0145 0,079 2.65 133 1360 3430 22000	0,017 0,036 0,198 6,6 337 3400 8600 54900	ОЮ29 0,061 0,33 11,1 558 5660 14300 95500 0,061 0,128 0,513 18,5 980 9900 28800
+Руда с самородным Ag	120 100 50 2 -	0,109 0,14 0,254 0,925 3,68 8,58 12,7	0,00023 0,00046 0,0018 0,067 3,83 35,7 108	0,00127 0.0026 0,0] 0,363 19,2 194 567	0,005 0,01 0,04! 1,47 78 790 2300	0,0145 0,031 Од23 4,44 234 2370 6940 6800 о,яб 0.61 1,28 5,15 187 9830 99000	0,036 0,077 0,308 147 815 5950 Н85О__ 13600 0,72 1,23 2,58 10,3 374 19600 198000	
+Руда с само- ] родным Au [ i	150 120 100 50 14	— '	680	1360 0,072 0,123 0,258 1,03 37,4 1966 19800	2720			27200 1т44 2.46 5,15 20,6 748 39320 396000
+		0,091 0, [09 0,14 0,254 0,^25 3,68 8,58	0,036 0.061 ОД 28 0,515 18.7 983 9900		0,145 0,246 0,515 2,06 74*8 3932 39600			
+Ь - i 0,06 yiflJU I IVOUV бУОии I yyuou f
+S i i I	II
+Вес первой пробы н степень сокращения
+Пользуясь правилом (таблицей) Ричардса или формулой (таблицей) Бруцтона, можно при данном измельчении отобрать вполне надежный вес пробы или, наоборот, зная, какой вес должна иметь проба, можно определить размер кусков, до какого должна быть измельчена руда перед взятием пробы. Но можно производить любое дробление и брать любой весв качестве пробы. Какой же вес должна иметь первая пробаи какое последующее сокращение должно быть: на %, на г/4, на 1/8, на */ 2(]0 или какое-нибудь иное? Например, требуется отобрать первую пробу от партии медной руды весом 10 000 mt величина кусков которой не превышает 25,4 лмл По таблице Ричардса при диаметре кусков 25,4 мм в пробу можно взять всего 0,45 т. Очевидно такая проба была бы ненадежна, так как партия руды в 10 000 т несомненно будет иметь в разных частях различный состав, в особенности если руда неоднородна и невозможно отобрать 0,45 т ее так, чтобы в пробу попало достаточное число кусков из всех частей партии. С другой стороны, если требуется отобрать пробу от той же руды, но имеющейся в количестве 0,7 ш, нужно ли отобрать в пробу 0,5 т и затем далее сокращать эту пробу в весе или нужно сначала измельчить всю руду (0,7 т) до 18 мм и отобрать 225 кг или возможно сразу измельчить до 8 мм и взять всего 45 кг.
+При решении подобных вопросов следует иметь в виду еще один фактор, влияющий на вес первой пробы: чем больше количество материала, подлежащего опробованию, тем больше должен быть абсолютный вес первой пробы, независимо от величины зерна, но в соответствии с другими факторами, определяющими вес пробы: степенью однородности, богатства, ценностью руды и т. п. Обычно в таких случаях руководствуются данными практики.
+Для обыкксвэнных руд на пробоотбирательных фабриках принято отбирать 10- или 20-п роценгную пробу в зависимости от степени однородности, ценности и богатства руды, т. е. берут 10 или 20% от всей руды в качестве первой пробы, от этой пробы после измельчения отбирают 20%, после нового измельчения берут снова 20% и т. д. до получения пробы требуемого веса. Диаметр наибольших кусков при каждом следующем измельчении уменьшается обычно вдвое, и тем, следовательно, уменьшается объем пробы каждый раз до 0,125, или 12,5% от предыдущего объема. Таким образом в течение всего процесса сокращения сохраняется постоянным отношение между весами пробы, с одной стороны, и квадратами диаметров наибольших кусков, с другой стороны. В случае опробования сравнительно небольших количеств очень ценной и богатой руды в качестве первой пробы может быть взято до 50%, и сокращение должно составлять 50%.* Если опробованию подлежит очень большое количество однородного и малоценного материала, то процент для первой пробы может быть понижен до 5 и менее, сокращение же при этом не должно быть меньше 10—20-процентного. При опробовании очень однородных, бедных по содержанию или малоценных материалов, аккумулированных в значительных количествах, вес первой пробы может составлять всего доли процента, например, при опробовании отвалов эфелей; для каменного 'угля обычная норма первой пробы 0,25%.
+ie	* .
+■;	-55
+Выяснив в предыдущем условия, каким должна удовлетворять правильная средняя проба, перейдем теперь к самому процессу про-боотби рання.
+Практика пробоотбирания
+Пробоотбирание состоит из трех операций: изхмельчення, перемешивания и сокращения,
+После сокращения получается проба и отвал* Отобранная проба * подвергается дальнейшему сокращению повторением указанных трех операций до тех пор, пока получится проба желаемой величины,
+Различают ручное и машинное пробоотбирания.
+При ручном нробоотбиракпи перемешивание и сокращение производятся вручную, при хчашинном — автоматически действующими машинами и приборами.
+Измельчение
+Если руда сама по себе не достаточно мелка, то ода дробится или измельчается до кусков установленной величины, обеспечиваю-щей правильность пробы. Измельчение совершается вручную или помощью машин. По величине зерна различают:
+гр у рое дробление. диаметр зерна 65—2(1
+среднее ,,	„	ч	30—0,4
+тонкое измельчение „	„	0.4—0/)б	и
+Грубое и среднее дробление производятся вручную иди помощью дробилок. Для ручного дробления пользуются низкой наковальней и широким молотком; для машинного — дробилками типа Блэк, толчеей, валками. Машины типа шаровой или трубной мельницы непригодны для дробления ввиду большого расхода анергии и трудности чистки их. Быстрота действия и легкость чистки — основные требования, каким обязательно должны удовлетворять приборы для з гр обо- f отбирания. Тонкое измельчение производят на чугунной или стальной доске, .грн края которой приподняты, помощью тяжелого широкого молотка на длинной деревянной ручке или в мельницах типа кофейной или вальцовой,
+Сита
+Величину зерен руды при измельчении определяют путем просеивания ее через сита с измеренными отверстиями, так называемым ситовым анализом, Размеры зерен больше 6 мл: обозначают диаметро/л отверстия сита, размеры меньше бди/— чипа ом отверстий в линейном дюйме сита (по-английски мюш» — юбйл).
+Термин «число отверстий в линейном дюйме» не определяет еще действительного размера отверстия, а следовательно, и размера зерна. Размер зерна определяется только промежутком между прнзолоками сита, а ио числом отверстий в последнем. Свободный же промежуток между проволоками, из которых сплетено сито, или диаметр отверстия, зависит от диаметра проволоки. Так например. продажная проволочная сетка, имеющая 20 отверстий в линейном дюйме, изготовляется из прбволокл 16 различных диаметров от 0,0095 до 0,032х' (0,241™ 0,813 л Lu), С кто с 20 отверстиями, или короче, «енто 20», изготовлен нот из проволоки диаметром 0,0095'' (0,241	имеет отверстие в 0,0405"
+(1,029 лш), з то в р е	гEnd of the text. Start your response.

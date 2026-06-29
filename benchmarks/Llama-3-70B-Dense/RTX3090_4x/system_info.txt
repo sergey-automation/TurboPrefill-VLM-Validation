@@ -1,0 +1,534 @@
+===== DATE =====
+Sun Jun 28 18:46:43 UTC 2026
+
+===== OS =====
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+===== KERNEL =====
+Linux 050b9b3e3520 6.8.0-117-generic #117~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu May  7 22:17:46 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+===== CPU =====
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  128
+On-line CPU(s) list:                     0-127
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 7B13 64-Core Processor
+CPU family:                              25
+Model:                                   1
+Thread(s) per core:                      2
+Core(s) per socket:                      64
+Socket(s):                               1
+Stepping:                                1
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      43%
+CPU max MHz:                             3541.3679
+CPU min MHz:                             1500.0000
+BogoMIPS:                                4500.14
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin brs arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap ibpb_exit_to_user
+Virtualization:                          AMD-V
+L1d cache:                               2 MiB (64 instances)
+L1i cache:                               2 MiB (64 instances)
+L2 cache:                                32 MiB (64 instances)
+L3 cache:                                256 MiB (8 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-127
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Vulnerable: Clear CPU buffers attempted, no microcode
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi       6.8Gi       112Gi        33Mi       134Gi       244Gi
+Swap:          7.6Gi          0B       7.6Gi
+
+===== NVIDIA-SMI =====
+Sun Jun 28 18:46:43 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.20             Driver Version: 580.126.20     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  |   00000000:82:00.0 Off |                  N/A |
+| 30%   35C    P8             32W /  250W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 3090        On  |   00000000:83:00.0 Off |                  N/A |
+|  0%   42C    P8             35W /  250W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 3090        On  |   00000000:C1:00.0 Off |                  N/A |
+|  0%   35C    P8             29W /  250W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 3090        On  |   00000000:C2:00.0 Off |                  N/A |
+| 53%   35C    P8             33W /  250W |       1MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+===== GPU TOPOLOGY =====
+	[4mGPU0	GPU1	GPU2	GPU3	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	PHB	NODE	NODE	0-127	0		N/A
+GPU1	PHB	 X 	NODE	NODE	0-127	0		N/A
+GPU2	NODE	NODE	 X 	PHB	0-127	0		N/A
+GPU3	NODE	NODE	PHB	 X 	0-127	0		N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+===== CUDA =====
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Wed_Aug_20_01:58:59_PM_PDT_2025
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+
+===== NVIDIA DRIVER =====
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  580.126.20  Wed Feb 18 05:56:34 UTC 2026
+GCC version:  gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 
+
+===== GIT =====
+origin	https://github.com/sergey-automation/llama.cpp.git (fetch)
+origin	https://github.com/sergey-automation/llama.cpp.git (push)
+turboprefill-vlm-support
+87868f4 Update llama-context.cpp v0.3.2.3
+
+===== CMAKE CACHE =====
+CMAKE_BUILD_TYPE:STRING=Release
+//CUDA compiler
+CMAKE_CUDA_COMPILER:FILEPATH=/usr/local/cuda/bin/nvcc
+//Flags used by the CUDA compiler during all build types.
+CMAKE_CUDA_FLAGS:STRING=
+//Flags used by the CUDA compiler during DEBUG builds.
+CMAKE_CUDA_FLAGS_DEBUG:STRING=-g
+//Flags used by the CUDA compiler during MINSIZEREL builds.
+CMAKE_CUDA_FLAGS_MINSIZEREL:STRING=-O1 -DNDEBUG
+//Flags used by the CUDA compiler during RELEASE builds.
+CMAKE_CUDA_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+//Flags used by the CUDA compiler during RELWITHDEBINFO builds.
+CMAKE_CUDA_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+CUDAToolkit_BIN_DIR:PATH=/usr/local/cuda/bin
+CUDAToolkit_CUPTI_INCLUDE_DIR:PATH=/usr/local/cuda/targets/x86_64-linux/include
+CUDAToolkit_NVCC_EXECUTABLE:FILEPATH=/usr/local/cuda/bin/nvcc
+CUDAToolkit_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.a
+CUDA_CUDART:FILEPATH=/usr/local/cuda/lib64/libcudart.so
+CUDA_OpenCL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenCL.so
+CUDA_cuFile_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufile.so
+CUDA_cuFile_rdma_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufile_rdma.so
+CUDA_cuFile_rdma_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufile_rdma_static.a
+CUDA_cuFile_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufile_static.a
+CUDA_cublasLt_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcublasLt.so
+CUDA_cublasLt_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcublasLt_static.a
+CUDA_cublas_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcublas.so
+CUDA_cublas_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcublas_static.a
+CUDA_cuda_driver_LIBRARY:FILEPATH=/usr/local/cuda/targets/x86_64-linux/lib/stubs/libcuda.so
+CUDA_cudart_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcudart.so
+CUDA_cudart_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcudart_static.a
+CUDA_cudla_LIBRARY:FILEPATH=CUDA_cudla_LIBRARY-NOTFOUND
+CUDA_cufft_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufft.so
+CUDA_cufft_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufft_static.a
+CUDA_cufft_static_nocallback_LIBRARY:FILEPATH=CUDA_cufft_static_nocallback_LIBRARY-NOTFOUND
+CUDA_cufftw_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufftw.so
+CUDA_cufftw_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcufftw_static.a
+CUDA_culibos_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libculibos.a
+CUDA_cupti_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcupti.so
+CUDA_cupti_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcupti_static.a
+CUDA_curand_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcurand.so
+CUDA_curand_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcurand_static.a
+CUDA_cusolver_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusolver.so
+CUDA_cusolver_lapack_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusolver_lapack_static.a
+CUDA_cusolver_metis_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusolver_metis_static.a
+CUDA_cusolver_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusolver_static.a
+CUDA_cusparse_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusparse.so
+CUDA_cusparse_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libcusparse_static.a
+CUDA_nppc_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppc.so
+CUDA_nppc_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppc_static.a
+CUDA_nppial_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppial.so
+CUDA_nppial_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppial_static.a
+CUDA_nppicc_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppicc.so
+CUDA_nppicc_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppicc_static.a
+CUDA_nppicom_LIBRARY:FILEPATH=CUDA_nppicom_LIBRARY-NOTFOUND
+CUDA_nppicom_static_LIBRARY:FILEPATH=CUDA_nppicom_static_LIBRARY-NOTFOUND
+CUDA_nppidei_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppidei.so
+CUDA_nppidei_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppidei_static.a
+CUDA_nppif_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppif.so
+CUDA_nppif_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppif_static.a
+CUDA_nppig_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppig.so
+CUDA_nppig_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppig_static.a
+CUDA_nppim_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppim.so
+CUDA_nppim_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppim_static.a
+CUDA_nppist_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppist.so
+CUDA_nppist_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppist_static.a
+CUDA_nppisu_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppisu.so
+CUDA_nppisu_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppisu_static.a
+CUDA_nppitc_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppitc.so
+CUDA_nppitc_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnppitc_static.a
+CUDA_npps_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnpps.so
+CUDA_npps_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnpps_static.a
+CUDA_nvJitLink_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvJitLink.so
+CUDA_nvJitLink_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvJitLink_static.a
+CUDA_nvToolsExt_LIBRARY:FILEPATH=CUDA_nvToolsExt_LIBRARY-NOTFOUND
+CUDA_nvgraph_LIBRARY:FILEPATH=CUDA_nvgraph_LIBRARY-NOTFOUND
+CUDA_nvgraph_static_LIBRARY:FILEPATH=CUDA_nvgraph_static_LIBRARY-NOTFOUND
+CUDA_nvjpeg_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvjpeg.so
+CUDA_nvjpeg_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvjpeg_static.a
+CUDA_nvml_LIBRARY:FILEPATH=/usr/local/cuda/targets/x86_64-linux/lib/stubs/libnvidia-ml.so
+CUDA_nvperf_host_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvperf_host.so
+CUDA_nvperf_host_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvperf_host_static.a
+CUDA_nvperf_target_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvperf_target.so
+CUDA_nvptxcompiler_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvptxcompiler_static.a
+CUDA_nvrtc_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvrtc.so
+CUDA_nvrtc_builtins_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvrtc-builtins.so
+CUDA_nvrtc_builtins_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvrtc-builtins_static.a
+CUDA_nvrtc_static_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libnvrtc_static.a
+CUDA_pcsamplingutil_LIBRARY:FILEPATH=/usr/local/cuda-13.0/targets/x86_64-linux/lib/libpcsamplingutil.so
+GGML_ACCELERATE:BOOL=ON
+GGML_ALL_WARNINGS_3RD_PARTY:BOOL=OFF
+GGML_AMX_BF16:BOOL=OFF
+GGML_AMX_INT8:BOOL=OFF
+GGML_AMX_TILE:BOOL=OFF
+GGML_AVX:BOOL=OFF
+GGML_AVX2:BOOL=OFF
+GGML_AVX512:BOOL=OFF
+GGML_AVX512_BF16:BOOL=OFF
+GGML_AVX512_VBMI:BOOL=OFF
+GGML_AVX512_VNNI:BOOL=OFF
+GGML_AVX_VNNI:BOOL=OFF
+//ggml: directory to load dynamic backends from (requires GGML_BACKEND_DL
+GGML_BACKEND_DIR:PATH=
+GGML_BACKEND_DL:BOOL=OFF
+GGML_BIN_INSTALL_DIR:PATH=bin
+GGML_BLAS:BOOL=OFF
+GGML_BLAS_VENDOR:STRING=Generic
+GGML_BMI2:BOOL=OFF
+GGML_BUILD_EXAMPLES:BOOL=OFF
+GGML_BUILD_TESTS:BOOL=OFF
+GGML_CCACHE:BOOL=ON
+GGML_CCACHE_FOUND:FILEPATH=GGML_CCACHE_FOUND-NOTFOUND
+GGML_CPU:BOOL=ON
+//ggml: build all variants of the CPU backend (requires GGML_BACKEND_DL)
+GGML_CPU_ALL_VARIANTS:BOOL=OFF
+GGML_CPU_ARM_ARCH:STRING=
+GGML_CPU_HBM:BOOL=OFF
+GGML_CPU_KLEIDIAI:BOOL=OFF
+GGML_CPU_POWERPC_CPUTYPE:STRING=
+GGML_CPU_REPACK:BOOL=ON
+//ggml: use CUDA
+GGML_CUDA:BOOL=ON
+GGML_CUDA_COMPRESSION_MODE:STRING=size
+//ggml: compile ggml FlashAttention CUDA kernels
+GGML_CUDA_FA:BOOL=ON
+GGML_CUDA_FA_ALL_QUANTS:BOOL=OFF
+GGML_CUDA_FORCE_CUBLAS:BOOL=OFF
+GGML_CUDA_FORCE_MMQ:BOOL=OFF
+//ggml: use CUDA graphs (llama.cpp only)
+GGML_CUDA_GRAPHS:BOOL=ON
+GGML_CUDA_NCCL:BOOL=ON
+GGML_CUDA_NO_PEER_COPY:BOOL=OFF
+//ggml: do not try to use CUDA VMM
+GGML_CUDA_NO_VMM:BOOL=OFF
+GGML_CUDA_PEER_MAX_BATCH_SIZE:STRING=128
+GGML_F16C:BOOL=OFF
+GGML_FMA:BOOL=OFF
+GGML_GPROF:BOOL=OFF
+GGML_HEXAGON:BOOL=OFF
+GGML_HEXAGON_FP32_QUANTIZE_GROUP_SIZE:STRING=128
+GGML_HIP:BOOL=OFF
+GGML_HIP_EXPORT_METRICS:BOOL=OFF
+GGML_HIP_GRAPHS:BOOL=ON
+GGML_HIP_MMQ_MFMA:BOOL=ON
+GGML_HIP_NO_VMM:BOOL=ON
+GGML_HIP_RCCL:BOOL=OFF
+GGML_HIP_ROCWMMA_FATTN:BOOL=OFF
+GGML_INCLUDE_INSTALL_DIR:PATH=include
+GGML_LASX:BOOL=ON
+GGML_LIB_INSTALL_DIR:PATH=lib
+GGML_LLAMAFILE:BOOL=ON
+GGML_LSX:BOOL=ON
+GGML_LTO:BOOL=OFF
+GGML_METAL:BOOL=OFF
+GGML_METAL_EMBED_LIBRARY:BOOL=OFF
+GGML_METAL_MACOSX_VERSION_MIN:STRING=
+GGML_METAL_NDEBUG:BOOL=OFF
+GGML_METAL_SHADER_DEBUG:BOOL=OFF
+GGML_METAL_STD:STRING=
+GGML_MUSA:BOOL=OFF
+GGML_MUSA_GRAPHS:BOOL=OFF
+GGML_MUSA_MUDNN_COPY:BOOL=OFF
+GGML_NATIVE:BOOL=ON
+GGML_OPENCL:BOOL=OFF
+GGML_OPENCL_EMBED_KERNELS:BOOL=ON
+GGML_OPENCL_PROFILING:BOOL=OFF
+GGML_OPENCL_TARGET_VERSION:STRING=300
+GGML_OPENCL_USE_ADRENO_KERNELS:BOOL=ON
+GGML_OPENMP:BOOL=ON
+GGML_OPENVINO:BOOL=OFF
+GGML_RPC:BOOL=OFF
+GGML_RVV:BOOL=ON
+GGML_RV_ZFH:BOOL=ON
+GGML_RV_ZICBOP:BOOL=ON
+GGML_RV_ZIHINTPAUSE:BOOL=ON
+GGML_RV_ZVFBFWMA:BOOL=OFF
+GGML_RV_ZVFH:BOOL=ON
+GGML_SANITIZE_ADDRESS:BOOL=OFF
+GGML_SANITIZE_THREAD:BOOL=OFF
+GGML_SANITIZE_UNDEFINED:BOOL=OFF
+GGML_SCCACHE_FOUND:FILEPATH=GGML_SCCACHE_FOUND-NOTFOUND
+GGML_SCHED_MAX_COPIES:STRING=4
+GGML_SCHED_NO_REALLOC:BOOL=OFF
+GGML_SSE42:BOOL=OFF
+GGML_STATIC:BOOL=OFF
+GGML_SYCL:BOOL=OFF
+GGML_SYCL_DEVICE_ARCH:STRING=
+GGML_SYCL_DNN:BOOL=ON
+GGML_SYCL_F16:BOOL=OFF
+GGML_SYCL_GRAPH:BOOL=ON
+GGML_SYCL_HOST_MEM_FALLBACK:BOOL=ON
+GGML_SYCL_TARGET:STRING=INTEL
+GGML_VIRTGPU:BOOL=OFF
+GGML_VIRTGPU_BACKEND:BOOL=OFF
+GGML_VULKAN:BOOL=OFF
+GGML_VULKAN_CHECK_RESULTS:BOOL=OFF
+GGML_VULKAN_DEBUG:BOOL=OFF
+GGML_VULKAN_MEMORY_DEBUG:BOOL=OFF
+GGML_VULKAN_RUN_TESTS:BOOL=OFF
+GGML_VULKAN_SHADERS_GEN_TOOLCHAIN:FILEPATH=
+GGML_VULKAN_SHADER_DEBUG_INFO:BOOL=OFF
+GGML_VULKAN_VALIDATE:BOOL=OFF
+GGML_VXE:BOOL=ON
+GGML_WEBGPU:BOOL=OFF
+GGML_WEBGPU_CPU_PROFILE:BOOL=OFF
+GGML_WEBGPU_DEBUG:BOOL=OFF
+GGML_WEBGPU_GPU_PROFILE:BOOL=OFF
+GGML_WEBGPU_JSPI:BOOL=ON
+GGML_XTHEADVECTOR:BOOL=OFF
+GGML_ZDNN:BOOL=OFF
+GGML_ZENDNN:BOOL=OFF
+LLAMA_USE_SYSTEM_GGML:BOOL=OFF
+NCCL_INCLUDE_DIR:PATH=/usr/include
+NCCL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnccl.so
+//ADVANCED property for variable: CMAKE_CUDA_COMPILER
+CMAKE_CUDA_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CUDA_FLAGS
+CMAKE_CUDA_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CUDA_FLAGS_DEBUG
+CMAKE_CUDA_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CUDA_FLAGS_MINSIZEREL
+CMAKE_CUDA_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CUDA_FLAGS_RELEASE
+CMAKE_CUDA_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CUDA_FLAGS_RELWITHDEBINFO
+CMAKE_CUDA_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDAToolkit_BIN_DIR
+CUDAToolkit_BIN_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDAToolkit_CUPTI_INCLUDE_DIR
+CUDAToolkit_CUPTI_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDAToolkit_NVCC_EXECUTABLE
+CUDAToolkit_NVCC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDAToolkit_rt_LIBRARY
+CUDAToolkit_rt_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_CUDART
+CUDA_CUDART-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_OpenCL_LIBRARY
+CUDA_OpenCL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cuFile_LIBRARY
+CUDA_cuFile_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cuFile_rdma_LIBRARY
+CUDA_cuFile_rdma_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cuFile_rdma_static_LIBRARY
+CUDA_cuFile_rdma_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cuFile_static_LIBRARY
+CUDA_cuFile_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cublasLt_LIBRARY
+CUDA_cublasLt_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cublasLt_static_LIBRARY
+CUDA_cublasLt_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cublas_LIBRARY
+CUDA_cublas_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cublas_static_LIBRARY
+CUDA_cublas_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cuda_driver_LIBRARY
+CUDA_cuda_driver_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cudart_LIBRARY
+CUDA_cudart_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cudart_static_LIBRARY
+CUDA_cudart_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cudla_LIBRARY
+CUDA_cudla_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cufft_LIBRARY
+CUDA_cufft_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cufft_static_LIBRARY
+CUDA_cufft_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cufft_static_nocallback_LIBRARY
+CUDA_cufft_static_nocallback_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cufftw_LIBRARY
+CUDA_cufftw_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cufftw_static_LIBRARY
+CUDA_cufftw_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_culibos_LIBRARY
+CUDA_culibos_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cupti_LIBRARY
+CUDA_cupti_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cupti_static_LIBRARY
+CUDA_cupti_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_curand_LIBRARY
+CUDA_curand_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_curand_static_LIBRARY
+CUDA_curand_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusolver_LIBRARY
+CUDA_cusolver_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusolver_lapack_static_LIBRARY
+CUDA_cusolver_lapack_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusolver_metis_static_LIBRARY
+CUDA_cusolver_metis_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusolver_static_LIBRARY
+CUDA_cusolver_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusparse_LIBRARY
+CUDA_cusparse_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusparse_static_LIBRARY
+CUDA_cusparse_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppc_LIBRARY
+CUDA_nppc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppc_static_LIBRARY
+CUDA_nppc_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppial_LIBRARY
+CUDA_nppial_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppial_static_LIBRARY
+CUDA_nppial_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicc_LIBRARY
+CUDA_nppicc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicc_static_LIBRARY
+CUDA_nppicc_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicom_LIBRARY
+CUDA_nppicom_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicom_static_LIBRARY
+CUDA_nppicom_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppidei_LIBRARY
+CUDA_nppidei_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppidei_static_LIBRARY
+CUDA_nppidei_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppif_LIBRARY
+CUDA_nppif_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppif_static_LIBRARY
+CUDA_nppif_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppig_LIBRARY
+CUDA_nppig_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppig_static_LIBRARY
+CUDA_nppig_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppim_LIBRARY
+CUDA_nppim_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppim_static_LIBRARY
+CUDA_nppim_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppist_LIBRARY
+CUDA_nppist_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppist_static_LIBRARY
+CUDA_nppist_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppisu_LIBRARY
+CUDA_nppisu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppisu_static_LIBRARY
+CUDA_nppisu_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppitc_LIBRARY
+CUDA_nppitc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppitc_static_LIBRARY
+CUDA_nppitc_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_npps_LIBRARY
+CUDA_npps_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_npps_static_LIBRARY
+CUDA_npps_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvJitLink_LIBRARY
+CUDA_nvJitLink_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvJitLink_static_LIBRARY
+CUDA_nvJitLink_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvToolsExt_LIBRARY
+CUDA_nvToolsExt_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvgraph_LIBRARY
+CUDA_nvgraph_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvgraph_static_LIBRARY
+CUDA_nvgraph_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvjpeg_LIBRARY
+CUDA_nvjpeg_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvjpeg_static_LIBRARY
+CUDA_nvjpeg_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvml_LIBRARY
+CUDA_nvml_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvperf_host_LIBRARY
+CUDA_nvperf_host_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvperf_host_static_LIBRARY
+CUDA_nvperf_host_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvperf_target_LIBRARY
+CUDA_nvperf_target_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvptxcompiler_static_LIBRARY
+CUDA_nvptxcompiler_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvrtc_LIBRARY
+CUDA_nvrtc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvrtc_builtins_LIBRARY
+CUDA_nvrtc_builtins_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvrtc_builtins_static_LIBRARY
+CUDA_nvrtc_builtins_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nvrtc_static_LIBRARY
+CUDA_nvrtc_static_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_pcsamplingutil_LIBRARY
+CUDA_pcsamplingutil_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding CUDAToolkit
+FIND_PACKAGE_MESSAGE_DETAILS_CUDAToolkit:INTERNAL=[/usr/local/cuda/targets/x86_64-linux/include][/usr/local/cuda/lib64/libcudart.so][/usr/local/cuda/bin][v13.0.88()]
+//Details about finding NCCL
+FIND_PACKAGE_MESSAGE_DETAILS_NCCL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libnccl.so][/usr/include][v()]
+GGML_AVAILABLE_BACKENDS:INTERNAL=ggml-cpu;ggml-cuda
+//STRINGS property for variable: GGML_CUDA_COMPRESSION_MODE
+GGML_CUDA_COMPRESSION_MODE-STRINGS:INTERNAL=none;speed;balance;size
+GGML_OPENMP_ENABLED:INTERNAL=ON
+//ADVANCED property for variable: NCCL_INCLUDE_DIR
+NCCL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: NCCL_LIBRARY
+NCCL_LIBRARY-ADVANCED:INTERNAL=1
+//CUDAToolkit internal list of implicit link directories
+_cmake_CUDAToolkit_implicit_link_directories:INTERNAL=/usr/local/cuda/targets/x86_64-linux/lib/stubs;/usr/local/cuda/targets/x86_64-linux/lib
+//CUDAToolkit internal list of include directories
+_cmake_CUDAToolkit_include_directories:INTERNAL=/usr/local/cuda/targets/x86_64-linux/include
+
+===== LLAMA SERVER =====
