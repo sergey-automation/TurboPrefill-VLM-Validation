@@ -1,0 +1,433 @@
+================ BASIC =================
+Fri Jul 10 15:56:48 UTC 2026
+abea1b87caa7
+root
+/workspace/llama.cpp-turboprefill-mtp
+Linux abea1b87caa7 5.15.0-170-generic #180-Ubuntu SMP Fri Jan 9 16:10:31 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+================ REPO =================
+origin	https://github.com/sergey-automation/llama.cpp.git (fetch)
+origin	https://github.com/sergey-automation/llama.cpp.git (push)
+turboprefill-mtp
+92ce1009f44744dee53b60f1a3c5137f2e6736d8
+92ce1009f Update ggml-backend.h
+version: 9876 (92ce1009f)
+built with GNU 13.3.0 for Linux x86_64
+-rwxrwxr-x 1 root root 18K Jul 10 10:21 build/bin/llama-server
+
+================ CPU/RAM/DISK =================
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  12
+On-line CPU(s) list:                     0-11
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+CPU family:                              6
+Model:                                   63
+Thread(s) per core:                      2
+Core(s) per socket:                      6
+Socket(s):                               1
+Stepping:                                2
+CPU(s) scaling MHz:                      54%
+CPU max MHz:                             3200.0000
+CPU min MHz:                             1200.0000
+BogoMIPS:                                4799.91
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts md_clear flush_l1d ibpb_exit_to_user
+Virtualization:                          VT-x
+L1d cache:                               192 KiB (6 instances)
+L1i cache:                               192 KiB (6 instances)
+L2 cache:                                1.5 MiB (6 instances)
+L3 cache:                                15 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-11
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
+Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:                  Mitigation; PTI
+Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+               total        used        free      shared  buff/cache   available
+Mem:            62Gi       3.8Gi        30Gi       507Mi        29Gi        58Gi
+Swap:          8.0Gi        38Mi       8.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         258G  184G   75G  72% /
+overlay         258G  184G   75G  72% /
+
+================ NVIDIA-SMI FULL =================
+Fri Jul 10 15:56:48 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 5070 Ti     On  |   00000000:01:00.0 Off |                  N/A |
+| 36%   42C    P1             67W /  250W |    9308MiB /  16303MiB |     41%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 5070 Ti     On  |   00000000:02:00.0 Off |                  N/A |
+| 32%   43C    P1             45W /  250W |    8296MiB /  16303MiB |     20%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 5070 Ti     On  |   00000000:03:00.0 Off |                  N/A |
+| 30%   44C    P1             49W /  250W |    7892MiB /  16303MiB |     19%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 5070 Ti     On  |   00000000:04:00.0 Off |                  N/A |
+| 33%   47C    P1             53W /  250W |    9432MiB /  16303MiB |     20%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A           92186      C   ...ll-mtp/build/bin/llama-server       9298MiB |
+|    1   N/A  N/A           92186      C   ...ll-mtp/build/bin/llama-server       8286MiB |
+|    2   N/A  N/A           92186      C   ...ll-mtp/build/bin/llama-server       7882MiB |
+|    3   N/A  N/A           92186      C   ...ll-mtp/build/bin/llama-server       9422MiB |
++-----------------------------------------------------------------------------------------+
+
+================ GPU QUERY =================
+Field "cuda_version" is not a valid field to query.
+
+
+================ NVIDIA TOPO =================
+	[4mGPU0	GPU1	GPU2	GPU3	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	PHB	PHB	PHB	0-11	0		N/A
+GPU1	PHB	 X 	PHB	PHB	0-11	0		N/A
+GPU2	PHB	PHB	 X 	PHB	0-11	0		N/A
+GPU3	PHB	PHB	PHB	 X 	0-11	0		N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+================ PCI DEVICES =================
+
+================ PCI LINK DETAILS =================
+---- /sys/bus/pci/devices/0000:01:00.0 ----
+0000:01:00.0
+0x10de
+0x2c05
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:01:00.1 ----
+0000:01:00.1
+0x10de
+0x22e9
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:02:00.0 ----
+0000:02:00.0
+0x10de
+0x2c05
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:02:00.1 ----
+0000:02:00.1
+0x10de
+0x22e9
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:03:00.0 ----
+0000:03:00.0
+0x10de
+0x2c05
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:03:00.1 ----
+0000:03:00.1
+0x10de
+0x22e9
+8.0 GT/s PCIe
+8
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:04:00.0 ----
+0000:04:00.0
+0x10de
+0x2c05
+8.0 GT/s PCIe
+16
+32.0 GT/s PCIe
+16
+---- /sys/bus/pci/devices/0000:04:00.1 ----
+0000:04:00.1
+0x10de
+0x22e9
+8.0 GT/s PCIe
+16
+32.0 GT/s PCIe
+16
+
+================ CUDA / BUILD TOOLS =================
+/usr/local/cuda/bin/nvcc
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Wed_Aug_20_01:58:59_PM_PDT_2025
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+/usr/bin/cmake
+cmake version 3.28.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+/usr/bin/gcc
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+/usr/bin/g++
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+Python 3.12.13
+pip 26.1.2 from /venv/main/lib/python3.12/site-packages/pip (python 3.12)
+
+================ PYTHON PACKAGES =================
+Package                 Version
+----------------------- -----------
+annotated-doc           0.0.4
+anyio                   4.13.0
+asttokens               3.0.1
+certifi                 2026.5.20
+charset-normalizer      3.4.9
+click                   8.4.1
+comm                    0.2.3
+debugpy                 1.8.21
+decorator               5.3.1
+executing               2.2.1
+filelock                3.29.1
+fsspec                  2026.4.0
+h11                     0.16.0
+hf-xet                  1.5.0
+httpcore                1.0.9
+httpx                   0.28.1
+huggingface_hub         1.18.0
+idna                    3.18
+ipykernel               7.2.0
+ipython                 9.14.1
+ipython_pygments_lexers 1.1.1
+ipywidgets              8.1.8
+jedi                    0.20.0
+jupyter_client          8.9.0
+jupyter_core            5.9.1
+jupyterlab_widgets      3.0.16
+markdown-it-py          4.2.0
+matplotlib-inline       0.2.2
+mdurl                   0.1.2
+nest-asyncio            1.6.0
+packaging               26.2
+parso                   0.8.7
+pexpect                 4.9.0
+pip                     26.1.2
+platformdirs            4.10.0
+prompt_toolkit          3.0.52
+psutil                  7.2.2
+ptyprocess              0.7.0
+pure_eval               0.2.3
+Pygments                2.20.0
+python-dateutil         2.9.0.post0
+PyYAML                  6.0.3
+pyzmq                   27.1.0
+requests                2.34.2
+rich                    15.0.0
+setuptools              82.0.1
+shellingham             1.5.4
+six                     1.17.0
+stack-data              0.6.3
+tornado                 6.5.6
+tqdm                    4.68.0
+traitlets               5.15.1
+typer                   0.25.1
+typing_extensions       4.15.0
+urllib3                 2.7.0
+wcwidth                 0.7.0
+wheel                   0.47.0
+widgetsnbextension      4.0.15
+
+================ MODELS =================
+-rw-rw-r-- 1 root root 28G Jul 10 10:00 /workspace/models/Qwen3.6-27B-MTP/Qwen3.6-27B-Q8_0.gguf
+-rw-rw-r-- 1 root root 885M Jul 10 13:03 /workspace/models/Qwen3.6-27B-MTP/mmproj-F16.gguf
+-rw-rw-r-- 1 root root 11G Jul 10 09:57 /workspace/models/gpt-oss-20b/gpt-oss-20b-Q4_K_M.gguf
+-rw-rw-r-- 1 root root 47G Jul 10 10:21 /workspace/models/gpt-oss-120b/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf
+-rw-rw-r-- 1 root root 13G Jul 10 10:27 /workspace/models/gpt-oss-120b/gpt-oss-120b-Q4_K_M-00002-of-00002.gguf
+-rw-rw-r-- 1 root root 45G Jul 10 10:16 /workspace/models/Qwen2.5-VL-72B/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf
+-rw-rw-r-- 1 root root 717M Jul 10 09:44 /workspace/models/Qwen2.5-VL-72B/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf
+40G	/workspace/models/Llama-3-70B
+45G	/workspace/models/Qwen2.5-VL-72B
+28G	/workspace/models/Qwen3.6-27B-MTP
+59G	/workspace/models/gpt-oss-120b
+11G	/workspace/models/gpt-oss-20b
+
+================ PROJECT FILES =================
+-rwxrwxr-x 1 root root 22K Jul 10 09:43 ./build-xcframework.sh
+-rwxrwxr-x 1 root root 13K Jul 10 09:43 ./convert_hf_to_gguf.py
+-rwxrwxr-x 1 root root 28K Jul 10 09:43 ./convert_hf_to_gguf_update.py
+-rwxrwxr-x 1 root root 19K Jul 10 09:43 ./convert_llama_ggml_to_gguf.py
+-rwxrwxr-x 1 root root 23K Jul 10 09:43 ./convert_lora_to_gguf.py
+-rwxrwxr-x 1 root root 14K Jul 10 10:28 ./bench_gpt120b.py
+-rwxrwxr-x 1 root root 1.3K Jul 10 15:55 ./config_MTP.sh
+-rwxrwxr-x 1 root root 4.5K Jul 10 10:21 ./run_vlm_server.sh
+-rwxrwxr-x 1 root root 1.2K Jul 10 12:43 ./server_config_gpt120b.sh
+-rwxrwxr-x 1 root root 14K Jul 10 09:55 ./bench_gpt20b.py
+-rwxrwxr-x 1 root root 817 Jul 10 12:09 ./server_config_20b.sh
+-rwxrwxr-x 1 root root 17K Jul  9 11:09 ./bench_MTP.py
+-rwxrwxr-x 1 root root 1.3K Jul  8 21:14 ./run_server_gpt120b.sh
+-rwxrwxr-x 1 root root 18K Jul  8 21:00 ./run_vlm_resolution.py
+628K	./contexts_llama3_70b
+768K	./contexts_gpt_tokenizer
+
+================ CONFIGS =================
+
+---- server_config_20b.sh ----
+2:# Edit MODEL, CONTEXTS_DIR, OUTPUT_DIR and TENSOR_SPLIT for your machine.
+6:MODEL="/workspace/models/gpt-oss-20b/gpt-oss-20b-Q4_K_M.gguf"
+13:TENSOR_SPLIT="1/1/1/1"
+14:# TENSOR_SPLIT="2/4/4/4/4/4/4/4/3/3"
+20:NGL=99
+21:CTX_SIZE=131072
+23:BATCH=8192
+25:UBATCH=256
+27:PARALLEL=1
+41:LOG_LEVEL=4
+
+---- server_config_gpt120b.sh ----
+2:# Edit MODEL, CONTEXTS_DIR, OUTPUT_DIR and TENSOR_SPLIT for your machine.
+6:#MODEL="/workspace/models/Q4_K_M/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf"
+7:#MODEL="/mnt/models/AI/LLM/GPT-OSS-120B/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf"
+9:MODEL="/workspace/models/gpt-oss-120b/gpt-oss-120b-Q4_K_M-00001-of-00002.gguf"
+16:# TENSOR_SPLIT="2/4/4/4/4/4/4/4/3/3"
+17:TENSOR_SPLIT="10/10/10/10"
+22:NGL=99
+23:CTX_SIZE=5000
+26:BATCH=1024
+27:UBATCH=128
+30:PARALLEL=1
+39:# 0 = baseline, 1 = TurboPrefill. Can be overridden by environment: TURBOPREFILL=1 ./run_server_gpt120b.sh
+40:TURBOPREFILL="${TURBOPREFILL:-0}"
+46:LOG_LEVEL=4
+
+---- config_MTP.sh ----
+6:# LLAMA_SERVER_BIN="/home/serg/workspace/versions/TurboPrefill-MTP/build/bin/llama-server"
+7:# LOCAL_LD_LIBRARY_PATH="/home/serg/workspace/versions/TurboPrefill-MTP/build/bin"
+9:LLAMA_SERVER_BIN="$SCRIPT_DIR/build/bin/llama-server"
+10:LOCAL_LD_LIBRARY_PATH="$SCRIPT_DIR/build/bin"
+15:# MODEL="/mnt/models/AI/LLM/Qwen3.6-27B/Qwen3.6-27B-MTP-Q8_0.gguf"
+16:# MMPROJ="/mnt/models/AI/LLM/Qwen3.6-27B/mmproj-F16.gguf"
+17:MODEL="/workspace/models/Qwen3.6-27B-MTP/Qwen3.6-27B-Q8_0.gguf"
+18:MMPROJ="/workspace/models/Qwen3.6-27B-MTP/mmproj-F16.gguf"
+24:# TENSOR_SPLIT="5/8/9/9/9/9/9/9/8/6"
+25:TENSOR_SPLIT="1/1/1/1"
+26:CUDA_VISIBLE_DEVICES="3,2,1,0"
+31:NGL=999
+33:CTX_SIZE=67000
+37:BATCH=8192
+40:UBATCH=256
+41:PARALLEL=1
+43:SPEC_TYPE=draft-mtp
+44:SPEC_DRAFT_N_MAX=4
+52:TURBOPREFILL="${TURBOPREFILL:-0}"
+53:LOG_LEVEL=4
+
+---- run_vlm_server.sh ----
+4:CTX_SIZE="${CTX_SIZE:-16384}"
+5:BATCH_SIZE="${BATCH_SIZE:-16384}"
+6:UBATCH_SIZE="${UBATCH_SIZE:-64}"
+8:N_PARALLEL="${N_PARALLEL:-1}"
+15:N_GPU_LAYERS="${N_GPU_LAYERS:-99}"
+17:#TENSOR_SPLIT="${TENSOR_SPLIT:-"1/1/1/1"}"
+20:TENSOR_SPLIT="${TENSOR_SPLIT:-"1/1/1/1"}"
+23:TURBOPREFILL="${TURBOPREFILL:-1}"
+25:FLASH_ATTN="${FLASH_ATTN:-on}"
+26:CACHE_TYPE_K="${CACHE_TYPE_K:-f16}"
+27:CACHE_TYPE_V="${CACHE_TYPE_V:-f16}"
+29:IMAGE_MIN_TOKENS="${IMAGE_MIN_TOKENS:-256}"
+30:IMAGE_MAX_TOKENS="${IMAGE_MAX_TOKENS:-6776}"
+35:CACHE_RAM="${CACHE_RAM:-0}"
+36:PROMPT_CACHE="${PROMPT_CACHE:-0}"
+46:#MODEL_FILE="${MODEL_FILE:-$SCRIPT_DIR/../../models/Qwen2.5-VL-72B/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf}"
+47:#MMPROJ_FILE="${MMPROJ_FILE:-$SCRIPT_DIR/../../models/Qwen2.5-VL-72B/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf}"
+48:MODEL_FILE="${MODEL_FILE:-/workspace/models/Qwen2.5-VL-72B/Qwen2.5-VL-72B-Instruct-Q4_K_M.gguf}"
+49:MMPROJ_FILE="${MMPROJ_FILE:-/workspace/models/Qwen2.5-VL-72B/mmproj-Qwen2.5-VL-72B-Instruct-Q8_0.gguf}"
+58:[ -f "$MODEL_FILE" ] || { echo "ERROR: model not found: $MODEL_FILE"; exit 1; }
+59:[ -f "$MMPROJ_FILE" ] || { echo "ERROR: mmproj not found: $MMPROJ_FILE"; exit 1; }
+63:  -m "$MODEL_FILE"
+64:  --mmproj "$MMPROJ_FILE"
+65:  -c "$CTX_SIZE"
+66:  -b "$BATCH_SIZE"
+67:  -ub "$UBATCH_SIZE"
+69:  -np "$N_PARALLEL"
+70:  -ngl "$N_GPU_LAYERS"
+72:  -fa "$FLASH_ATTN"
+73:  -ctk "$CACHE_TYPE_K"
+74:  -ctv "$CACHE_TYPE_V"
+75:  --image-min-tokens "$IMAGE_MIN_TOKENS"
+76:  --image-max-tokens "$IMAGE_MAX_TOKENS"
+78:  --cache-ram "$CACHE_RAM"
+84:[ -n "$TENSOR_SPLIT" ] && ARGS+=(-ts "$TENSOR_SPLIT")
+85:[ "$PROMPT_CACHE" = "0" ] && ARGS+=(--no-cache-prompt)
+96:echo "MODEL_FILE        : $MODEL_FILE"
+97:echo "MMPROJ_FILE       : $MMPROJ_FILE"
+100:echo "CTX_SIZE          : $CTX_SIZE"
+101:echo "BATCH_SIZE        : $BATCH_SIZE"
+102:echo "UBATCH_SIZE       : $UBATCH_SIZE"
+104:echo "N_PARALLEL        : $N_PARALLEL"
+105:echo "N_GPU_LAYERS      : $N_GPU_LAYERS"
+107:echo "TENSOR_SPLIT      : $TENSOR_SPLIT"
+108:echo "FLASH_ATTN        : $FLASH_ATTN"
+109:echo "CACHE_TYPE_K      : $CACHE_TYPE_K"
+110:echo "CACHE_TYPE_V      : $CACHE_TYPE_V"
+111:echo "IMAGE_MIN_TOKENS  : $IMAGE_MIN_TOKENS"
+112:echo "IMAGE_MAX_TOKENS  : $IMAGE_MAX_TOKENS"
+113:echo "TURBOPREFILL      : $TURBOPREFILL"
+115:echo "CACHE_RAM         : $CACHE_RAM"
+116:echo "PROMPT_CACHE      : $PROMPT_CACHE"
+127:  CUDA_VISIBLE_DEVICES="$CUDA_DEVICES" \
+130:  TURBOPREFILL="$TURBOPREFILL" \
+135:  TURBOPREFILL="$TURBOPREFILL" \
+
+ 

@@ -1,0 +1,29 @@
+
+1. Стенд: Ubuntu 24.04.4, kernel 5.15, Xeon E5-2620 v3, 12 потоков, RAM 62 GiB. 
+
+2. Репозиторий: ветка `turboprefill-mtp`, commit `92ce1009`, `llama-server version 9876`. 
+
+3. GPU: 4? RTX 5070 Ti 16 GB, driver `580.126.09`, CUDA `13.0`. Свободно около 15.8 GiB на карту. 
+
+4. PCIe:
+
+   * GPU0: Gen2 x8
+   * GPU1: Gen2 x8
+   * GPU2: Gen2 x8
+   * GPU3: Gen2 x16
+
+   По sysfs: текущая скорость `5.0 GT/s`, максимум `32.0 GT/s`; то есть фактически работает как PCIe Gen2, не Gen5. 
+
+5. Топология: все GPU через `PHB`, NVLink нет. 
+
+6. Модели на месте:
+
+   * GPT-OSS-20B Q4_K_M
+   * GPT-OSS-120B Q4_K_M, 2 части
+   * Qwen3.6-27B-MTP + `mmproj-F16`
+   * Qwen2.5-VL-72B + `mmproj`
+   * Llama-3-70B Q4_K_M 
+
+Недостатки остались только системные: `lspci`, `dmidecode`, `numactl` не установлены. Это не критично, потому что PCIe уже снят через `/sys/bus/pci`.
+
+Итог: файл можно сохранять вместе с архивами отчётов.
